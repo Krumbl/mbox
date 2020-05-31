@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="5/30/2020 4:04:48 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="5/30/2020 9:46:07 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>5_kee_fx</Name>
@@ -1467,6 +1467,7 @@
       <string>TargetGroup</string>
       <string>Virtual Heal</string>
       <string>ISB42 - Combat Hotkeys</string>
+      <string>5-Toggles</string>
     </KeyMapStrings>
     <KeyMapWhiteOrBlackListType>Ignore</KeyMapWhiteOrBlackListType>
     <KeyMapWhiteOrBlackList />
@@ -1475,6 +1476,8 @@
       <string>Slot Display</string>
       <string>Slots-5</string>
       <string>shadow_heal</string>
+      <string>Repeater Toggle 01 ENABLE</string>
+      <string>Repeater Toggle 02 ENABLE</string>
     </ClickBarStrings>
     <VirtualFileTargets />
     <VirtualMappedKeys>
@@ -1616,6 +1619,7 @@
       <string>Combat</string>
       <string>Interupt</string>
       <string>Damage</string>
+      <string>Repeater</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Warrior - Protection</string>
@@ -1665,6 +1669,7 @@
     <RelayGroupStrings>
       <string>Follower</string>
       <string>Combat</string>
+      <string>Repeater</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Priest - Holy</string>
@@ -1717,6 +1722,7 @@
       <string>Interupt</string>
       <string>Stun</string>
       <string>Damage</string>
+      <string>Repeater</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Hunter - Beast Master</string>
@@ -1769,6 +1775,7 @@
       <string>Interupt</string>
       <string>Stun</string>
       <string>Damage</string>
+      <string>Repeater</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Hunter - Beast Master</string>
@@ -2270,6 +2277,7 @@
       <string>Follower</string>
       <string>Combat</string>
       <string>Damage</string>
+      <string>Repeater</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Monk - Brewmaster</string>
@@ -2320,6 +2328,7 @@
       <string>Follower</string>
       <string>Combat</string>
       <string>Healer</string>
+      <string>Repeater</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Monk - Mistweaver</string>
@@ -2374,6 +2383,7 @@
       <string>Follower</string>
       <string>Combat</string>
       <string>Damage</string>
+      <string>Repeater</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Hunter - Beast Master</string>
@@ -2424,6 +2434,7 @@
       <string>Follower</string>
       <string>Combat</string>
       <string>Damage</string>
+      <string>Repeater</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Hunter - Beast Master</string>
@@ -2474,6 +2485,7 @@
       <string>Follower</string>
       <string>Combat</string>
       <string>Damage</string>
+      <string>Repeater</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Hunter - Beast Master</string>
@@ -2883,6 +2895,9 @@
   </RelayGroup>
   <RelayGroup>
     <Name>Damage</Name>
+  </RelayGroup>
+  <RelayGroup>
+    <Name>Repeater</Name>
   </RelayGroup>
   <KeyMap>
     <Name>ISB42 - Always On</Name>
@@ -5063,7 +5078,9 @@ See http://isboxer.com/wiki/WoW:Interact_with_Target.</Description>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="RepeaterTargetAction" />
+              <MappedKeyAction xsi:type="RepeaterTargetAction">
+                <RepeaterTarget>other Repeater</RepeaterTarget>
+              </MappedKeyAction>
               <MappedKeyAction xsi:type="RepeaterStateAction">
                 <UseMouseState>true</UseMouseState>
                 <UseKeyboardState>true</UseKeyboardState>
@@ -5154,6 +5171,7 @@ See http://isboxer.com/wiki/WoW:Interact_with_Target.</Description>
             <Actions>
               <MappedKeyAction xsi:type="RepeaterTargetAction">
                 <Target>all</Target>
+                <RepeaterTarget>other Repeater</RepeaterTarget>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="RepeaterStateAction">
                 <UseMouseState>true</UseMouseState>
@@ -5356,6 +5374,157 @@ See http://isboxer.com/wiki/WoW:Interact_with_Target.</Description>
                     <ImageString>repeater pressed</ImageString>
                   </ImagePressed>
                 </ButtonChanges>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+    </Mappings>
+  </KeyMap>
+  <KeyMap>
+    <Name>5-Toggles</Name>
+    <Mappings>
+      <MappedKey>
+        <Name>Slot-1 ATG Toggle</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>1</Target>
+                <Action>Leave</Action>
+                <RelayGroupString>Repeater</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="ClickBarStateAction">
+                <Target>all</Target>
+                <ClickBar>
+                  <ClickBarString>Repeater Toggle 01 ENABLE</ClickBarString>
+                </ClickBar>
+                <Value>Off</Value>
+                <ClickBarSet />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="ClickBarStateAction">
+                <Target>all</Target>
+                <ClickBar>
+                  <ClickBarString>Repeater Toggle 01 DISABLE</ClickBarString>
+                </ClickBar>
+                <ClickBarSet />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>5-Toggles</KeyMapString>
+                  <MappedKeyString>Slot-1 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>2</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>1</Target>
+                <Action>Join</Action>
+                <RelayGroupString>Repeater</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="ClickBarStateAction">
+                <Target>all</Target>
+                <ClickBar>
+                  <ClickBarString>Repeater Toggle 01 ENABLE</ClickBarString>
+                </ClickBar>
+                <ClickBarSet />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="ClickBarStateAction">
+                <Target>all</Target>
+                <ClickBar>
+                  <ClickBarString>Repeater Toggle 01 DISABLE</ClickBarString>
+                </ClickBar>
+                <Value>Off</Value>
+                <ClickBarSet />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>5-Toggles</KeyMapString>
+                  <MappedKeyString>Slot-1 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Slot-2 ATG Toggle</Name>
+        <Description>Generated by Mapped Key Wizard with 'Action Target Group Toggler'</Description>
+        <Combo />
+        <Hold />
+        <UseFTLModifiers />
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>2</Target>
+                <Action>Leave</Action>
+                <RelayGroupString>Repeater</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="ClickBarStateAction">
+                <Target>all</Target>
+                <ClickBar>
+                  <ClickBarString>Repeater Toggle 02 ENABLE</ClickBarString>
+                </ClickBar>
+                <Value>Off</Value>
+                <ClickBarSet />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="ClickBarStateAction">
+                <Target>all</Target>
+                <ClickBar>
+                  <ClickBarString>Repeater Toggle 02 DISABLE</ClickBarString>
+                </ClickBar>
+                <ClickBarSet />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>5-Toggles</KeyMapString>
+                  <MappedKeyString>Slot-2 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>2</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>2</Target>
+                <Action>Join</Action>
+                <RelayGroupString>Repeater</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="ClickBarStateAction">
+                <Target>all</Target>
+                <ClickBar>
+                  <ClickBarString>Repeater Toggle 02 ENABLE</ClickBarString>
+                </ClickBar>
+                <ClickBarSet />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="ClickBarStateAction">
+                <Target>all</Target>
+                <ClickBar>
+                  <ClickBarString>Repeater Toggle 02 DISABLE</ClickBarString>
+                </ClickBar>
+                <Value>Off</Value>
+                <ClickBarSet />
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>5-Toggles</KeyMapString>
+                  <MappedKeyString>Slot-2 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -5589,8 +5758,18 @@ See http://isboxer.com/wiki/WoW:Interact_with_Target.</Description>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Name>Target Slot 1</Name>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>1</Target>
+                <Action>Leave</Action>
+                <RelayGroupString>Repeater</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="ClickBarStateAction">
+                <Target>1</Target>
+                <ClickBar>
+                  <ClickBarString>------Repeater-5-----</ClickBarString>
+                </ClickBar>
+                <Value>Off</Value>
+                <ClickBarSet />
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -11667,6 +11846,191 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         </MouseOverAction>
         <Tooltip />
         <Text />
+      </Button>
+    </Buttons>
+  </ClickBar>
+  <ClickBar>
+    <Name>------Repeater-5-----</Name>
+    <X>0</X>
+    <Y>0</Y>
+    <BackgroundColor />
+    <CellBorder_Color>
+      <Red>255</Red>
+      <Green>255</Green>
+      <Blue>255</Blue>
+    </CellBorder_Color>
+    <Rows>1</Rows>
+    <Columns>1</Columns>
+  </ClickBar>
+  <ClickBar>
+    <Name>Repeater Toggle 01 ENABLE</Name>
+    <X>0</X>
+    <Y>50</Y>
+    <RowHeight>29</RowHeight>
+    <ColumnWidth>51</ColumnWidth>
+    <BackgroundColor />
+    <CellBorder_Color>
+      <Green>200</Green>
+    </CellBorder_Color>
+    <Rows>1</Rows>
+    <Columns>1</Columns>
+    <Buttons>
+      <Button>
+        <Enabled>false</Enabled>
+        <Name>Button 1,1</Name>
+        <BackgroundColor />
+        <ClickActions>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Action>
+              <KeyMapString>5-Toggles</KeyMapString>
+              <MappedKeyString>Slot-1 ATG Toggle</MappedKeyString>
+            </Action>
+          </ClickAction>
+        </ClickActions>
+        <MouseOverAction>
+          <LeftRight>Left</LeftRight>
+          <Action />
+        </MouseOverAction>
+        <Tooltip />
+        <Text>01</Text>
+        <TextStyle>
+          <Face>Courier New</Face>
+          <Size>26</Size>
+          <Color>
+            <Green>200</Green>
+          </Color>
+          <Bold>true</Bold>
+        </TextStyle>
+      </Button>
+    </Buttons>
+  </ClickBar>
+  <ClickBar>
+    <Name>Repeater Toggle 02 ENABLE</Name>
+    <X>52</X>
+    <Y>50</Y>
+    <RowHeight>29</RowHeight>
+    <ColumnWidth>51</ColumnWidth>
+    <BackgroundColor />
+    <CellBorder_Color>
+      <Green>200</Green>
+    </CellBorder_Color>
+    <Rows>1</Rows>
+    <Columns>1</Columns>
+    <Buttons>
+      <Button>
+        <Enabled>false</Enabled>
+        <Name>Button 1,1</Name>
+        <BackgroundColor />
+        <ClickActions>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Action>
+              <KeyMapString>5-Toggles</KeyMapString>
+              <MappedKeyString>Slot-2 ATG Toggle</MappedKeyString>
+            </Action>
+          </ClickAction>
+        </ClickActions>
+        <MouseOverAction>
+          <LeftRight>Left</LeftRight>
+          <Action />
+        </MouseOverAction>
+        <Tooltip />
+        <Text>02</Text>
+        <TextStyle>
+          <Face>Courier New</Face>
+          <Size>26</Size>
+          <Color>
+            <Green>200</Green>
+          </Color>
+          <Bold>true</Bold>
+        </TextStyle>
+      </Button>
+    </Buttons>
+  </ClickBar>
+  <ClickBar>
+    <Name>Repeater Toggle 01 DISABLE</Name>
+    <X>0</X>
+    <Y>50</Y>
+    <RowHeight>29</RowHeight>
+    <ColumnWidth>51</ColumnWidth>
+    <BackgroundColor />
+    <CellBorder_Color>
+      <Red>200</Red>
+    </CellBorder_Color>
+    <Rows>1</Rows>
+    <Columns>1</Columns>
+    <Buttons>
+      <Button>
+        <Enabled>false</Enabled>
+        <Name>Button 1,1</Name>
+        <BackgroundColor />
+        <ClickActions>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Action>
+              <KeyMapString>5-Toggles</KeyMapString>
+              <MappedKeyString>Slot-1 ATG Toggle</MappedKeyString>
+            </Action>
+          </ClickAction>
+        </ClickActions>
+        <MouseOverAction>
+          <LeftRight>Left</LeftRight>
+          <Action />
+        </MouseOverAction>
+        <Tooltip />
+        <Text>01</Text>
+        <TextStyle>
+          <Face>Courier New</Face>
+          <Size>26</Size>
+          <Color>
+            <Red>200</Red>
+          </Color>
+          <Bold>true</Bold>
+        </TextStyle>
+      </Button>
+    </Buttons>
+  </ClickBar>
+  <ClickBar>
+    <Name>Repeater Toggle 02 DISABLE</Name>
+    <X>52</X>
+    <Y>50</Y>
+    <RowHeight>29</RowHeight>
+    <ColumnWidth>51</ColumnWidth>
+    <BackgroundColor />
+    <CellBorder_Color>
+      <Red>200</Red>
+    </CellBorder_Color>
+    <Rows>1</Rows>
+    <Columns>1</Columns>
+    <Buttons>
+      <Button>
+        <Enabled>false</Enabled>
+        <Name>Button 1,1</Name>
+        <BackgroundColor />
+        <ClickActions>
+          <ClickAction>
+            <LeftRight>Left</LeftRight>
+            <Action>
+              <KeyMapString>5-Toggles</KeyMapString>
+              <MappedKeyString>Slot-2 ATG Toggle</MappedKeyString>
+            </Action>
+          </ClickAction>
+        </ClickActions>
+        <MouseOverAction>
+          <LeftRight>Left</LeftRight>
+          <Action />
+        </MouseOverAction>
+        <Tooltip />
+        <Text>02</Text>
+        <TextStyle>
+          <Face>Courier New</Face>
+          <Size>26</Size>
+          <Color>
+            <Red>200</Red>
+          </Color>
+          <Bold>true</Bold>
+        </TextStyle>
       </Button>
     </Buttons>
   </ClickBar>
