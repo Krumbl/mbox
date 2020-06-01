@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="5/31/2020 9:12:03 AM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="5/31/2020 9:19:45 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>DuckTales</Name>
@@ -36,8 +36,9 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
-        <SwitchToKeyMapString>ISB42 - WoW</SwitchToKeyMapString>
-        <SwitchToMappedKeyString>JambaMaster</SwitchToMappedKeyString>
+        <WindowTitle />
+        <SwitchToKeyMapString>Swap Slot Bar</SwitchToKeyMapString>
+        <SwitchToMappedKeyString>Slot Swapped</SwitchToMappedKeyString>
         <FTLModifiers>
           <FTLModifierEnum>LShift</FTLModifierEnum>
         </FTLModifiers>
@@ -111,8 +112,9 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
-        <SwitchToKeyMapString>ISB42 - WoW</SwitchToKeyMapString>
-        <SwitchToMappedKeyString>JambaMaster</SwitchToMappedKeyString>
+        <WindowTitle />
+        <SwitchToKeyMapString>Swap Slot Bar</SwitchToKeyMapString>
+        <SwitchToMappedKeyString>Slot Swapped</SwitchToMappedKeyString>
         <FTLModifiers>
           <FTLModifierEnum>RShift</FTLModifierEnum>
         </FTLModifiers>
@@ -186,8 +188,9 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
-        <SwitchToKeyMapString>ISB42 - WoW</SwitchToKeyMapString>
-        <SwitchToMappedKeyString>JambaMaster</SwitchToMappedKeyString>
+        <WindowTitle />
+        <SwitchToKeyMapString>Swap Slot Bar</SwitchToKeyMapString>
+        <SwitchToMappedKeyString>Slot Swapped</SwitchToMappedKeyString>
         <FTLModifiers>
           <FTLModifierEnum>LCtrl</FTLModifierEnum>
         </FTLModifiers>
@@ -261,8 +264,9 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
-        <SwitchToKeyMapString>ISB42 - WoW</SwitchToKeyMapString>
-        <SwitchToMappedKeyString>JambaMaster</SwitchToMappedKeyString>
+        <WindowTitle />
+        <SwitchToKeyMapString>Swap Slot Bar</SwitchToKeyMapString>
+        <SwitchToMappedKeyString>Slot Swapped</SwitchToMappedKeyString>
         <FTLModifiers>
           <FTLModifierEnum>LAlt</FTLModifierEnum>
         </FTLModifiers>
@@ -336,8 +340,9 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
-        <SwitchToKeyMapString>ISB42 - WoW</SwitchToKeyMapString>
-        <SwitchToMappedKeyString>JambaMaster</SwitchToMappedKeyString>
+        <WindowTitle />
+        <SwitchToKeyMapString>Swap Slot Bar</SwitchToKeyMapString>
+        <SwitchToMappedKeyString>Slot Swapped</SwitchToMappedKeyString>
         <FTLModifiers>
           <FTLModifierEnum>LShift</FTLModifierEnum>
           <FTLModifierEnum>LCtrl</FTLModifierEnum>
@@ -522,9 +527,6 @@
       <MenuInstance>
         <MenuString>Follow Toggle</MenuString>
       </MenuInstance>
-      <MenuInstance>
-        <MenuString>Heal Overlay</MenuString>
-      </MenuInstance>
     </MenuInstances>
     <WoWMacroSets>
       <WoWMacroSetLooseRef>
@@ -533,11 +535,14 @@
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>Heal</WoWMacroSetString>
       </WoWMacroSetLooseRef>
+      <WoWMacroSetLooseRef>
+        <WoWMacroSetString>View</WoWMacroSetString>
+      </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
     <LaunchCharacterSetStrings />
     <WindowLayout>
-      <WindowLayoutString>DuckTales</WindowLayoutString>
+      <WindowLayoutString>5man</WindowLayoutString>
     </WindowLayout>
   </CharacterSet>
   <Character>
@@ -850,10 +855,126 @@
           <DPIScale>100</DPIScale>
         </UserScreen>
       </AllScreens>
-      <Name>&lt;Current Screen Layout&gt;</Name>
+      <Name>&lt;Window Layout-specified&gt;</Name>
     </UserScreenSet>
     <Name>DuckTales</Name>
     <Description>This Window Layout features maximum usage of a single monitor. Swapping enabled. Includes a home region for every window. Leaves space for the Windows taskbar.</Description>
+    <FocusFollowsMouse>true</FocusFollowsMouse>
+    <InstantSwap>true</InstantSwap>
+    <SwapMode>SlotActivate</SwapMode>
+    <SwapHotkey>
+      <Combo>Alt+Q</Combo>
+      <Modifiers>Alt</Modifiers>
+      <Key>
+        <Key>Q</Key>
+        <Code>16</Code>
+      </Key>
+    </SwapHotkey>
+    <RolloverStyle>
+      <Enabled>true</Enabled>
+      <Scale>1.5</Scale>
+      <Rollup>false</Rollup>
+      <Frames>10</Frames>
+    </RolloverStyle>
+    <Regions>
+      <Region>
+        <Rect>
+          <Width>3440</Width>
+          <Height>1200</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>1</CharacterSetSlot>
+        <Rect>
+          <Top>1200</Top>
+          <Width>688</Width>
+          <Height>240</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>2</CharacterSetSlot>
+        <Rect>
+          <Left>688</Left>
+          <Top>1200</Top>
+          <Width>688</Width>
+          <Height>240</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>3</CharacterSetSlot>
+        <Rect>
+          <Left>1376</Left>
+          <Top>1200</Top>
+          <Width>688</Width>
+          <Height>240</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>4</CharacterSetSlot>
+        <Rect>
+          <Left>2064</Left>
+          <Top>1200</Top>
+          <Width>688</Width>
+          <Height>240</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>5</CharacterSetSlot>
+        <Rect>
+          <Left>2752</Left>
+          <Top>1200</Top>
+          <Width>688</Width>
+          <Height>240</Height>
+        </Rect>
+      </Region>
+    </Regions>
+    <SwapGroups>
+      <SwapGroup ResetRegion="0" ActiveRegion="0" />
+      <SwapGroup DeactivateSwapGroup="1" />
+      <SwapGroup DeactivateSwapGroup="2" />
+      <SwapGroup DeactivateSwapGroup="3" />
+      <SwapGroup DeactivateSwapGroup="4" />
+      <SwapGroup DeactivateSwapGroup="5" />
+      <SwapGroup DeactivateSwapGroup="6" />
+      <SwapGroup DeactivateSwapGroup="7" />
+    </SwapGroups>
+  </WindowLayout>
+  <WindowLayout>
+    <UserScreenSet>
+      <AllScreens>
+        <UserScreen>
+          <Bounds>
+            <Width>3440</Width>
+            <Height>1440</Height>
+          </Bounds>
+          <WorkingArea>
+            <Width>3440</Width>
+            <Height>1440</Height>
+          </WorkingArea>
+          <Primary>true</Primary>
+          <DeviceName>\\.\DISPLAY1</DeviceName>
+          <DPIScale>100</DPIScale>
+        </UserScreen>
+        <UserScreen>
+          <Bounds>
+            <Left>-1920</Left>
+            <Width>1920</Width>
+            <Height>1080</Height>
+          </Bounds>
+          <WorkingArea>
+            <Left>-1858</Left>
+            <Width>1858</Width>
+            <Height>1080</Height>
+          </WorkingArea>
+          <DeviceName>\\.\DISPLAY2</DeviceName>
+          <DPIScale>100</DPIScale>
+        </UserScreen>
+      </AllScreens>
+      <Name>&lt;Window Layout-specified&gt;</Name>
+    </UserScreenSet>
+    <Name>5man</Name>
+    <Description>This Window Layout features maximum usage of a single monitor. Swapping enabled. Includes a home region for every window. Leaves space for the Windows taskbar.</Description>
+    <FocusFollowsMouse>true</FocusFollowsMouse>
     <InstantSwap>true</InstantSwap>
     <SwapMode>SlotActivate</SwapMode>
     <SwapHotkey>
@@ -924,6 +1045,13 @@
     </Regions>
     <SwapGroups>
       <SwapGroup ResetRegion="0" ActiveRegion="0" />
+      <SwapGroup DeactivateSwapGroup="1" />
+      <SwapGroup DeactivateSwapGroup="2" />
+      <SwapGroup DeactivateSwapGroup="3" />
+      <SwapGroup DeactivateSwapGroup="4" />
+      <SwapGroup DeactivateSwapGroup="5" />
+      <SwapGroup DeactivateSwapGroup="6" />
+      <SwapGroup DeactivateSwapGroup="7" />
     </SwapGroups>
   </WindowLayout>
   <RepeaterProfile>
@@ -970,6 +1098,7 @@
   <KeyMap>
     <Name>ISB42 - Always On</Name>
     <Description>This Key Map is to contain only Hotkeys that should never be toggled OFF. By default, this includes overall control mechanisms, such as toggling Broadcasting Mode, or toggling other Hotkeys.</Description>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>Activate Maps</Name>
@@ -1017,12 +1146,20 @@
       <MappedKey>
         <Name>Activate Mouse Repeat</Name>
         <Description>This toggles Mouse Repeat (1 to 1 broadcasting for the mouse) from the current window to all others. It does not have a Hotkey by default.</Description>
+        <Combo>
+          <Combo>Shift+H</Combo>
+          <Modifiers>Shift</Modifiers>
+          <Key>
+            <Key>H</Key>
+            <Code>35</Code>
+          </Key>
+        </Combo>
         <Steps>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>ISB42 - Toggles</KeyMapString>
-                <MappedKeyString>Activate Mouse Repeat (current window)</MappedKeyString>
+                <MappedKeyString>Activate Mouse Repeat (all windows)</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -1032,8 +1169,8 @@
         <Name>Toggle Formations Menu</Name>
         <Description>This key can be used to toggle the Formations Menu</Description>
         <Combo>
-          <Combo>Ctrl+Shift+Alt+F</Combo>
-          <Modifiers>Ctrl Shift Alt</Modifiers>
+          <Combo>Shift+Alt+F</Combo>
+          <Modifiers>Shift Alt</Modifiers>
           <Key>
             <Key>F</Key>
             <Code>33</Code>
@@ -1066,7 +1203,6 @@
       <MappedKey>
         <Name>Next window</Name>
         <Description>This key can be used to rotate to the next window.</Description>
-        <Combo />
         <ResetTimer>0</ResetTimer>
         <Steps>
           <Step>
@@ -1222,6 +1358,7 @@
   <KeyMap>
     <Name>ISB42 - Base Hotkeys</Name>
     <Description>This Key Map contains general use Hotkeys, which can be toggled by default by Activate Maps (Shift+Alt+M). Most of the default Mapped Keys use Do Mapped Key Action to perform behaviors from another Key Map.</Description>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>Follow Me</Name>
@@ -1239,6 +1376,10 @@
         <Steps>
           <Step>
             <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>ISB42 - Base Hotkeys</KeyMapString>
+                <MappedKeyString>Stop</MappedKeyString>
+              </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>ISB42 - Party</KeyMapString>
                 <MappedKeyString>Follow Me - Active Method</MappedKeyString>
@@ -1489,15 +1630,15 @@ The Star formation aligns your characters in all four directions around the lead
             <Actions>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
                 <Target>(@other isboxer&amp;~dxnothing)#1</Target>
-                <Name>Move Backward</Name>
-              </MappedKeyAction>
-              <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Target>(@other isboxer&amp;~dxnothing)#2</Target>
                 <Name>Move Forward</Name>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Target>(@other isboxer&amp;~dxnothing)#3</Target>
+                <Target>(@other isboxer&amp;~dxnothing)#2</Target>
                 <Name>Move Left</Name>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Target>(@other isboxer&amp;~dxnothing)#3</Target>
+                <Name>Move Backward</Name>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
                 <Target>(@other isboxer&amp;~dxnothing)#4</Target>
@@ -2197,8 +2338,30 @@ See http://isboxer.com/wiki/WoW:Interact_with_Target.</Description>
         <Steps>
           <Step>
             <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>ISB42 - Base Hotkeys</KeyMapString>
+                <MappedKeyString>StopCast</MappedKeyString>
+              </MappedKeyAction>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Target>all other</Target>
                 <Name>Move Backward</Name>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>StopCast</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <Target>all</Target>
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>View</WoWMacroSetString>
+                  <WoWMacroString>Stop Casting</WoWMacroString>
+                </WoWMacro>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -2209,6 +2372,7 @@ See http://isboxer.com/wiki/WoW:Interact_with_Target.</Description>
   <KeyMap>
     <Name>ISB42 - Toggles</Name>
     <Description>This Key Map is not toggled OFF by the Hotkeys toggle and is not intended to contain any Hotkeys! Use a Do Mapped Key Action to Window:Current to perform any of these Mapped Keys. (As in ISB42 - Always On)</Description>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>Activate Maps - Active Method</Name>
@@ -2703,6 +2867,124 @@ See http://isboxer.com/wiki/WoW:Interact_with_Target.</Description>
           </Step>
         </Steps>
       </MappedKey>
+      <MappedKey>
+        <Name>Activate Mouse Repeat (all windows)</Name>
+        <Description>This toggles Mouse Repeat (1 to 1 broadcasting for the mouse) from the current window to all others. It does not have a Hotkey by default.</Description>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <Target>all</Target>
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>View</WoWMacroSetString>
+                  <WoWMacroString>Set View</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="RepeaterTargetAction">
+                <Target>all</Target>
+                <RepeaterTarget>other Repeater</RepeaterTarget>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="RepeaterStateAction">
+                <UseMouseState>true</UseMouseState>
+                <Target>all</Target>
+                <VideoFeed xsi:nil="true" />
+                <VideoSourceSize>
+                  <Width>0</Width>
+                  <Height>0</Height>
+                </VideoSourceSize>
+                <VideoOutputSize>
+                  <Width>0</Width>
+                  <Height>0</Height>
+                </VideoOutputSize>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>Broadcasting ON</Text>
+                <DurationMS>1000</DurationMS>
+                <Red>0</Red>
+                <Blue>0</Blue>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuButtonAction">
+                <MenuButton>
+                  <MenuButtonSetString>Toggles</MenuButtonSetString>
+                  <NumButton>1</NumButton>
+                </MenuButton>
+                <ButtonChanges>
+                  <Actions />
+                  <UseImages>true</UseImages>
+                  <Image>
+                    <ImageString>repeater on</ImageString>
+                  </Image>
+                  <ImageHover />
+                  <ImagePressed>
+                    <ImageString>repeater pressed</ImageString>
+                  </ImagePressed>
+                </ButtonChanges>
+                <Target>all</Target>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all other</Target>
+                <MappedKey>
+                  <KeyMapString>ISB42 - Toggles</KeyMapString>
+                  <MappedKeyString>Activate Mouse Repeat (all windows)</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>2</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="RepeaterStateAction">
+                <UseMouseState>true</UseMouseState>
+                <MouseState>Off</MouseState>
+                <KeyboardState>Off</KeyboardState>
+                <Target>all</Target>
+                <VideoFeed xsi:nil="true" />
+                <VideoSourceSize>
+                  <Width>0</Width>
+                  <Height>0</Height>
+                </VideoSourceSize>
+                <VideoOutputSize>
+                  <Width>0</Width>
+                  <Height>0</Height>
+                </VideoOutputSize>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="PopupTextAction">
+                <Text>Broadcasting OFF</Text>
+                <DurationMS>1000</DurationMS>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuButtonAction">
+                <MenuButton>
+                  <MenuButtonSetString>Toggles</MenuButtonSetString>
+                  <NumButton>1</NumButton>
+                </MenuButton>
+                <ButtonChanges>
+                  <Actions />
+                  <UseImages>true</UseImages>
+                  <Image>
+                    <ImageString>repeater off</ImageString>
+                  </Image>
+                  <ImageHover />
+                  <ImagePressed>
+                    <ImageString>repeater pressed</ImageString>
+                  </ImagePressed>
+                </ButtonChanges>
+                <Target>all</Target>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all other</Target>
+                <MappedKey>
+                  <KeyMapString>ISB42 - Toggles</KeyMapString>
+                  <MappedKeyString>Activate Mouse Repeat (all windows)</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
     </Mappings>
   </KeyMap>
   <KeyMap>
@@ -2712,6 +2994,7 @@ See http://isboxer.com/wiki/WoW:Interact_with_Target.</Description>
 Contains different methods of Follow and Assist. Some games will only work with certain methods.
 
 The Active Methods are set up in your Character Set under Virtual Mapped Keys!</Description>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>Follow Me - Active Method</Name>
@@ -3204,6 +3487,7 @@ See http://isboxer.com/wiki/WoW:Interact_with_Target.</Description>
   <KeyMap>
     <Name>ISB42 - WoW</Name>
     <Description>This Key Map is not toggled OFF by the Hotkeys toggle and is not intended to contain any Hotkeys! Use a Do Mapped Key Action to Window:Current to perform any of these Mapped Keys. (As in ISB42 - Base Hotkeys and ISB42 - Party)</Description>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>Click to Move Off</Name>
@@ -3508,6 +3792,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   <KeyMap>
     <Name>ISB42 - Custom Hotkeys</Name>
     <Description>This Key Map can contain your own custom Hotkeys, which can be toggled by default by Activate Maps (Shift+Alt+M).</Description>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>Use this Key Map for custom Hotkeys!</Name>
@@ -3525,6 +3810,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   </KeyMap>
   <KeyMap>
     <Name>Repeater ATG Toggle</Name>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>Slot-1 ATG Toggle</Name>
@@ -3907,6 +4193,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   </KeyMap>
   <KeyMap>
     <Name>Follow ATG Toggle</Name>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>Slot-1 ATG Toggle</Name>
@@ -3937,7 +4224,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>1</Target>
                 <KeyMapString>ISB42 - Base Hotkeys</KeyMapString>
-                <MappedKeyString>Stop</MappedKeyString>
+                <MappedKeyString>StopCast</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepAction">
                 <Target>all</Target>
@@ -4018,7 +4305,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>2</Target>
                 <KeyMapString>ISB42 - Base Hotkeys</KeyMapString>
-                <MappedKeyString>Stop</MappedKeyString>
+                <MappedKeyString>StopCast</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepAction">
                 <Target>all</Target>
@@ -4099,7 +4386,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>3</Target>
                 <KeyMapString>ISB42 - Base Hotkeys</KeyMapString>
-                <MappedKeyString>Stop</MappedKeyString>
+                <MappedKeyString>StopCast</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepAction">
                 <Target>all</Target>
@@ -4180,7 +4467,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>4</Target>
                 <KeyMapString>ISB42 - Base Hotkeys</KeyMapString>
-                <MappedKeyString>Stop</MappedKeyString>
+                <MappedKeyString>StopCast</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepAction">
                 <Target>all</Target>
@@ -4261,7 +4548,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>5</Target>
                 <KeyMapString>ISB42 - Base Hotkeys</KeyMapString>
-                <MappedKeyString>Stop</MappedKeyString>
+                <MappedKeyString>StopCast</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyStepAction">
                 <Target>all</Target>
@@ -4314,6 +4601,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   </KeyMap>
   <KeyMap>
     <Name>Swap Slot Bar</Name>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>Slot1</Name>
@@ -4415,6 +4703,35 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </Step>
         </Steps>
       </MappedKey>
+      <MappedKey>
+        <Name>Slot Swapped</Name>
+        <Description>Whenever a slot is swapped run this </Description>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Show Heal Region</Name>
+        <Combo>
+          <Combo>Num -</Combo>
+          <Key>
+            <Key>Num -</Key>
+            <Code>74</Code>
+          </Key>
+        </Combo>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="RepeaterRegionsAction">
+                <Action>Load</Action>
+                <Profile>Healing</Profile>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
     </Mappings>
   </KeyMap>
   <KeyMap>
@@ -4423,6 +4740,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   </KeyMap>
   <KeyMap>
     <Name>ISB42 - Combat Hotkeys</Name>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>DPS Rotation</Name>
@@ -4534,6 +4852,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>Interupt</Target>
+                <RoundRobin>true</RoundRobin>
                 <KeyMapString>ISB42 - Virtual Combat</KeyMapString>
                 <MappedKeyString>Interrupt</MappedKeyString>
               </MappedKeyAction>
@@ -4641,6 +4960,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   </KeyMap>
   <KeyMap>
     <Name>ISB42 - Virtual Combat</Name>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>DPS Rotation</Name>
@@ -4742,6 +5062,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   </KeyMap>
   <KeyMap>
     <Name>Virtual Heal</Name>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>HoT-1</Name>
@@ -4842,12 +5163,31 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     </Mappings>
   </KeyMap>
   <KeyMap>
+    <Name>Heal Overlay</Name>
+    <Mappings>
+      <MappedKey>
+        <Name>Heal Region</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="RepeaterRegionsAction">
+                <Action>Load</Action>
+                <Profile>Healing</Profile>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+    </Mappings>
+  </KeyMap>
+  <KeyMap>
     <Name>----- DEFAULT COMBAT -----</Name>
     <Mappings />
   </KeyMap>
   <KeyMap>
     <Name>ISB42 - Combat Broadcast Hotkeys</Name>
     <Description>This Key Map contains Combat Broadcasting Hotkeys, which can be toggled by default by Activate Maps (Shift+Alt+M). Most of the default Mapped Keys use Do Mapped Key Action to perform behaviors from ISB42 - Combat Broadcast. You can easily configure different behaviors for different teams by copying ISB42 - Combat Broadcast, and then use Key Map Virtualization to set ISB42 - Combat Broadcast "is now" your new Key Map.</Description>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>1</Name>
@@ -5776,6 +6116,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
   <KeyMap>
     <Name>ISB42 - Combat Broadcast</Name>
     <Description>This Key Map is not toggled OFF by the Hotkeys toggle and is not intended to contain any Hotkeys! Use a Do Mapped Key Action to Window:Current to perform the actual broadcast of 1 through = and modified versions. (As in ISB42 - Combat Broadcast Hotkeys)</Description>
+    <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
         <Name>1</Name>
@@ -8123,6 +8464,36 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </WoWMacro>
     </WoWMacros>
   </WoWMacroSet>
+  <WoWMacroSet>
+    <Name>View</Name>
+    <WoWMacros>
+      <WoWMacro>
+        <MacroCommands>/script SetView(3);</MacroCommands>
+        <ColloquialName>Set View</ColloquialName>
+        <Combo>
+          <Combo>F9</Combo>
+          <Key>
+            <Key>F9</Key>
+            <Code>67</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/stopcasting</MacroCommands>
+        <ColloquialName>Stop Casting</ColloquialName>
+        <Combo>
+          <Combo>Shift+F9</Combo>
+          <Modifiers>Shift</Modifiers>
+          <Key>
+            <Key>F9</Key>
+            <Code>67</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+    </WoWMacros>
+  </WoWMacroSet>
   <VariableKeystroke>
     <Name>Move Forward</Name>
     <Category>Movement</Category>
@@ -8667,7 +9038,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <DisplayText>Flying V</DisplayText>
         <UseImages>true</UseImages>
         <Image>
-          <ImageString>Flying V Formation pressed</ImageString>
+          <ImageString>Flying V Formation</ImageString>
         </Image>
         <ImageHover />
         <ImagePressed>
@@ -8687,6 +9058,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <Image>
           <ImageString>4 pt star Formation</ImageString>
         </Image>
+        <ImageHover />
         <ImagePressed>
           <ImageString>4 pt star Formation pressed</ImageString>
         </ImagePressed>
@@ -10350,7 +10722,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <BackgroundColor>
       <Alpha>0</Alpha>
     </BackgroundColor>
-    <Alpha>0.247058824</Alpha>
+    <Alpha>0.5882353</Alpha>
     <Border>0</Border>
     <BorderColor>
       <Alpha>0</Alpha>
@@ -10449,8 +10821,9 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Name>ISB42 - Formations</Name>
     <Template>Formations</Template>
     <ButtonLayout>ISB42 - Formations</ButtonLayout>
-    <X>400</X>
-    <Y>100</Y>
+    <HotkeyLayout />
+    <X>925</X>
+    <Y>400</Y>
   </Menu>
   <Menu>
     <Name>ISB42 - Toggles</Name>
