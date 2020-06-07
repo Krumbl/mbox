@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="6/6/2020 9:17:30 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="6/6/2020 9:27:38 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>DuckTales</Name>
@@ -1636,6 +1636,9 @@
       </MenuInstance>
       <MenuInstance>
         <MenuString>Assist Toggle</MenuString>
+      </MenuInstance>
+      <MenuInstance>
+        <MenuString>Swap Slot</MenuString>
       </MenuInstance>
     </MenuInstances>
     <WoWMacroSets>
@@ -12382,6 +12385,75 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       </MenuButton>
     </Buttons>
   </MenuButtonSet>
+  <MenuButtonSet>
+    <Name>Swap Slot</Name>
+    <Buttons>
+      <MenuButton>
+        <Actions />
+        <Text>S</Text>
+        <UseImages>true</UseImages>
+        <Image>
+          <ImageString>#FF000000</ImageString>
+        </Image>
+        <ImageHover>
+          <ImageString>#FF404040</ImageString>
+        </ImageHover>
+        <ImagePressed>
+          <ImageString>#FF606060</ImageString>
+        </ImagePressed>
+        <BackgroundColor />
+        <Alpha>0.784313738</Alpha>
+        <FontColor>
+          <Red>255</Red>
+          <Green>255</Green>
+          <Blue>255</Blue>
+        </FontColor>
+        <FontBold>0</FontBold>
+        <FontSize>24</FontSize>
+        <FontName>Tahoma</FontName>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <KeyMapString>Swap Slot Bar</KeyMapString>
+            <MappedKeyString>Slot1</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <KeyMapString>Swap Slot Bar</KeyMapString>
+            <MappedKeyString>Slot2</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <KeyMapString>Swap Slot Bar</KeyMapString>
+            <MappedKeyString>Slot3</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <KeyMapString>Swap Slot Bar</KeyMapString>
+            <MappedKeyString>Slot4</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <KeyMapString>Swap Slot Bar</KeyMapString>
+            <MappedKeyString>Slot5</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+      </MenuButton>
+    </Buttons>
+  </MenuButtonSet>
   <MenuHotkeySet>
     <Name>Standard</Name>
     <Description>Quick Setup Wizard 42 - Standard 12-button Menu Hotkeys</Description>
@@ -13093,7 +13165,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Template>5-button</Template>
     <ButtonLayout>Repeater Toggle</ButtonLayout>
     <HotkeyLayout />
-    <X>675</X>
+    <X>625</X>
     <Y>425</Y>
   </Menu>
   <Menu>
@@ -13103,7 +13175,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Template>5-button</Template>
     <ButtonLayout>Assist Toggle</ButtonLayout>
     <HotkeyLayout />
-    <X>725</X>
+    <X>675</X>
     <Y>425</Y>
   </Menu>
   <Menu>
@@ -13112,6 +13184,16 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
 </Description>
     <Template>5-button</Template>
     <ButtonLayout>Follow Toggle</ButtonLayout>
+    <HotkeyLayout />
+    <X>725</X>
+    <Y>425</Y>
+  </Menu>
+  <Menu>
+    <Name>Swap Slot</Name>
+    <Description>Toggle checkmarks per character
+</Description>
+    <Template>5-button</Template>
+    <ButtonLayout>Swap Slot</ButtonLayout>
     <HotkeyLayout />
     <X>775</X>
     <Y>425</Y>
