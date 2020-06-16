@@ -1,0 +1,32 @@
+VER 3 0100000000000002 "Crusader Strike" "INV_MISC_QUESTIONMARK"
+#showtooltip Crusader Strike
+/startattack
+/cast Crusader Strike
+END
+VER 3 0100000000000001 "Exorcism" "INV_MISC_QUESTIONMARK"
+#showtooltip Exorcism
+/stopcasting
+/cast Exorcism
+/stopcasting
+END
+VER 3 0100000000000008 "PROT" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/click [button:2] PROT RightButton; [button:3] PROT MiddleButton; [button:4] PROT Button4; [button:5] PROT Button5; PROT
+END
+VER 3 0100000000000007 "PULL" "132208"
+/dbm pull 10
+END
+VER 3 0100000000000005 "sigryn" "INV_MISC_QUESTIONMARK"
+/target Sigryn
+/cast Hammer of Justice
+END
+VER 3 0100000000000006 "sigryn2" "INV_MISC_QUESTIONMARK"
+/target Inquisitor Variss
+/cast Avenger's Shield
+END
+VER 3 0100000000000003 "VuhDoDCShieldData" "Ability_Repair"
+P1IH1HR1HR1HR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1PT[x]0__0__0__[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000004 "VuhDoDCShieldNames" "Ability_Repair"
+NKeeKeeKeeKee[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Kru[x]SpiSpiSpi[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="6/12/2020 9:04:32 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="6/15/2020 7:12:31 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>DuckTales</Name>
@@ -1643,6 +1643,9 @@
       <MenuInstance>
         <MenuString>Swap Slot</MenuString>
       </MenuInstance>
+      <MenuInstance>
+        <MenuString>Heal Toggle</MenuString>
+      </MenuInstance>
     </MenuInstances>
     <WoWMacroSets>
       <WoWMacroSetLooseRef>
@@ -2207,6 +2210,9 @@
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>Priest</WoWMacroSetString>
       </WoWMacroSetLooseRef>
+      <WoWMacroSetLooseRef>
+        <WoWMacroSetString>Druid</WoWMacroSetString>
+      </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
     <LaunchCharacterSetStrings />
@@ -2759,6 +2765,9 @@
       </WoWMacroSetLooseRef>
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>Priest</WoWMacroSetString>
+      </WoWMacroSetLooseRef>
+      <WoWMacroSetLooseRef>
+        <WoWMacroSetString>Druid</WoWMacroSetString>
       </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
@@ -3405,7 +3414,7 @@
       <string>Repeater</string>
     </RelayGroupStrings>
     <KeyMapStrings>
-      <string>Druid - Holy</string>
+      <string>Druid - Resto</string>
     </KeyMapStrings>
     <KeyMapWhiteOrBlackListType>Ignore</KeyMapWhiteOrBlackListType>
     <KeyMapWhiteOrBlackList />
@@ -3425,7 +3434,11 @@
         <VirtualFileString>Software/Blizzard Entertainment/Battle.net/</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
-    <WoWMacroSets />
+    <WoWMacroSets>
+      <WoWMacroSetLooseRef>
+        <WoWMacroSetString>Druid</WoWMacroSetString>
+      </WoWMacroSetLooseRef>
+    </WoWMacroSets>
     <CrypticMacroSets />
     <VirtualMappedKeys>
       <VirtualMappedKey>
@@ -3433,7 +3446,7 @@
           <KeyMapString>Virtual Heal</KeyMapString>
         </FromMappedKey>
         <ToMappedKey>
-          <KeyMapString>Priest - Holy</KeyMapString>
+          <KeyMapString>Druid - Resto</KeyMapString>
         </ToMappedKey>
       </VirtualMappedKey>
     </VirtualMappedKeys>
@@ -6264,62 +6277,6 @@ See http://isboxer.com/wiki/WoW:Interact_with_Target.</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>JambaMaster</Name>
-        <Description>This tells the Jamba Addon to tell the other characters the current one is master.
-
-The Quick Setup Wizard uses this and similar mappings for whatever character switching (e.g. follow upon character switch) options were selected on the last page. A different Mapped Key can be selected later if desired, by selecting it per Slot in your Character Set (in a drop-down box on the right side). Or just run the wizard again...</Description>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="WoWMacroRefAction">
-                <UseCustomModifiers />
-                <WoWMacro>
-                  <WoWMacroSetString>Quick Setup 42</WoWMacroSetString>
-                  <WoWMacroString>JambaMaster</WoWMacroString>
-                </WoWMacro>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>JambaStrobe Off</Name>
-        <Description>This tells the Jamba Addon to turn off follow strobing. It is used by Toggle Jamba Follow Strobing in the Non-combat Key Map.</Description>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="WoWMacroRefAction">
-                <UseCustomModifiers />
-                <WoWMacro>
-                  <WoWMacroSetString>Quick Setup 42</WoWMacroSetString>
-                  <WoWMacroString>JambaStrobe OFF</WoWMacroString>
-                </WoWMacro>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>JambaStrobe On</Name>
-        <Description>This tells the Jamba Addon to turn on follow strobing. It is used by Toggle Jamba Follow Strobing.</Description>
-        <ResetTimer>0</ResetTimer>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="WoWMacroRefAction">
-                <UseCustomModifiers />
-                <WoWMacro>
-                  <WoWMacroSetString>Quick Setup 42</WoWMacroSetString>
-                  <WoWMacroString>JambaStrobe ON</WoWMacroString>
-                </WoWMacro>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
         <Name>Follow/JambaMaster</Name>
         <Description>This uses the Follow Me key under the Non-combat Key Map, and the JambaMaster key under this Key Map. It does not have a Hotkey by default.
 
@@ -8154,7 +8111,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Actions>
               <MappedKeyAction xsi:type="KeyMapAction">
                 <Target>Healer</Target>
-                <Value>Off</Value>
                 <KeyMapString>Virtual Heal</KeyMapString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuButtonAction">
@@ -8179,6 +8135,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
                   <MappedKeyString>Toggle Heals</MappedKeyString>
                 </MappedKey>
                 <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -8399,13 +8356,17 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <MappedKey>
         <Name>ST Rotation</Name>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
       <MappedKey>
         <Name>AOE Rotation</Name>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
     </Mappings>
@@ -9911,7 +9872,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Mappings />
   </KeyMap>
   <KeyMap>
-    <Name>Druid - Holy</Name>
+    <Name>Druid - Resto</Name>
     <Mode>OnPress</Mode>
     <Mappings>
       <MappedKey>
@@ -10095,7 +10056,6 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         <Name>ST Rotation</Name>
         <Description>Renew slots 1-&gt;5
 Prayer of Mending slot 1</Description>
-        <ManualLoad>true</ManualLoad>
         <ResetTimer>5</ResetTimer>
         <ResetType>FromLastPress</ResetType>
         <Steps>
@@ -10105,8 +10065,8 @@ Prayer of Mending slot 1</Description>
               <MappedKeyAction xsi:type="WoWMacroRefAction">
                 <UseCustomModifiers />
                 <WoWMacro>
-                  <WoWMacroSetString>Priest</WoWMacroSetString>
-                  <WoWMacroString>Prayer of Mending</WoWMacroString>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Lifebloom</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
             </Actions>
@@ -10119,8 +10079,21 @@ Prayer of Mending slot 1</Description>
                   <LShift>true</LShift>
                 </UseCustomModifiers>
                 <WoWMacro>
-                  <WoWMacroSetString>Priest</WoWMacroSetString>
-                  <WoWMacroString>Renew</WoWMacroString>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Rejuvenation</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1.4</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Efflorescence
+</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
             </Actions>
@@ -10133,8 +10106,8 @@ Prayer of Mending slot 1</Description>
                   <RShift>true</RShift>
                 </UseCustomModifiers>
                 <WoWMacro>
-                  <WoWMacroSetString>Priest</WoWMacroSetString>
-                  <WoWMacroString>Renew</WoWMacroString>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Rejuvenation</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
             </Actions>
@@ -10147,8 +10120,8 @@ Prayer of Mending slot 1</Description>
                   <LCtrl>true</LCtrl>
                 </UseCustomModifiers>
                 <WoWMacro>
-                  <WoWMacroSetString>Priest</WoWMacroSetString>
-                  <WoWMacroString>Renew</WoWMacroString>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Rejuvenation</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
             </Actions>
@@ -10161,8 +10134,8 @@ Prayer of Mending slot 1</Description>
                   <LAlt>true</LAlt>
                 </UseCustomModifiers>
                 <WoWMacro>
-                  <WoWMacroSetString>Priest</WoWMacroSetString>
-                  <WoWMacroString>Renew</WoWMacroString>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Rejuvenation</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
             </Actions>
@@ -10176,8 +10149,103 @@ Prayer of Mending slot 1</Description>
                   <LCtrl>true</LCtrl>
                 </UseCustomModifiers>
                 <WoWMacro>
-                  <WoWMacroSetString>Priest</WoWMacroSetString>
-                  <WoWMacroString>Renew</WoWMacroString>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Rejuvenation</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Wild Growth</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers>
+                  <LShift>true</LShift>
+                </UseCustomModifiers>
+                <WoWMacro>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Regrowth</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers>
+                  <RShift>true</RShift>
+                </UseCustomModifiers>
+                <WoWMacro>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Regrowth</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers>
+                  <LCtrl>true</LCtrl>
+                </UseCustomModifiers>
+                <WoWMacro>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Regrowth</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers>
+                  <LAlt>true</LAlt>
+                </UseCustomModifiers>
+                <WoWMacro>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Regrowth</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers>
+                  <LShift>true</LShift>
+                  <LCtrl>true</LCtrl>
+                </UseCustomModifiers>
+                <WoWMacro>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Regrowth</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Innervate</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
             </Actions>
@@ -10186,90 +10254,16 @@ Prayer of Mending slot 1</Description>
       </MappedKey>
       <MappedKey>
         <Name>AOE Rotation</Name>
-        <ManualLoad>true</ManualLoad>
+        <Description>Renew slots 1-&gt;5
+Prayer of Mending slot 1</Description>
         <ResetTimer>5</ResetTimer>
+        <ResetType>FromLastPress</ResetType>
         <Steps>
           <Step>
-            <Stick>1</Stick>
             <Actions>
-              <MappedKeyAction xsi:type="WoWMacroRefAction">
-                <UseCustomModifiers />
-                <WoWMacro>
-                  <WoWMacroSetString>Priest</WoWMacroSetString>
-                  <WoWMacroString>Sanctify</WoWMacroString>
-                </WoWMacro>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>1</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="WoWMacroRefAction">
-                <UseCustomModifiers />
-                <WoWMacro>
-                  <WoWMacroSetString>Priest</WoWMacroSetString>
-                  <WoWMacroString>Circle of Healing</WoWMacroString>
-                </WoWMacro>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>2</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="WoWMacroRefAction">
-                <UseCustomModifiers />
-                <WoWMacro>
-                  <WoWMacroSetString>Priest</WoWMacroSetString>
-                  <WoWMacroString>Prayer of Healing</WoWMacroString>
-                </WoWMacro>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>2</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="WoWMacroRefAction">
-                <UseCustomModifiers />
-                <WoWMacro>
-                  <WoWMacroSetString>Priest</WoWMacroSetString>
-                  <WoWMacroString>Prayer of Healing</WoWMacroString>
-                </WoWMacro>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>2</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="WoWMacroRefAction">
-                <UseCustomModifiers />
-                <WoWMacro>
-                  <WoWMacroSetString>Priest</WoWMacroSetString>
-                  <WoWMacroString>Prayer of Healing</WoWMacroString>
-                </WoWMacro>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>2</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="WoWMacroRefAction">
-                <UseCustomModifiers />
-                <WoWMacro>
-                  <WoWMacroSetString>Priest</WoWMacroSetString>
-                  <WoWMacroString>Prayer of Healing</WoWMacroString>
-                </WoWMacro>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-          <Step>
-            <Stick>2</Stick>
-            <Actions>
-              <MappedKeyAction xsi:type="WoWMacroRefAction">
-                <UseCustomModifiers />
-                <WoWMacro>
-                  <WoWMacroSetString>Priest</WoWMacroSetString>
-                  <WoWMacroString>Prayer of Healing</WoWMacroString>
-                </WoWMacro>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>Druid - Resto</KeyMapString>
+                <MappedKeyString>ST Rotation</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -12007,6 +12001,102 @@ Prayer of Mending slot 1</Description>
           </Key>
         </Combo>
         <AllowCustomModifiers />
+      </WoWMacro>
+    </WoWMacros>
+  </WoWMacroSet>
+  <WoWMacroSet>
+    <Name>Druid</Name>
+    <WoWMacros>
+      <WoWMacro>
+        <MacroCommands>/cast [nomod:alt,mod:lshift,nomod:ctrl, @{SLOT1}][nomod:alt,mod:rshift,nomod:ctrl, @{SLOT2}][nomod:alt,nomod:shift,mod:lctrl, @{SLOT3}][mod:lalt,nomod:shift,nomod:ctrl, @{SLOT4}][nomod:alt,mod:lshift,mod:lctrl, @{SLOT5}] Rejuvenation</MacroCommands>
+        <ColloquialName>Rejuvenation</ColloquialName>
+        <Combo>
+          <Combo>'</Combo>
+          <Key>
+            <Key>'</Key>
+            <Code>40</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers>
+          <LAlt>true</LAlt>
+          <RAlt>true</RAlt>
+          <LShift>true</LShift>
+          <RShift>true</RShift>
+          <LCtrl>true</LCtrl>
+          <RCtrl>true</RCtrl>
+        </AllowCustomModifiers>
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast [@{SLOT1}] Lifebloom</MacroCommands>
+        <ColloquialName>Lifebloom</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Right Ctrl+F7</Combo>
+          <Modifiers>Ctrl RightCtrl</Modifiers>
+          <Key>
+            <Key>F7</Key>
+            <Code>65</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast [@player] Efflorescence</MacroCommands>
+        <ColloquialName>Efflorescence
+</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Shift+Alt+F7</Combo>
+          <Modifiers>Ctrl Shift Alt</Modifiers>
+          <Key>
+            <Key>F7</Key>
+            <Code>65</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast Wild Growth</MacroCommands>
+        <ColloquialName>Wild Growth</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Shift+Right Ctrl+F7</Combo>
+          <Modifiers>Ctrl Shift RightCtrl</Modifiers>
+          <Key>
+            <Key>F7</Key>
+            <Code>65</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast [@player] Innervate</MacroCommands>
+        <ColloquialName>Innervate</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+Right Ctrl+F7</Combo>
+          <Modifiers>Ctrl Alt RightCtrl</Modifiers>
+          <Key>
+            <Key>F7</Key>
+            <Code>65</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast [nomod:alt,mod:lshift,nomod:ctrl, @{SLOT1}][nomod:alt,mod:rshift,nomod:ctrl, @{SLOT2}][nomod:alt,nomod:shift,mod:lctrl, @{SLOT3}][mod:lalt,nomod:shift,nomod:ctrl, @{SLOT4}][nomod:alt,mod:lshift,mod:lctrl, @{SLOT5}] Regrowth</MacroCommands>
+        <ColloquialName>Regrowth</ColloquialName>
+        <Combo>
+          <Combo>[</Combo>
+          <Key>
+            <Key>[</Key>
+            <Code>26</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers>
+          <LAlt>true</LAlt>
+          <RAlt>true</RAlt>
+          <LShift>true</LShift>
+          <RShift>true</RShift>
+          <LCtrl>true</LCtrl>
+          <RCtrl>true</RCtrl>
+        </AllowCustomModifiers>
       </WoWMacro>
     </WoWMacros>
   </WoWMacroSet>

@@ -1,0 +1,3 @@
+
+EasyObliterate_IgnoreList = {
+}
