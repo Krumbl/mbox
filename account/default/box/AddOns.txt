@@ -289,3 +289,4 @@ WeakAurasCompanion: enabled
 InvasionTimer: disabled
 TortollanQuest: enabled
 XaneshPractice: disabled
+AstralKeys: enabled
