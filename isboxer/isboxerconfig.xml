@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="5/30/2020 7:11:49 AM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="6/19/2020 4:40:31 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>DemonHunter</Name>
@@ -8495,7 +8495,7 @@
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
         <BackgroundMaxFPS>10</BackgroundMaxFPS>
-        <CharacterString>Renaron-Sargeras</CharacterString>
+        <CharacterString>Rumbld-Sargeras</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+5</Combo>
           <Modifiers>Ctrl Alt</Modifiers>
