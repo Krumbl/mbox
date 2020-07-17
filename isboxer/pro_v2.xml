@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="7/11/2020 7:27:10 AM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="7/15/2020 5:01:11 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>DuckTales</Name>
@@ -536,9 +536,6 @@
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>View</WoWMacroSetString>
       </WoWMacroSetLooseRef>
-      <WoWMacroSetLooseRef>
-        <WoWMacroSetString>Monk</WoWMacroSetString>
-      </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
     <LaunchCharacterSetStrings />
@@ -973,6 +970,7 @@
       <string>Virtual Combat</string>
       <string>Virtual Heal</string>
       <string>healfx</string>
+      <string>Target</string>
     </KeyMapStrings>
     <KeyMapWhiteOrBlackListType>Ignore</KeyMapWhiteOrBlackListType>
     <KeyMapWhiteOrBlackList>
@@ -1094,7 +1092,7 @@
         <WoWMacroSetString>View</WoWMacroSetString>
       </WoWMacroSetLooseRef>
       <WoWMacroSetLooseRef>
-        <WoWMacroSetString>Monk</WoWMacroSetString>
+        <WoWMacroSetString>Heal</WoWMacroSetString>
       </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
@@ -2091,6 +2089,7 @@
       <string>Virtual Combat</string>
       <string>Virtual Heal</string>
       <string>healfx</string>
+      <string>Target</string>
     </KeyMapStrings>
     <KeyMapWhiteOrBlackListType>Ignore</KeyMapWhiteOrBlackListType>
     <KeyMapWhiteOrBlackList />
@@ -2211,10 +2210,7 @@
         <WoWMacroSetString>View</WoWMacroSetString>
       </WoWMacroSetLooseRef>
       <WoWMacroSetLooseRef>
-        <WoWMacroSetString>Priest</WoWMacroSetString>
-      </WoWMacroSetLooseRef>
-      <WoWMacroSetLooseRef>
-        <WoWMacroSetString>Druid</WoWMacroSetString>
+        <WoWMacroSetString>Heal</WoWMacroSetString>
       </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
@@ -2771,9 +2767,6 @@
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>View</WoWMacroSetString>
       </WoWMacroSetLooseRef>
-      <WoWMacroSetLooseRef>
-        <WoWMacroSetString>Druid</WoWMacroSetString>
-      </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
     <LaunchCharacterSetStrings />
@@ -3066,6 +3059,7 @@
     <KeyMapStrings>
       <string>ISB42 - Video FX Layout</string>
       <string>ISB42 - Video FX Layout</string>
+      <string>ISB42 - Video FX Layout</string>
     </KeyMapStrings>
     <KeyMapWhiteOrBlackListType>WhiteList</KeyMapWhiteOrBlackListType>
     <KeyMapWhiteOrBlackList>
@@ -3174,6 +3168,9 @@
     <WoWMacroSets>
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>Priest</WoWMacroSetString>
+      </WoWMacroSetLooseRef>
+      <WoWMacroSetLooseRef>
+        <WoWMacroSetString>Heal</WoWMacroSetString>
       </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
@@ -3733,7 +3730,7 @@
           <DPIScale>100</DPIScale>
         </UserScreen>
       </AllScreens>
-      <Name>&lt;Current Screen Layout&gt;</Name>
+      <Name>&lt;Window Layout-specified&gt;</Name>
     </UserScreenSet>
     <Name>5man FX</Name>
     <Description>This Window Layout features maximum usage of a single monitor. Swapping enabled. Includes a home region for every window. Leaves space for the Windows taskbar.</Description>
@@ -3804,6 +3801,222 @@
     </Regions>
     <SwapGroups>
       <SwapGroup ResetRegion="0" ActiveRegion="0" />
+      <SwapGroup DeactivateSwapGroup="1" />
+      <SwapGroup DeactivateSwapGroup="2" />
+      <SwapGroup DeactivateSwapGroup="3" />
+      <SwapGroup DeactivateSwapGroup="4" />
+      <SwapGroup DeactivateSwapGroup="5" />
+      <SwapGroup DeactivateSwapGroup="6" />
+      <SwapGroup DeactivateSwapGroup="7" />
+    </SwapGroups>
+  </WindowLayout>
+  <WindowLayout>
+    <UserScreenSet>
+      <AllScreens>
+        <UserScreen>
+          <Bounds>
+            <Width>3440</Width>
+            <Height>1440</Height>
+          </Bounds>
+          <WorkingArea>
+            <Width>3440</Width>
+            <Height>1440</Height>
+          </WorkingArea>
+          <Primary>true</Primary>
+          <DeviceName>\\.\DISPLAY1</DeviceName>
+          <DPIScale>100</DPIScale>
+        </UserScreen>
+        <UserScreen>
+          <Bounds>
+            <Left>-1920</Left>
+            <Width>1920</Width>
+            <Height>1080</Height>
+          </Bounds>
+          <WorkingArea>
+            <Left>-1858</Left>
+            <Width>1858</Width>
+            <Height>1080</Height>
+          </WorkingArea>
+          <DeviceName>\\.\DISPLAY2</DeviceName>
+          <DPIScale>100</DPIScale>
+        </UserScreen>
+      </AllScreens>
+      <Name>&lt;Window Layout-specified&gt;</Name>
+    </UserScreenSet>
+    <Name>5man FX Vertical</Name>
+    <Description>This Window Layout features maximum usage of a single monitor. Swapping enabled. Includes a home region for every window. Leaves space for the Windows taskbar.</Description>
+    <InstantSwap>true</InstantSwap>
+    <UseVideoFXLayout>true</UseVideoFXLayout>
+    <SwapMode>AlwaysForGames</SwapMode>
+    <WheelSwitcherKey>
+      <Key>Q</Key>
+      <Code>16</Code>
+    </WheelSwitcherKey>
+    <RolloverStyle>
+      <Enabled>false</Enabled>
+      <Scale>1.5</Scale>
+      <Rollup>false</Rollup>
+      <Frames>10</Frames>
+    </RolloverStyle>
+    <Regions>
+      <Region>
+        <Rect>
+          <Width>2580</Width>
+          <Height>1440</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>1</CharacterSetSlot>
+        <Rect>
+          <Left>2580</Left>
+          <Width>860</Width>
+          <Height>360</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>2</CharacterSetSlot>
+        <Rect>
+          <Left>2158</Left>
+          <Top>360</Top>
+          <Width>860</Width>
+          <Height>360</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>3</CharacterSetSlot>
+        <Rect>
+          <Left>2358</Left>
+          <Top>674</Top>
+          <Width>860</Width>
+          <Height>360</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>4</CharacterSetSlot>
+        <Rect>
+          <Left>2752</Left>
+          <Top>960</Top>
+          <Width>688</Width>
+          <Height>240</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>5</CharacterSetSlot>
+        <Rect>
+          <Left>2752</Left>
+          <Top>1200</Top>
+          <Width>688</Width>
+          <Height>240</Height>
+        </Rect>
+      </Region>
+    </Regions>
+    <SwapGroups>
+      <SwapGroup ResetRegion="0" ActiveRegion="0" />
+      <SwapGroup DeactivateSwapGroup="1" />
+      <SwapGroup DeactivateSwapGroup="2" />
+      <SwapGroup DeactivateSwapGroup="3" />
+      <SwapGroup DeactivateSwapGroup="4" />
+      <SwapGroup DeactivateSwapGroup="5" />
+      <SwapGroup DeactivateSwapGroup="6" />
+      <SwapGroup DeactivateSwapGroup="7" />
+    </SwapGroups>
+  </WindowLayout>
+  <WindowLayout>
+    <UserScreenSet>
+      <AllScreens>
+        <UserScreen>
+          <Bounds>
+            <Width>3440</Width>
+            <Height>1440</Height>
+          </Bounds>
+          <WorkingArea>
+            <Width>3440</Width>
+            <Height>1440</Height>
+          </WorkingArea>
+          <Primary>true</Primary>
+          <DeviceName>\\.\DISPLAY1</DeviceName>
+          <DPIScale>100</DPIScale>
+        </UserScreen>
+        <UserScreen>
+          <Bounds>
+            <Left>-1920</Left>
+            <Width>1920</Width>
+            <Height>1080</Height>
+          </Bounds>
+          <WorkingArea>
+            <Left>-1858</Left>
+            <Width>1858</Width>
+            <Height>1080</Height>
+          </WorkingArea>
+          <DeviceName>\\.\DISPLAY2</DeviceName>
+          <DPIScale>100</DPIScale>
+        </UserScreen>
+      </AllScreens>
+      <Name>&lt;Window Layout-specified&gt;</Name>
+    </UserScreenSet>
+    <Name>5FXV</Name>
+    <Description>This Window Layout features maximum usage of a single monitor. Swapping enabled. Does not include a home for every window. Leaves space for the Windows taskbar.</Description>
+    <InstantSwap>true</InstantSwap>
+    <UseVideoFXLayout>true</UseVideoFXLayout>
+    <SwapMode>AlwaysForGames</SwapMode>
+    <RolloverStyle>
+      <Enabled>false</Enabled>
+      <Scale>1.5</Scale>
+      <Rollup>false</Rollup>
+      <Frames>10</Frames>
+    </RolloverStyle>
+    <Regions>
+      <Region>
+        <Rect>
+          <Width>2580</Width>
+          <Height>1440</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>2</CharacterSetSlot>
+        <Rect>
+          <Left>2580</Left>
+          <Width>860</Width>
+          <Height>360</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>3</CharacterSetSlot>
+        <Rect>
+          <Left>2580</Left>
+          <Top>360</Top>
+          <Width>860</Width>
+          <Height>360</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>4</CharacterSetSlot>
+        <Rect>
+          <Left>2580</Left>
+          <Top>720</Top>
+          <Width>860</Width>
+          <Height>360</Height>
+        </Rect>
+      </Region>
+      <Region>
+        <CharacterSetSlot>5</CharacterSetSlot>
+        <Rect>
+          <Left>2580</Left>
+          <Top>1080</Top>
+          <Width>860</Width>
+          <Height>360</Height>
+        </Rect>
+      </Region>
+    </Regions>
+    <SwapGroups>
+      <SwapGroup ResetRegion="0" ActiveRegion="0" PiPSqueakSlot="1" />
+      <SwapGroup DeactivateSwapGroup="1" />
+      <SwapGroup DeactivateSwapGroup="2" />
+      <SwapGroup DeactivateSwapGroup="3" />
+      <SwapGroup DeactivateSwapGroup="4" />
+      <SwapGroup DeactivateSwapGroup="5" />
+      <SwapGroup DeactivateSwapGroup="6" />
+      <SwapGroup DeactivateSwapGroup="7" />
     </SwapGroups>
   </WindowLayout>
   <RepeaterProfile>
@@ -4391,7 +4604,7 @@ The Star formation aligns your characters in all four directions around the lead
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Target>(@other isboxer&amp;~dxnothing)#1</Target>
+                <Target>(@other isboxer&amp;~dxnothing)#1&amp;~healer</Target>
                 <Name>Move Forward</Name>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
@@ -8454,6 +8667,12 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           </Step>
         </Steps>
       </MappedKey>
+      <MappedKey>
+        <Name>Reset ST Focus</Name>
+        <Steps>
+          <Step />
+        </Steps>
+      </MappedKey>
     </Mappings>
   </KeyMap>
   <KeyMap>
@@ -8497,6 +8716,10 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
                   <WoWMacroString>Focus S1</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>Virtual Heal</KeyMapString>
+                <MappedKeyString>Reset ST Focus</MappedKeyString>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -8520,6 +8743,10 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
                   <WoWMacroSetString>Heal</WoWMacroSetString>
                   <WoWMacroString>Focus S2</WoWMacroString>
                 </WoWMacro>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>Virtual Heal</KeyMapString>
+                <MappedKeyString>Reset ST Focus</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -8545,6 +8772,10 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
                   <WoWMacroString>Focus S3</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>Virtual Heal</KeyMapString>
+                <MappedKeyString>Reset ST Focus</MappedKeyString>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -8569,6 +8800,10 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
                   <WoWMacroString>Focus S4</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>Virtual Heal</KeyMapString>
+                <MappedKeyString>Reset ST Focus</MappedKeyString>
+              </MappedKeyAction>
             </Actions>
           </Step>
         </Steps>
@@ -8592,6 +8827,10 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
                   <WoWMacroSetString>Heal</WoWMacroSetString>
                   <WoWMacroString>Focus S5</WoWMacroString>
                 </WoWMacro>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>Virtual Heal</KeyMapString>
+                <MappedKeyString>Reset ST Focus</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -10583,110 +10822,7 @@ Prayer of Mending slot 1</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Target Reset 1</Name>
-        <Combo>
-          <Combo>F1</Combo>
-          <Key>
-            <Key>F1</Key>
-            <Code>59</Code>
-          </Key>
-        </Combo>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>Druid - Resto</KeyMapString>
-                  <MappedKeyString>ST Focus</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Target Reset 2</Name>
-        <Combo>
-          <Combo>F2</Combo>
-          <Key>
-            <Key>F2</Key>
-            <Code>60</Code>
-          </Key>
-        </Combo>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>Druid - Resto</KeyMapString>
-                  <MappedKeyString>ST Focus</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Target Reset 3</Name>
-        <Combo>
-          <Combo>F3</Combo>
-          <Key>
-            <Key>F3</Key>
-            <Code>61</Code>
-          </Key>
-        </Combo>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>Druid - Resto</KeyMapString>
-                  <MappedKeyString>ST Focus</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Target Reset 4</Name>
-        <Combo>
-          <Combo>F4</Combo>
-          <Key>
-            <Key>F4</Key>
-            <Code>62</Code>
-          </Key>
-        </Combo>
-        <Steps>
-          <Step>
-            <Actions>
-              <MappedKeyAction xsi:type="MappedKeyStepAction">
-                <MappedKey>
-                  <KeyMapString>Druid - Resto</KeyMapString>
-                  <MappedKeyString>ST Focus</MappedKeyString>
-                </MappedKey>
-                <Action>Set</Action>
-                <Value>1</Value>
-              </MappedKeyAction>
-            </Actions>
-          </Step>
-        </Steps>
-      </MappedKey>
-      <MappedKey>
-        <Name>Target Reset 5</Name>
-        <Combo>
-          <Combo>F5</Combo>
-          <Key>
-            <Key>F5</Key>
-            <Code>63</Code>
-          </Key>
-        </Combo>
+        <Name>Reset ST Focus</Name>
         <Steps>
           <Step>
             <Actions>
@@ -11051,11 +11187,9 @@ Prayer of Mending slot 1</Description>
             <Actions>
               <MappedKeyAction xsi:type="WoWMacroRefAction">
                 <Target>Healer</Target>
-                <UseCustomModifiers>
-                  <LShift>true</LShift>
-                </UseCustomModifiers>
+                <UseCustomModifiers />
                 <WoWMacro>
-                  <WoWMacroSetString>Heal</WoWMacroSetString>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
                   <WoWMacroString>Renewing Mist</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
@@ -11070,11 +11204,9 @@ Prayer of Mending slot 1</Description>
             <Actions>
               <MappedKeyAction xsi:type="WoWMacroRefAction">
                 <Target>Healer</Target>
-                <UseCustomModifiers>
-                  <RShift>true</RShift>
-                </UseCustomModifiers>
+                <UseCustomModifiers />
                 <WoWMacro>
-                  <WoWMacroSetString>Heal</WoWMacroSetString>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
                   <WoWMacroString>Renewing Mist</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
@@ -11089,11 +11221,9 @@ Prayer of Mending slot 1</Description>
             <Actions>
               <MappedKeyAction xsi:type="WoWMacroRefAction">
                 <Target>Healer</Target>
-                <UseCustomModifiers>
-                  <LCtrl>true</LCtrl>
-                </UseCustomModifiers>
+                <UseCustomModifiers />
                 <WoWMacro>
-                  <WoWMacroSetString>Heal</WoWMacroSetString>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
                   <WoWMacroString>Renewing Mist</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
@@ -11108,11 +11238,9 @@ Prayer of Mending slot 1</Description>
             <Actions>
               <MappedKeyAction xsi:type="WoWMacroRefAction">
                 <Target>Healer</Target>
-                <UseCustomModifiers>
-                  <LAlt>true</LAlt>
-                </UseCustomModifiers>
+                <UseCustomModifiers />
                 <WoWMacro>
-                  <WoWMacroSetString>Heal</WoWMacroSetString>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
                   <WoWMacroString>Renewing Mist</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
@@ -11127,12 +11255,9 @@ Prayer of Mending slot 1</Description>
             <Actions>
               <MappedKeyAction xsi:type="WoWMacroRefAction">
                 <Target>Healer</Target>
-                <UseCustomModifiers>
-                  <LShift>true</LShift>
-                  <LCtrl>true</LCtrl>
-                </UseCustomModifiers>
+                <UseCustomModifiers />
                 <WoWMacro>
-                  <WoWMacroSetString>Heal</WoWMacroSetString>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
                   <WoWMacroString>Renewing Mist</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
@@ -11168,11 +11293,9 @@ Prayer of Mending slot 1</Description>
             <Actions>
               <MappedKeyAction xsi:type="WoWMacroRefAction">
                 <Target>Healer</Target>
-                <UseCustomModifiers>
-                  <LShift>true</LShift>
-                </UseCustomModifiers>
+                <UseCustomModifiers />
                 <WoWMacro>
-                  <WoWMacroSetString>Heal</WoWMacroSetString>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
                   <WoWMacroString>Enveloping Mist</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
@@ -11187,11 +11310,9 @@ Prayer of Mending slot 1</Description>
             <Actions>
               <MappedKeyAction xsi:type="WoWMacroRefAction">
                 <Target>Healer</Target>
-                <UseCustomModifiers>
-                  <RShift>true</RShift>
-                </UseCustomModifiers>
+                <UseCustomModifiers />
                 <WoWMacro>
-                  <WoWMacroSetString>Heal</WoWMacroSetString>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
                   <WoWMacroString>Enveloping Mist</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
@@ -11206,11 +11327,9 @@ Prayer of Mending slot 1</Description>
             <Actions>
               <MappedKeyAction xsi:type="WoWMacroRefAction">
                 <Target>Healer</Target>
-                <UseCustomModifiers>
-                  <LCtrl>true</LCtrl>
-                </UseCustomModifiers>
+                <UseCustomModifiers />
                 <WoWMacro>
-                  <WoWMacroSetString>Heal</WoWMacroSetString>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
                   <WoWMacroString>Enveloping Mist</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
@@ -11225,11 +11344,9 @@ Prayer of Mending slot 1</Description>
             <Actions>
               <MappedKeyAction xsi:type="WoWMacroRefAction">
                 <Target>Healer</Target>
-                <UseCustomModifiers>
-                  <LAlt>true</LAlt>
-                </UseCustomModifiers>
+                <UseCustomModifiers />
                 <WoWMacro>
-                  <WoWMacroSetString>Heal</WoWMacroSetString>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
                   <WoWMacroString>Enveloping Mist</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
@@ -11244,12 +11361,9 @@ Prayer of Mending slot 1</Description>
             <Actions>
               <MappedKeyAction xsi:type="WoWMacroRefAction">
                 <Target>Healer</Target>
-                <UseCustomModifiers>
-                  <LShift>true</LShift>
-                  <LCtrl>true</LCtrl>
-                </UseCustomModifiers>
+                <UseCustomModifiers />
                 <WoWMacro>
-                  <WoWMacroSetString>Heal</WoWMacroSetString>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
                   <WoWMacroString>Enveloping Mist</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
@@ -11311,6 +11425,117 @@ Prayer of Mending slot 1</Description>
                     <Code>5</Code>
                   </Key>
                 </Combo>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>ST Focus</Name>
+        <ResetTimer>5</ResetTimer>
+        <ResetType>FromLastPress</ResetType>
+        <Steps>
+          <Step>
+            <Stick>1.4</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
+                  <WoWMacroString>Soothing Mist-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
+                  <WoWMacroString>Enveloping Mist-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
+                  <WoWMacroString>Vivify-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
+                  <WoWMacroString>Vivify-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
+                  <WoWMacroString>Vivify-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
+                  <WoWMacroString>Vivify-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Monk</WoWMacroSetString>
+                  <WoWMacroString>Vivify-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Reset ST Focus</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="VariableKeystrokeAction">
+                <Name>Jump</Name>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>Monk - Mistweaver</KeyMapString>
+                  <MappedKeyString>ST Focus</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -11859,6 +12084,138 @@ Prayer of Mending slot 1</Description>
                   <WoWMacroSetString>Priest</WoWMacroSetString>
                   <WoWMacroString>Prayer of Healing</WoWMacroString>
                 </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>ST Focus</Name>
+        <ResetTimer>5</ResetTimer>
+        <ResetType>FromLastPress</ResetType>
+        <Steps>
+          <Step>
+            <Stick>1.4</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Priest</WoWMacroSetString>
+                  <WoWMacroString>Flash Heal-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Priest</WoWMacroSetString>
+                  <WoWMacroString>Renew-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Priest</WoWMacroSetString>
+                  <WoWMacroString>PoM-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1.4</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Priest</WoWMacroSetString>
+                  <WoWMacroString>Flash Heal-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1.4</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Priest</WoWMacroSetString>
+                  <WoWMacroString>Flash Heal-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1.4</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Priest</WoWMacroSetString>
+                  <WoWMacroString>Flash Heal-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1.4</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Priest</WoWMacroSetString>
+                  <WoWMacroString>Flash Heal-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1.4</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Priest</WoWMacroSetString>
+                  <WoWMacroString>Flash Heal-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Stick>1.4</Stick>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Priest</WoWMacroSetString>
+                  <WoWMacroString>Flash Heal-Focus</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Reset ST Focus</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <MappedKey>
+                  <KeyMapString>Priest - Holy</KeyMapString>
+                  <MappedKeyString>ST Focus</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -12472,11 +12829,11 @@ Prayer of Mending slot 1</Description>
         <MacroCommands>/cast [@focus] Rejuvenation</MacroCommands>
         <ColloquialName>Rejuvenation-Focus</ColloquialName>
         <Combo>
-          <Combo>Ctrl+Alt+2</Combo>
+          <Combo>Ctrl+Alt+Num 2</Combo>
           <Modifiers>Ctrl Alt</Modifiers>
           <Key>
-            <Key>2</Key>
-            <Code>3</Code>
+            <Key>Num 2</Key>
+            <Code>80</Code>
           </Key>
         </Combo>
         <AllowCustomModifiers />
@@ -12553,6 +12910,45 @@ Prayer of Mending slot 1</Description>
           <Key>
             <Key>F8</Key>
             <Code>66</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast [@focus] Flash Heal</MacroCommands>
+        <ColloquialName>Flash Heal-Focus</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+Num 1</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>Num 1</Key>
+            <Code>79</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast [@focus] Renew</MacroCommands>
+        <ColloquialName>Renew-Focus</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+Num 2</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>Num 2</Key>
+            <Code>80</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast [@focus] Prayer of Mending</MacroCommands>
+        <ColloquialName>PoM-Focus</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+Num 3</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>Num 3</Key>
+            <Code>81</Code>
           </Key>
         </Combo>
         <AllowCustomModifiers />
@@ -12669,6 +13065,45 @@ Prayer of Mending slot 1</Description>
           <LCtrl>true</LCtrl>
           <RCtrl>true</RCtrl>
         </AllowCustomModifiers>
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast [@focus] Enveloping Mist</MacroCommands>
+        <ColloquialName>Enveloping Mist-Focus</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+Num 1</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>Num 1</Key>
+            <Code>79</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast [@focus] Vivify</MacroCommands>
+        <ColloquialName>Vivify-Focus</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+Num 2</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>Num 2</Key>
+            <Code>80</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast [@focus] Soothing Mist</MacroCommands>
+        <ColloquialName>Soothing Mist-Focus</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+Num 3</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>Num 3</Key>
+            <Code>81</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
       </WoWMacro>
     </WoWMacros>
   </WoWMacroSet>
