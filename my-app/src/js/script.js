@@ -27,66 +27,11 @@ function render(){
     $('.stats').append('<br/>')
     $('.stats').append('Free memory: <span>' + prettyBytes(os.freemem())+ '</span>');
     $('.stats').append('<br/>')
-    os.cpus().forEach(element => {
-        // console.log(element)
-        $('.stats').append(JSON.stringify(element))
-        $('.stats').append('<br/>')
-    });
 
     // Electron's UI library. We will need it for later.
     var shell = require('shell');
 
-    // https://nodejs.org/api/os.html#os_os_cpus
-    // TODO try catch
-    // let dir = fs.opendirSync(WOW_PATH);
-    // console.log(dir)
-    // console.log(dir.path)
-
-    // https://nodejs.org/docs/latest/api/fs.html#fs_class_fs_dirent
-    // var dirent
-    // while((dirent = dir.readSync()) != null) {
-        // console.log(dirent)
-        // console.log(dirent.name)
-        // addAccount(dirent)
-    // }
-    // dir.close()
-
-    // fs.readdirSync(WOW_PATH, {"withFileTypes" : true}).forEach(account => addAccount(WOW_PATH, account))
     fs.readdirSync(WOW_PATH).forEach(account => buildAccount(WOW_PATH, account).appendTo($('ul#accounts')))
-
-    // for await (const dirent of dir) {
-        // console.log(dirent.name);
-    // }
-
-    // Fetch the recent posts on Tutorialzine.
-
-
-    // Create a li item for every article, and append it to the unordered list.
-    // var li = $('<li>a0</li>');
-    // var li = $('<li><img /><a target="_blank"></a></li>');
-    // li.find('a')
-        // .attr('href', item.find('link').text())
-        // .text(item.find("title").text());
-    // li.find('img').attr('src', imageSource);
-    // $('<li>asfasfd</li>').appendTo($('.flipster ul'))
-
-    // https://tutorialzine.com/2015/12/creating-your-first-desktop-app-with-html-js-and-electron
-
-}
-
-function addAccount(location, account) {
-    mlog.group("Add account: " + account)
-    // var ul = $('.accounts ul');
-    var accountUl = $('<ul id="accounts"/>')
-    var path = location + "/" + account;
-    if (fs.statSync(path).isDirectory()) {
-        // console.log(dir)
-        $('<li>' + account + '</li>').appendTo(accountUl);
-        // fs.readdirSync(path).forEach(server => buildServer(path, server))
-    }
-    accountUl.appendTo($('.accounts'))
-    // let dir = fs.opendirSync(WOW_PATH);
-    mlog.groupEnd()
 }
 
 function buildAccount(location, account) {
@@ -138,8 +83,4 @@ function buildCharacter(location, character) {
     return characterLi;
 }
 
-    // TODO account expands to show toons
-    // TODO toons have class icon and level
-    // TODO toon expands to select active addons
-    // TODO toon expands with additional details (from a wow addon?)
 main()
