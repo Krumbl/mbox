@@ -1,0 +1,6 @@
+documentation
+https://docs.python.org/3/howto/curses.html
+
+examples
+https://github.com/nikhilkumarsingh/python-curses-tut
+https://www.devdungeon.com/content/curses-programming-python
