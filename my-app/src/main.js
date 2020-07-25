@@ -1,16 +1,25 @@
+'use strict'
+
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
-const mlog = require('./log.js')
+const mlog = require('./log.js');
+const DataStore = require('./js/DataStore.js');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
   app.quit();
 }
 
+const dataStore = new DataStore('C:\\Program Files (x86)\\World of Warcraft\\_retail_\\WTF\\Account')
+
 const createWindow = () => {
   // Create the browser window.
   mlog.warn("START")
   const mainWindow = new BrowserWindow({
+    // TODO store state - https://github.com/mawie81/electron-window-state
+    // https://www.npmjs.com/package/electron-store
+    x: 2500,
+    y: 100,
     width: 800,
     height: 600,
     webPreferences: {
@@ -19,10 +28,15 @@ const createWindow = () => {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, 'index.html'));
+  mainWindow.loadFile(path.join(__dirname, 'landing.html'));
+
+  // mainWindow.once('show', () => {
+  mainWindow.webContents.on('did-finish-load', () => {
+    mainWindow.webContents.send('dataStore', dataStore)
+  })
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 };
 
 // This method will be called when Electron has finished

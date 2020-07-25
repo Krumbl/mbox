@@ -1,9 +1,13 @@
+'use strict'
+
 // Mixing jQuery and Node.js code in the same file? Yes please!
 let $ = require('jquery')
 let fs = require('fs')
 
 const mlog = require('./log.js')
 const isDevelopment = require('electron-is-dev');
+
+const { ipcRenderer } = require('electron')
 
 let WOW_PATH= 'C:\\Program Files (x86)\\World of Warcraft\\_retail_\\WTF\\Account'
 async function main() {
@@ -12,11 +16,16 @@ async function main() {
         // this is to give Chrome Debugger time to attach to the new window 
         await new Promise(r => setTimeout(r, 1000));
         // debugger;
-        render()
     }
 }
 
-function render(){
+ipcRenderer.on('dataStore', (event, dataStore) => {
+    mlog.error('dataStore: ' + JSON.stringify(dataStore, null, 2))
+    render(dataStore)
+})
+
+function render(dataStore){
+    mlog.info('render')
     // Display some statistics about this computer, using node's os module.
 
     var os = require('os');
@@ -31,54 +40,36 @@ function render(){
     // Electron's UI library. We will need it for later.
     var shell = require('shell');
 
-    fs.readdirSync(WOW_PATH).forEach(account => buildAccount(WOW_PATH, account).appendTo($('ul#accounts')))
+    dataStore.accounts.forEach(account => buildAccount(account).appendTo($('ul#accounts')))
 }
 
-function buildAccount(location, account) {
-    mlog.group("Add account: " + account)
-    var accountLi = $('<li/>').attr("id", account).text(account)
-    var serversUl = $('<ul/>').attr("id", account + "_servers")
+function buildAccount(account) {
+    mlog.group("Add account: " + mlog.stringify(account))
+    var accountLi = $('<li/>').attr("id", account.name).text(account.name)
+    var serversUl = $('<ul/>').attr("id", account.name + "_servers")
 
-    var path = location + "/" + account;
-    mlog.trace("account path: " + path)
-    if (fs.statSync(path).isDirectory()) {
-        // $('<li>' + account + '</li>').appendTo(accountUl);
-        fs.readdirSync(path, {"withFileTypes" : true})
-                .filter(f => f.isDirectory() && f.name != 'SavedVariables')
-                .forEach(server => buildServer(path, server.name).appendTo(serversUl))
-        // buildServer(path, server).appendTo(serversUl);
-    }
-
+    account.servers.forEach(server => buildServer(server).appendTo(serversUl))
+    
     serversUl.appendTo(accountLi);
     mlog.groupEnd()
     return accountLi
 }
 
-function buildServer(location, server) {
-    mlog.group("Add server: " + server)
-    var serverLi = $('<li/>').attr("id", server).text(server)
-    var charactersUl = $('<ul/>').attr("id", server + "_characters")
+function buildServer(server) {
+    mlog.group("Add server: " + mlog.stringify(server))
+    var serverLi = $('<li/>').attr("id", server.name).text(server.name)
+    var charactersUl = $('<ul/>').attr("id", server.name + "_characters")
 
-    var path = location + "/" + server;
-    mlog.trace("server path: " + path)
-    if (fs.statSync(path).isDirectory()) {
-        // fs.readdirSync(WOW_PATH, {"withFileTypes" : true}).forEach(addAccount)
-        fs.readdirSync(path).forEach(character => buildCharacter(path, character).appendTo(charactersUl))
-        // $('<li>' + server + '</li>').appendTo(serverUl);
-    }
+    server.characters.forEach(character => buildCharacter(character).appendTo(charactersUl))
 
     charactersUl.appendTo(serverLi);
     mlog.groupEnd()
     return serverLi;
 }
 
-function buildCharacter(location, character) {
-    mlog.group("Add character: " + character)
-    var characterLi = $('<li/>').attr("id", character).text(character)
-
-    var path = location + "/" + character;
-    mlog.trace("character path: " + path)
-
+function buildCharacter(character) {
+    mlog.group("Add character: " + mlog.stringify(character))
+    var characterLi = $('<li/>').attr("id", character.name).text(character.name)
     mlog.groupEnd()
     return characterLi;
 }
