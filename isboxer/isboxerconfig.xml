@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="6/19/2020 4:40:31 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="7/28/2020 9:47:29 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>DemonHunter</Name>
@@ -8270,7 +8270,7 @@
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
         <BackgroundMaxFPS>10</BackgroundMaxFPS>
-        <CharacterString>Renarfor-Sargeras</CharacterString>
+        <CharacterString>Rumbla-Sargeras</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+2</Combo>
           <Modifiers>Ctrl Alt</Modifiers>
@@ -8345,7 +8345,7 @@
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
         <BackgroundMaxFPS>10</BackgroundMaxFPS>
-        <CharacterString>Renariv-Sargeras</CharacterString>
+        <CharacterString>Rumblc-Sargeras</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+3</Combo>
           <Modifiers>Ctrl Alt</Modifiers>
@@ -8420,7 +8420,7 @@
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
         <BackgroundMaxFPS>10</BackgroundMaxFPS>
-        <CharacterString>Renarx-Stormrage</CharacterString>
+        <CharacterString>Romble-Sargeras</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+4</Combo>
           <Modifiers>Ctrl Alt</Modifiers>
@@ -8495,7 +8495,7 @@
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
         <BackgroundMaxFPS>10</BackgroundMaxFPS>
-        <CharacterString>Rumbld-Sargeras</CharacterString>
+        <CharacterString>Rumblf-Sargeras</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+5</Combo>
           <Modifiers>Ctrl Alt</Modifiers>

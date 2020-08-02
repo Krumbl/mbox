@@ -4,7 +4,7 @@
 let $ = require('jquery')
 let fs = require('fs')
 
-const mlog = require('./log.js')
+const mlog = require('../../js/log.js')
 const isDevelopment = require('electron-is-dev');
 
 const { ipcRenderer } = require('electron')

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="7/23/2020 5:11:25 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="7/27/2020 7:53:06 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>DuckTales</Name>
@@ -4604,7 +4604,7 @@ The Star formation aligns your characters in all four directions around the lead
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Target>(@other isboxer&amp;~dxnothing)#1</Target>
+                <Target>(@other isboxer&amp;~dxnothing)#1&amp;~healer</Target>
                 <Name>Move Forward</Name>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">

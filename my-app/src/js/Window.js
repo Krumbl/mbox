@@ -4,8 +4,12 @@ const { BrowserWindow } = require('electron')
 
 // default window settings
 const defaultProps = {
-  width: 500,
-  height: 800,
+  // TODO store state - https://github.com/mawie81/electron-window-state
+  // https://www.npmjs.com/package/electron-store
+  x: 2500,
+  y: 100,
+  width: 800,
+  height: 600,
   show: false,
   
   // update for electron V5+
