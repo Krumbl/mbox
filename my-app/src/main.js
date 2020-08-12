@@ -11,7 +11,9 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
   app.quit();
 }
 
-const dataStore = new DataStore('C:\\Program Files (x86)\\World of Warcraft\\_retail_\\WTF\\Account')
+// const dataStore = new DataStore('C:\\Program Files (x86)\\World of Warcraft\\_retail_\\WTF\\Account')
+const dataStore = new DataStore('/home/mbox/develop/swan/data/WTF')
+
 
 const createWindow = () => {
   mlog.warn("START")
