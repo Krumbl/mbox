@@ -11,7 +11,6 @@ const isDevelopment = require('electron-is-dev');
 
 const { ipcRenderer } = require('electron')
 
-let WOW_PATH= 'C:\\Program Files (x86)\\World of Warcraft\\_retail_\\WTF\\Account'
 async function main() {
     if (isDevelopment) {
         mlog.warn("Using debug mode")
@@ -39,12 +38,9 @@ function render(dataStore){
     $('.stats').append('Free memory: <span>' + prettyBytes(os.freemem())+ '</span>');
     $('.stats').append('<br/>')
 
-    // Electron's UI library. We will need it for later.
-    var shell = require('shell');
-
     dataStore.accounts.forEach(account => buildAccount(account).appendTo($('ul#accounts')))
 
-    $('div#currency').append($('<span/>').text(dataStore.currencyText))
+    $('div#currency').append($('<span/>').text(Currency.copy(dataStore.currency).getText()))
 }
 
 function buildAccount(account) {
@@ -64,7 +60,10 @@ function buildServer(server) {
     var serverLi = $('<li/>').attr("id", server.name).text(server.name)
     var charactersUl = $('<ul/>').attr("id", server.name + "_characters")
 
-    server.characters.forEach(character => buildCharacter(character).appendTo(charactersUl))
+    server.characters.forEach(character => { 
+        if (character.currency.copper > 0)
+            buildCharacter(character).appendTo(charactersUl)
+    })
 
     charactersUl.appendTo(serverLi);
     mlog.groupEnd()

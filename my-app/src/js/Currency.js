@@ -10,8 +10,17 @@ let path = require('path')
 let lua = require('luaparse')
 
 class Currency {
-    constructor(accountPath, account, server, character) {
-        this.copper = 1000
+    constructor(copper) {
+        this.copper = copper
+        this.text = this.getText()
+    }
+
+    static copy(currency) {
+        return new Currency(currency.copper)
+    }
+
+    static fromMbox(accountPath, account, server, character) {
+        let copper = 0
 
         let mboxPath=path.join(accountPath, 
             account.name, 
@@ -23,7 +32,7 @@ class Currency {
         try {
             let luaDb = lua.parse(fs.readFileSync(mboxPath, 'utf-8'))
             // mlog.debug(JSON.stringify(luaDb, null, '\t'))
-            this.copper = luaDb.body[0].init[0].value
+            copper = luaDb.body[0].init[0].value
         } catch (err) {
             if (err.code == 'ENOENT') {
                 // mlog.debug('Mbox not found')
@@ -32,14 +41,21 @@ class Currency {
             }
         }
 
-        this.text = this.getText()
+        return new Currency(copper)
     }
 
     getText() {
         return'' + 
-            Math.floor(Math.floor(this.copper / 100) / 100) + 'g'
+            Math.floor(Math.floor(this.copper / 100) / 100).toLocaleString() + 'g'
             + Math.floor(this.copper / 100) % 100 + 's'
             + this.copper % 100 + 'c'
+    }
+
+    static getTextStatic(currency) {
+        return'' + 
+            Math.floor(Math.floor(currency.copper / 100) / 100).toLocaleString() + 'g'
+            + Math.floor(currency.copper / 100) % 100 + 's'
+            + currency.copper % 100 + 'c'
     }
 }
 

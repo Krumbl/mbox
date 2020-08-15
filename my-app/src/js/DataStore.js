@@ -17,22 +17,24 @@ class DataStore {
 
         fs.readdirSync(accountPath).forEach(account => this.accounts.push(new Account(accountPath, account)))
 
-        this.copper=0
+        let copper=0
         this.accounts.forEach(account => {
             account.servers.forEach(server => {
                 server.characters.forEach(character => {
-                    mlog.trace(account.name + "-" + server.name + "-" + character.name)
-                    character.currency = new Currency(accountPath, account, server, character)
-                    this.copper += character.currency.copper
+                    mlog.trace('Load currency: ' + account.name + '-' + server.name + '-' + character.name)
+                    character.currency = Currency.fromMbox(accountPath, account, server, character)
+                    copper += character.currency.copper
                 })
             })
         })
 
-        this.currencyText = '' + 
-            Math.floor(this.copper / 100 / 100).toLocaleString() + 'g'
-            + Math.floor(this.copper / 100) % 100 + 's'
-            + this.copper % 100 + 'c'
-        mlog.error(this.currencyText)
+
+        // this.currencyText = '' + 
+            // Math.floor(this.copper / 100 / 100).toLocaleString() + 'g'
+            // + Math.floor(this.copper / 100) % 100 + 's'
+            // + this.copper % 100 + 'c'
+        this.currency = new Currency(copper)
+        mlog.error(this.currency.getText())
 
         mlog.debug('Data loaded')
 
