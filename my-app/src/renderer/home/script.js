@@ -5,6 +5,7 @@ const Currency = require('../../js/Currency.js');
 // Mixing jQuery and Node.js code in the same file? Yes please!
 let $ = require('jquery')
 let fs = require('fs')
+require('bootstrap')
 
 const mlog = require('../../js/log.js')
 const isDevelopment = require('electron-is-dev');
