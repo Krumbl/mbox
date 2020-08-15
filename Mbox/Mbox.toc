@@ -1,0 +1,10 @@
+## Interface: 80200
+## Title: Mbox 
+## Version: 0.0.1
+## DefaultState: Enabled
+## SavedVariables: CharacterDB
+## SavedVariablesPerCharacter: Currency
+
+embeds.xml
+
+Mbox.lua
