@@ -1,5 +1,7 @@
 'use strict'
 
+const Currency = require('../../js/Currency.js');
+
 // Mixing jQuery and Node.js code in the same file? Yes please!
 let $ = require('jquery')
 let fs = require('fs')
@@ -20,7 +22,7 @@ async function main() {
 }
 
 ipcRenderer.on('dataStore', (event, dataStore) => {
-    mlog.error('dataStore: ' + JSON.stringify(dataStore, null, 2))
+    mlog.debug('dataStore: ' + JSON.stringify(dataStore, null, 2))
     render(dataStore)
 })
 
@@ -41,6 +43,8 @@ function render(dataStore){
     var shell = require('shell');
 
     dataStore.accounts.forEach(account => buildAccount(account).appendTo($('ul#accounts')))
+
+    $('div#currency').append($('<span/>').text(dataStore.currencyText))
 }
 
 function buildAccount(account) {
@@ -69,7 +73,8 @@ function buildServer(server) {
 
 function buildCharacter(character) {
     mlog.group("Add character: " + mlog.stringify(character))
-    var characterLi = $('<li/>').attr("id", character.name).text(character.name)
+    var characterLi = $('<li/>').attr("id", character.name).text(character.name + ' - ' + character.currency.text)
+    // var characterLi = $('<li/>').attr("id", character.name).text(character.name + ' - ' + JSON.stringify(character.currency))
     mlog.groupEnd()
     return characterLi;
 }
