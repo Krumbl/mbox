@@ -1,28 +1,35 @@
+'use strict'
+
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
-const mlog = require('./log.js')
+const mlog = require('./js/log.js');
+const DataStore = require('./js/DataStore.js');
+const Window = require('./js//Window')
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
   app.quit();
 }
 
-const createWindow = () => {
-  // Create the browser window.
-  mlog.warn("START")
-  const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
-    webPreferences: {
-      nodeIntegration: true,
-    }
-  });
+// const dataStore = new DataStore('C:\\Program Files (x86)\\World of Warcraft\\_retail_\\WTF\\Account')
+const dataStore = new DataStore('/home/mbox/develop/swan/data/WTF')
 
-  // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, 'index.html'));
+
+const createWindow = () => {
+  mlog.warn("START")
+
+  mlog.info(path.join(__dirname, 'renderer/home/index.html'));
+  const mainWindow = new Window({
+    file: path.join(__dirname, 'renderer/home/index.html')
+  })
+
+  // mainWindow.once('show', () => {
+  mainWindow.webContents.on('did-finish-load', () => {
+    mainWindow.webContents.send('dataStore', dataStore)
+  })
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 };
 
 // This method will be called when Electron has finished
