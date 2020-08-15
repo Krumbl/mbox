@@ -19,6 +19,10 @@ async function main() {
         await new Promise(r => setTimeout(r, 1000));
         // debugger;
     }
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('inactive');
+    });
 }
 
 ipcRenderer.on('dataStore', (event, dataStore) => {

@@ -1,41 +1,89 @@
-html{
-	background: #14243d;
-	background: radial-gradient(ellipse at center, #14243d 0%,#030611 100%);
-	position: absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
+/* .wrapper {
+    display: flex;
+    align-items: stretch;
 }
 
-body{
-	font: 14px/1.5 Arial, Helvetica, sans-serif;
-	color:#fff;
+#sidebar {
+    min-width: 100px;
+	max-width: 100px;
+	min-height: 100vh;
 }
 
-a, a:visited, a:hover{
-	color:#fff;
-	text-decoration: none;
+#sidebar.inactive {
+    margin-left: -100px;
 }
 
-
-/* The cover flow slider */
-
-.accounts {
-	margin-top:120px;
+a[data-toggle="collapse"] {
+    position: relative;
 }
 
-/* Stats */
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+} 
+*/
 
-.stats{
-	text-align: center;
-	margin-top: 80px;
-	color: #8C91A0;
-	font-size: 13px;
+/* https://bootstrapious.com/p/bootstrap-sidebar */
+
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
 }
 
-.stats span{
-	font-weight: bold;
-	color: #A2A9BD;
-	margin-right: 10px;
+#sidebar.inactive {
+    margin-left: -100px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+} 
+
+
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+	min-width: 100px;
+	max-width: 100px;
+	height: 100vh;
+    background: #dee2e6;
+    /* color: #fff; */
+    transition: all 0.3s;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li.inactive > a, a[aria-expanded="true"] {
+    background: #dae0e5;
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #dae0e5;
 }
