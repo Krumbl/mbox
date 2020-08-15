@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/1/2020 11:56:28 AM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/14/2020 12:36:42 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>fish_druid_fx</Name>
@@ -3469,8 +3469,8 @@
     </VideoFXFocusCombo>
     <Slots>
       <Slot>
-        <ForegroundMaxFPS>30</ForegroundMaxFPS>
-        <BackgroundMaxFPS>15</BackgroundMaxFPS>
+        <ForegroundMaxFPS>40</ForegroundMaxFPS>
+        <BackgroundMaxFPS>20</BackgroundMaxFPS>
         <CharacterString>Mumbl-Sargeras</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+1</Combo>
@@ -3489,6 +3489,28 @@
         <CPUCores>
           <unsignedInt>1</unsignedInt>
           <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+          <unsignedInt>13</unsignedInt>
+          <unsignedInt>14</unsignedInt>
+          <unsignedInt>15</unsignedInt>
+          <unsignedInt>16</unsignedInt>
+          <unsignedInt>17</unsignedInt>
+          <unsignedInt>18</unsignedInt>
+          <unsignedInt>19</unsignedInt>
+          <unsignedInt>20</unsignedInt>
+          <unsignedInt>21</unsignedInt>
+          <unsignedInt>22</unsignedInt>
+          <unsignedInt>23</unsignedInt>
+          <unsignedInt>24</unsignedInt>
         </CPUCores>
         <VariableKeystrokeInstances>
           <VariableKeystrokeInstance>
@@ -3562,8 +3584,8 @@
         </VariableKeystrokeInstances>
       </Slot>
       <Slot>
-        <ForegroundMaxFPS>30</ForegroundMaxFPS>
-        <BackgroundMaxFPS>15</BackgroundMaxFPS>
+        <ForegroundMaxFPS>40</ForegroundMaxFPS>
+        <BackgroundMaxFPS>20</BackgroundMaxFPS>
         <CharacterString>Chipmonk-Dark Iron</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+2</Combo>
@@ -3580,8 +3602,30 @@
           <FTLModifierEnum>RShift</FTLModifierEnum>
         </FTLModifiers>
         <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
           <unsignedInt>3</unsignedInt>
           <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+          <unsignedInt>13</unsignedInt>
+          <unsignedInt>14</unsignedInt>
+          <unsignedInt>15</unsignedInt>
+          <unsignedInt>16</unsignedInt>
+          <unsignedInt>17</unsignedInt>
+          <unsignedInt>18</unsignedInt>
+          <unsignedInt>19</unsignedInt>
+          <unsignedInt>20</unsignedInt>
+          <unsignedInt>21</unsignedInt>
+          <unsignedInt>22</unsignedInt>
+          <unsignedInt>23</unsignedInt>
+          <unsignedInt>24</unsignedInt>
         </CPUCores>
         <VariableKeystrokeInstances>
           <VariableKeystrokeInstance>
@@ -3655,8 +3699,8 @@
         </VariableKeystrokeInstances>
       </Slot>
       <Slot>
-        <ForegroundMaxFPS>30</ForegroundMaxFPS>
-        <BackgroundMaxFPS>15</BackgroundMaxFPS>
+        <ForegroundMaxFPS>40</ForegroundMaxFPS>
+        <BackgroundMaxFPS>20</BackgroundMaxFPS>
         <CharacterString>Tweedee-Sargeras</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+3</Combo>
@@ -3673,8 +3717,30 @@
           <FTLModifierEnum>LCtrl</FTLModifierEnum>
         </FTLModifiers>
         <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
           <unsignedInt>5</unsignedInt>
           <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+          <unsignedInt>13</unsignedInt>
+          <unsignedInt>14</unsignedInt>
+          <unsignedInt>15</unsignedInt>
+          <unsignedInt>16</unsignedInt>
+          <unsignedInt>17</unsignedInt>
+          <unsignedInt>18</unsignedInt>
+          <unsignedInt>19</unsignedInt>
+          <unsignedInt>20</unsignedInt>
+          <unsignedInt>21</unsignedInt>
+          <unsignedInt>22</unsignedInt>
+          <unsignedInt>23</unsignedInt>
+          <unsignedInt>24</unsignedInt>
         </CPUCores>
         <VariableKeystrokeInstances>
           <VariableKeystrokeInstance>
@@ -3748,8 +3814,8 @@
         </VariableKeystrokeInstances>
       </Slot>
       <Slot>
-        <ForegroundMaxFPS>30</ForegroundMaxFPS>
-        <BackgroundMaxFPS>15</BackgroundMaxFPS>
+        <ForegroundMaxFPS>40</ForegroundMaxFPS>
+        <BackgroundMaxFPS>20</BackgroundMaxFPS>
         <CharacterString>Tweedum-Sargeras</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+4</Combo>
@@ -3766,8 +3832,30 @@
           <FTLModifierEnum>LAlt</FTLModifierEnum>
         </FTLModifiers>
         <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
           <unsignedInt>7</unsignedInt>
           <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+          <unsignedInt>13</unsignedInt>
+          <unsignedInt>14</unsignedInt>
+          <unsignedInt>15</unsignedInt>
+          <unsignedInt>16</unsignedInt>
+          <unsignedInt>17</unsignedInt>
+          <unsignedInt>18</unsignedInt>
+          <unsignedInt>19</unsignedInt>
+          <unsignedInt>20</unsignedInt>
+          <unsignedInt>21</unsignedInt>
+          <unsignedInt>22</unsignedInt>
+          <unsignedInt>23</unsignedInt>
+          <unsignedInt>24</unsignedInt>
         </CPUCores>
         <VariableKeystrokeInstances>
           <VariableKeystrokeInstance>
@@ -3841,8 +3929,8 @@
         </VariableKeystrokeInstances>
       </Slot>
       <Slot>
-        <ForegroundMaxFPS>30</ForegroundMaxFPS>
-        <BackgroundMaxFPS>15</BackgroundMaxFPS>
+        <ForegroundMaxFPS>40</ForegroundMaxFPS>
+        <BackgroundMaxFPS>20</BackgroundMaxFPS>
         <CharacterString>Allis-Stormrage</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+5</Combo>
@@ -3860,8 +3948,30 @@
           <FTLModifierEnum>LCtrl</FTLModifierEnum>
         </FTLModifiers>
         <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
           <unsignedInt>3</unsignedInt>
           <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+          <unsignedInt>13</unsignedInt>
+          <unsignedInt>14</unsignedInt>
+          <unsignedInt>15</unsignedInt>
+          <unsignedInt>16</unsignedInt>
+          <unsignedInt>17</unsignedInt>
+          <unsignedInt>18</unsignedInt>
+          <unsignedInt>19</unsignedInt>
+          <unsignedInt>20</unsignedInt>
+          <unsignedInt>21</unsignedInt>
+          <unsignedInt>22</unsignedInt>
+          <unsignedInt>23</unsignedInt>
+          <unsignedInt>24</unsignedInt>
         </CPUCores>
         <VariableKeystrokeInstances>
           <VariableKeystrokeInstance>
@@ -3935,8 +4045,8 @@
         </VariableKeystrokeInstances>
       </Slot>
       <Slot>
-        <ForegroundMaxFPS>30</ForegroundMaxFPS>
-        <BackgroundMaxFPS>15</BackgroundMaxFPS>
+        <ForegroundMaxFPS>40</ForegroundMaxFPS>
+        <BackgroundMaxFPS>20</BackgroundMaxFPS>
         <CharacterString>Hátter-Sargeras</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+6</Combo>
@@ -3954,8 +4064,30 @@
           <FTLModifierEnum>LAlt</FTLModifierEnum>
         </FTLModifiers>
         <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
           <unsignedInt>5</unsignedInt>
           <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+          <unsignedInt>13</unsignedInt>
+          <unsignedInt>14</unsignedInt>
+          <unsignedInt>15</unsignedInt>
+          <unsignedInt>16</unsignedInt>
+          <unsignedInt>17</unsignedInt>
+          <unsignedInt>18</unsignedInt>
+          <unsignedInt>19</unsignedInt>
+          <unsignedInt>20</unsignedInt>
+          <unsignedInt>21</unsignedInt>
+          <unsignedInt>22</unsignedInt>
+          <unsignedInt>23</unsignedInt>
+          <unsignedInt>24</unsignedInt>
         </CPUCores>
         <VariableKeystrokeInstances>
           <VariableKeystrokeInstance>
@@ -4029,8 +4161,8 @@
         </VariableKeystrokeInstances>
       </Slot>
       <Slot>
-        <ForegroundMaxFPS>30</ForegroundMaxFPS>
-        <BackgroundMaxFPS>15</BackgroundMaxFPS>
+        <ForegroundMaxFPS>40</ForegroundMaxFPS>
+        <BackgroundMaxFPS>20</BackgroundMaxFPS>
         <CharacterString>Wrabbit-Sargeras</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+7</Combo>
@@ -4048,8 +4180,30 @@
           <FTLModifierEnum>LCtrl</FTLModifierEnum>
         </FTLModifiers>
         <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
+          <unsignedInt>3</unsignedInt>
+          <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
           <unsignedInt>7</unsignedInt>
           <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+          <unsignedInt>13</unsignedInt>
+          <unsignedInt>14</unsignedInt>
+          <unsignedInt>15</unsignedInt>
+          <unsignedInt>16</unsignedInt>
+          <unsignedInt>17</unsignedInt>
+          <unsignedInt>18</unsignedInt>
+          <unsignedInt>19</unsignedInt>
+          <unsignedInt>20</unsignedInt>
+          <unsignedInt>21</unsignedInt>
+          <unsignedInt>22</unsignedInt>
+          <unsignedInt>23</unsignedInt>
+          <unsignedInt>24</unsignedInt>
         </CPUCores>
         <VariableKeystrokeInstances>
           <VariableKeystrokeInstance>
@@ -4093,8 +4247,8 @@
         </VariableKeystrokeInstances>
       </Slot>
       <Slot>
-        <ForegroundMaxFPS>30</ForegroundMaxFPS>
-        <BackgroundMaxFPS>15</BackgroundMaxFPS>
+        <ForegroundMaxFPS>40</ForegroundMaxFPS>
+        <BackgroundMaxFPS>20</BackgroundMaxFPS>
         <CharacterString>Capatiller-Stormrage</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+8</Combo>
@@ -4112,8 +4266,30 @@
           <FTLModifierEnum>LAlt</FTLModifierEnum>
         </FTLModifiers>
         <CPUCores>
+          <unsignedInt>1</unsignedInt>
+          <unsignedInt>2</unsignedInt>
           <unsignedInt>3</unsignedInt>
           <unsignedInt>4</unsignedInt>
+          <unsignedInt>5</unsignedInt>
+          <unsignedInt>6</unsignedInt>
+          <unsignedInt>7</unsignedInt>
+          <unsignedInt>8</unsignedInt>
+          <unsignedInt>9</unsignedInt>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>11</unsignedInt>
+          <unsignedInt>12</unsignedInt>
+          <unsignedInt>13</unsignedInt>
+          <unsignedInt>14</unsignedInt>
+          <unsignedInt>15</unsignedInt>
+          <unsignedInt>16</unsignedInt>
+          <unsignedInt>17</unsignedInt>
+          <unsignedInt>18</unsignedInt>
+          <unsignedInt>19</unsignedInt>
+          <unsignedInt>20</unsignedInt>
+          <unsignedInt>21</unsignedInt>
+          <unsignedInt>22</unsignedInt>
+          <unsignedInt>23</unsignedInt>
+          <unsignedInt>24</unsignedInt>
         </CPUCores>
         <VariableKeystrokeInstances>
           <VariableKeystrokeInstance>
@@ -7171,7 +7347,7 @@
     <ServerName />
     <ActualName />
     <Game>DxNothing</Game>
-    <GameProfile>DxNothing Client DirectX 11 64-bit</GameProfile>
+    <GameProfile>DxNothing Default Profile</GameProfile>
     <VideoFeedViewersPermanent>true</VideoFeedViewersPermanent>
     <MuteBroadcasts>true</MuteBroadcasts>
     <KnownGame>DxNothing</KnownGame>
@@ -7179,8 +7355,6 @@
       <string>DxNothing</string>
     </RelayGroupStrings>
     <KeyMapStrings>
-      <string>ISB42 - Video FX Layout</string>
-      <string>ISB42 - Video FX Layout</string>
       <string>ISB42 - Video FX Layout</string>
     </KeyMapStrings>
     <KeyMapWhiteOrBlackListType>WhiteList</KeyMapWhiteOrBlackListType>
@@ -8486,6 +8660,7 @@
     <VariableKeystrokeInstances />
   </Character>
   <Character>
+    <ExecuteOnLoad />
     <Name>Rumblb-Sargeras</Name>
     <AccountName />
     <SubAccountName>VUONGMDO</SubAccountName>
@@ -9069,15 +9244,15 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>Battle.net-Kalarcyon-Sargeras.config</Filename>
+        <Filename>Battle.net-Vaeelormran-Sargeras.config</Filename>
         <VirtualFileString>Battle.net.config</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Config-Kalarcyon-Sargeras.WTF</Filename>
+        <Filename>Config-Vaeelormran-Sargeras.WTF</Filename>
         <VirtualFileString>Config.WTF</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Kalarcyon-Sargeras/</Filename>
+        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Vaeelormran-Sargeras/</Filename>
         <VirtualFileString>Software/Blizzard Entertainment/Battle.net/</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
@@ -9107,15 +9282,15 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>Battle.net-Kalarcyon-Sargeras.config</Filename>
+        <Filename>Battle.net-Caraliia-Sargeras.config</Filename>
         <VirtualFileString>Battle.net.config</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Config-Kalarcyon-Sargeras.WTF</Filename>
+        <Filename>Config-Caraliia-Sargeras.WTF</Filename>
         <VirtualFileString>Config.WTF</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Kalarcyon-Sargeras/</Filename>
+        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Caraliia-Sargeras/</Filename>
         <VirtualFileString>Software/Blizzard Entertainment/Battle.net/</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
@@ -9145,15 +9320,15 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>Battle.net-Kalarcyon-Sargeras.config</Filename>
+        <Filename>Battle.net-Mardowson-Sargeras.config</Filename>
         <VirtualFileString>Battle.net.config</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Config-Kalarcyon-Sargeras.WTF</Filename>
+        <Filename>Config-Mardowson-Sargeras.WTF</Filename>
         <VirtualFileString>Config.WTF</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Kalarcyon-Sargeras/</Filename>
+        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Mardowson-Sargeras/</Filename>
         <VirtualFileString>Software/Blizzard Entertainment/Battle.net/</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
@@ -9183,15 +9358,15 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>Battle.net-Kalarcyon-Sargeras.config</Filename>
+        <Filename>Battle.net-Maveriirus-Sargeras.config</Filename>
         <VirtualFileString>Battle.net.config</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Config-Kalarcyon-Sargeras.WTF</Filename>
+        <Filename>Config-Maveriirus-Sargeras.WTF</Filename>
         <VirtualFileString>Config.WTF</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Kalarcyon-Sargeras/</Filename>
+        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Maveriirus-Sargeras/</Filename>
         <VirtualFileString>Software/Blizzard Entertainment/Battle.net/</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
@@ -9221,15 +9396,15 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>Battle.net-Kalarcyon-Sargeras.config</Filename>
+        <Filename>Battle.net-Fumbl-Sargeras.config</Filename>
         <VirtualFileString>Battle.net.config</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Config-Kalarcyon-Sargeras.WTF</Filename>
+        <Filename>Config-Fumbl-Sargeras.WTF</Filename>
         <VirtualFileString>Config.WTF</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Kalarcyon-Sargeras/</Filename>
+        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Fumbl-Sargeras/</Filename>
         <VirtualFileString>Software/Blizzard Entertainment/Battle.net/</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
@@ -9259,15 +9434,15 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>Battle.net-Kalarcyon-Sargeras.config</Filename>
+        <Filename>Battle.net-Andenaden-Sargeras.config</Filename>
         <VirtualFileString>Battle.net.config</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Config-Kalarcyon-Sargeras.WTF</Filename>
+        <Filename>Config-Andenaden-Sargeras.WTF</Filename>
         <VirtualFileString>Config.WTF</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Kalarcyon-Sargeras/</Filename>
+        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Andenaden-Sargeras/</Filename>
         <VirtualFileString>Software/Blizzard Entertainment/Battle.net/</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
@@ -9297,15 +9472,15 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>Battle.net-Kalarcyon-Sargeras.config</Filename>
+        <Filename>Battle.net-Bastalrar-Sargeras.config</Filename>
         <VirtualFileString>Battle.net.config</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Config-Kalarcyon-Sargeras.WTF</Filename>
+        <Filename>Config-Bastalrar-Sargeras.WTF</Filename>
         <VirtualFileString>Config.WTF</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Kalarcyon-Sargeras/</Filename>
+        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Bastalrar-Sargeras/</Filename>
         <VirtualFileString>Software/Blizzard Entertainment/Battle.net/</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
@@ -9335,15 +9510,15 @@
     <MenuInstances />
     <VirtualFileTargets>
       <VirtualFileTarget>
-        <Filename>Battle.net-Kalarcyon-Sargeras.config</Filename>
+        <Filename>Battle.net-Casarirn-Sargeras.config</Filename>
         <VirtualFileString>Battle.net.config</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Config-Kalarcyon-Sargeras.WTF</Filename>
+        <Filename>Config-Casarirn-Sargeras.WTF</Filename>
         <VirtualFileString>Config.WTF</VirtualFileString>
       </VirtualFileTarget>
       <VirtualFileTarget>
-        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Kalarcyon-Sargeras/</Filename>
+        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Casarirn-Sargeras/</Filename>
         <VirtualFileString>Software/Blizzard Entertainment/Battle.net/</VirtualFileString>
       </VirtualFileTarget>
     </VirtualFileTargets>
