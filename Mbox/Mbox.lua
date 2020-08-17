@@ -41,8 +41,12 @@ function Mbox:PLAYER_ENTERING_WORLD()
     Mbox:HelloWorld()
     print('PLAYER_ENTERING_WORLD')
     local charName = UnitName("player")
+    -- https://wow.gamepedia.com/ClassId
+    _, _, self.db.char.class = UnitClass("player")
     self.db.char.copper = GetMoney()
     self.db.char.level = UnitLevel("player")
+    self.db.char.server = GetNormalizedRealmName()
+    self.db.char.name = UnitFullName("player")
     Currency = GetMoney()
 end
 
