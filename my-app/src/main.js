@@ -1,6 +1,6 @@
 'use strict'
 
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const mlog = require('./js/log.js');
 const DataStore = require('./js/DataStore.js');
@@ -27,12 +27,24 @@ const createWindow = () => {
 
   // mainWindow.once('show', () => {
   mainWindow.webContents.on('did-finish-load', () => {
-    mainWindow.webContents.send('dataStore', dataStoreV2)
+    mlog.error('did-finish-load')
+  })
+  mainWindow.webContents.on('dom-ready', () => {
+    mlog.error('dom-ready')
   })
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.once('did-finish-load', () => {
+    // mlog.error("LOAD")
+  // })
+  ipcMain.on('CONTENT_LOAD', (event, page) => {
+    mlog.error("CONTENT_LOAD " + page)
+    // TODO switch on correct page
+    mainWindow.webContents.send('CONTENT_HOME', dataStoreV2)
+  })
 };
+
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

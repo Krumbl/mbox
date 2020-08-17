@@ -20,12 +20,10 @@ async function main() {
         // debugger;
     }
 
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('inactive');
-    });
+    // initSidebar()
 }
 
-ipcRenderer.on('dataStore', (event, dataStore) => {
+ipcRenderer.on('CONTENT_HOME', (event, dataStore) => {
     mlog.debug('dataStore: ' + JSON.stringify(dataStore, null, 2))
     render(dataStore)
 })
@@ -86,5 +84,10 @@ function buildCharacter(character) {
     mlog.groupEnd()
     return characterDiv;
 }
+
+$(function() {
+    $('div#sidebar').load('sidebar.html', initSidebar())
+    $('div#content').load('home.html', () => ipcRenderer.send('CONTENT_LOAD', 'home'))
+})
 
 main()

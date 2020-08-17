@@ -1,94 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>mbox</title>
 
-        <title>Overview</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="../../css/styles.css">
-        <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <title>Overview</title>
 
-        <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-        
+    <script defer src="./script.js"></script>
+    <script defer src="../../js/sidebar/sidebar.js"></script>
 
-        <link rel="import" href="../character/character.html">
-    </head>
-    <body>
 
-        <div class="wrapper">
-            <nav id="sidebar">
-                <div class="sidebar-header">
-                    <h3>Sidebar</h3>
-                </div>
 
-        <ul class="list-unstyled components">
-            <li class="active">
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li>
-                        <a href="#">Home 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Home 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Home 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li>
-                        <a href="#">Page 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-            </nav>
+    <link rel="import" href="../character/character.html">
+</head>
 
-            <div id="content">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+<body>
 
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
-                <i class="fas fa-align-left"></i>
-                <span>Toggle Sidebar</span>
-            </button>
+    <link rel="import" href="../character/character.html">
 
-        </div>
-                <div id="stats" class="container">
-                    <p class="stats"></p>
-                </div>
+    <div class="wrapper">
+        <div id="sidebar"></div>
 
-                <div id="currency" class="container">
+        <div id="container">
+            <div id="header">
+                <div class="container-fluid">
 
-                </div>
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
 
-                <div id="" class="container">
-                    <div id="accounts" class="accordian">
-                    </div>
                 </div>
             </div>
-    </nav>
+
+            <div id="content"></div>
         </div>
-    </body>
+
+
+    </div>
+</body>
+
 </html>
