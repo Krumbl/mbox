@@ -67,9 +67,9 @@ function buildServer(server) {
 
     var serverDiv = $('<div/>').attr("id", server.name).addClass("card")
     $('<button/>').addClass('btn btn-link btn-block text-left')
-        .attr('data-toggle', 'collapse').attr('data-target', '#' + $.escapeSelector(server.name) +  '_characters').text(server.name)
+        .attr('data-toggle', 'collapse').attr('data-target', '#' + $.escapeSelector(server.account.name + '_' + server.name) +  '_characters').text(server.name)
         .appendTo($('<div/>').addClass('card-header').appendTo(serverDiv))
-    var serverBody = $('<div/>').attr("id", server.name + '_characters').addClass('card-body collapse').appendTo(serverDiv)
+    var serverBody = $('<div/>').attr("id", server.account.name +'_' +  server.name + '_characters').addClass('card-body collapse').appendTo(serverDiv)
 
     server.characters.forEach((character, name) => { 
         if (character.currency.copper > 0)
