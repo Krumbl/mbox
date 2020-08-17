@@ -43,7 +43,7 @@ function render(dataStore){
     $('.stats').append('Free memory: <span>' + prettyBytes(os.freemem())+ '</span>');
     $('.stats').append('<br/>')
 
-    dataStore.accounts.forEach(account => buildAccount(account).appendTo($('div#accounts')))
+    dataStore.accounts.forEach((account, name) => buildAccount(account).appendTo($('div#accounts')))
 
     $('div#currency').append($('<span/>').text(Currency.copy(dataStore.currency).getText()))
 }
@@ -56,7 +56,7 @@ function buildAccount(account) {
         .appendTo($('<div/>').addClass('card-header').appendTo(accountDiv))
     var accountBody = $('<div/>').attr("id", account.name + '_servers').addClass('card-body collapse').appendTo(accountDiv)
 
-    account.servers.forEach(server => buildServer(server).appendTo(accountBody))
+    account.servers.forEach((server, name) => buildServer(server).appendTo(accountBody))
     
     mlog.groupEnd()
     return accountDiv
@@ -71,7 +71,7 @@ function buildServer(server) {
         .appendTo($('<div/>').addClass('card-header').appendTo(serverDiv))
     var serverBody = $('<div/>').attr("id", server.name + '_characters').addClass('card-body collapse').appendTo(serverDiv)
 
-    server.characters.forEach(character => { 
+    server.characters.forEach((character, name) => { 
         if (character.currency.copper > 0)
             buildCharacter(character).appendTo(serverBody)
     })

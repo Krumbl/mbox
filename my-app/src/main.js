@@ -4,6 +4,7 @@ const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const mlog = require('./js/log.js');
 const DataStore = require('./js/DataStore.js');
+const DataStoreV2 = require('./js/dataStore/DataStoreV2.js');
 const Window = require('./js//Window')
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -11,8 +12,9 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
   app.quit();
 }
 
-// const dataStore = new DataStore('C:\\Program Files (x86)\\World of Warcraft\\_retail_\\WTF\\Account')
-const dataStore = new DataStore('/home/mbox/develop/swan/data/WTF')
+// const dataStore = new DataStore('D:\\Blizzard\\World of Warcraft\\_retail_\\WTF')
+const dataStoreV2 = new DataStoreV2('D:\\Blizzard\\World of Warcraft\\_retail_\\WTF')
+// const dataStore = new DataStore('/home/mbox/develop/swan/data/WTF')
 
 
 const createWindow = () => {
@@ -25,7 +27,7 @@ const createWindow = () => {
 
   // mainWindow.once('show', () => {
   mainWindow.webContents.on('did-finish-load', () => {
-    mainWindow.webContents.send('dataStore', dataStore)
+    mainWindow.webContents.send('dataStore', dataStoreV2)
   })
 
   // Open the DevTools.
