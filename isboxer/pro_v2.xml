@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/14/2020 11:07:52 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/15/2020 8:16:16 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>level</Name>
@@ -683,6 +683,9 @@
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>View</WoWMacroSetString>
       </WoWMacroSetLooseRef>
+      <WoWMacroSetLooseRef>
+        <WoWMacroSetString>5man</WoWMacroSetString>
+      </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
     <LaunchCharacterSetStrings />
@@ -1222,6 +1225,9 @@
       </WoWMacroSetLooseRef>
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>View</WoWMacroSetString>
+      </WoWMacroSetLooseRef>
+      <WoWMacroSetLooseRef>
+        <WoWMacroSetString>5man</WoWMacroSetString>
       </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
@@ -1779,6 +1785,9 @@
       </WoWMacroSetLooseRef>
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>Heal</WoWMacroSetString>
+      </WoWMacroSetLooseRef>
+      <WoWMacroSetLooseRef>
+        <WoWMacroSetString>5man</WoWMacroSetString>
       </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
@@ -2341,6 +2350,9 @@
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>View</WoWMacroSetString>
       </WoWMacroSetLooseRef>
+      <WoWMacroSetLooseRef>
+        <WoWMacroSetString>5man</WoWMacroSetString>
+      </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
     <LaunchCharacterSetStrings />
@@ -2896,6 +2908,9 @@
       </WoWMacroSetLooseRef>
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>Heal</WoWMacroSetString>
+      </WoWMacroSetLooseRef>
+      <WoWMacroSetLooseRef>
+        <WoWMacroSetString>5man</WoWMacroSetString>
       </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
@@ -3586,6 +3601,9 @@
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>View</WoWMacroSetString>
       </WoWMacroSetLooseRef>
+      <WoWMacroSetLooseRef>
+        <WoWMacroSetString>5man</WoWMacroSetString>
+      </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
     <LaunchCharacterSetStrings />
@@ -4274,6 +4292,9 @@
       </WoWMacroSetLooseRef>
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>View</WoWMacroSetString>
+      </WoWMacroSetLooseRef>
+      <WoWMacroSetLooseRef>
+        <WoWMacroSetString>5man</WoWMacroSetString>
       </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
@@ -4965,6 +4986,9 @@
       </WoWMacroSetLooseRef>
       <WoWMacroSetLooseRef>
         <WoWMacroSetString>View</WoWMacroSetString>
+      </WoWMacroSetLooseRef>
+      <WoWMacroSetLooseRef>
+        <WoWMacroSetString>5man</WoWMacroSetString>
       </WoWMacroSetLooseRef>
     </WoWMacroSets>
     <CrypticMacroSets />
@@ -7706,7 +7730,7 @@ The Star formation aligns your characters in all four directions around the lead
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
                 <Target>(@other isboxer&amp;~dxnothing)#2</Target>
-                <Name>Move Left</Name>
+                <Name>Move Right</Name>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
                 <Target>(@other isboxer&amp;~dxnothing)#3</Target>
@@ -7714,7 +7738,7 @@ The Star formation aligns your characters in all four directions around the lead
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
                 <Target>(@other isboxer&amp;~dxnothing)#4</Target>
-                <Name>Move Right</Name>
+                <Name>Move Left</Name>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -11348,6 +11372,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
         </Combo>
         <Steps>
           <Step>
+            <Stick>1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <KeyMapString>ISB42 - Base Hotkeys</KeyMapString>
@@ -14577,15 +14602,12 @@ Prayer of Mending slot 1</Description>
         <Steps>
           <Step>
             <Actions>
-              <MappedKeyAction xsi:type="Keystroke">
-                <Combo>
-                  <Combo>Ctrl+Shift+3</Combo>
-                  <Modifiers>Ctrl Shift</Modifiers>
-                  <Key>
-                    <Key>3</Key>
-                    <Code>4</Code>
-                  </Key>
-                </Combo>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Hunter</WoWMacroSetString>
+                  <WoWMacroString>Intimidation</WoWMacroString>
+                </WoWMacro>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -17063,6 +17085,19 @@ Prayer of Mending slot 1</Description>
         </Combo>
         <AllowCustomModifiers />
       </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast Intimidation</MacroCommands>
+        <ColloquialName>Intimidation</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+Num 8</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>Num 8</Key>
+            <Code>72</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
     </WoWMacros>
   </WoWMacroSet>
   <WoWMacroSet>
@@ -17777,6 +17812,33 @@ Prayer of Mending slot 1</Description>
           <Key>
             <Key>Num 9</Key>
             <Code>73</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+    </WoWMacros>
+  </WoWMacroSet>
+  <WoWMacroSet>
+    <Name>5man</Name>
+    <WoWMacros>
+      <WoWMacro>
+        <MacroCommands>/target {SLOT1}
+/tm 8
+/target {SLOT2}
+/tm 7
+/target {SLOT3}
+/tm 6
+/target {SLOT4}
+/tm 5
+/target {SLOT5}
+/tm 4</MacroCommands>
+        <ColloquialName>raid icons</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+F12</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>F12</Key>
+            <Code>88</Code>
           </Key>
         </Combo>
         <AllowCustomModifiers />
