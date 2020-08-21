@@ -6,7 +6,7 @@ const { BrowserWindow } = require('electron')
 const defaultProps = {
   // TODO store state - https://github.com/mawie81/electron-window-state
   // https://www.npmjs.com/package/electron-store
-  x: 2500,
+  x: 2000,
   y: 100,
   width: 800,
   height: 600,

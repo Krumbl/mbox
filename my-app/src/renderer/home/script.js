@@ -10,8 +10,15 @@ async function main() {
 }
 
 $(function() {
-    $('div#sidebar').load('sidebar.html', initSidebar())
-    $('div#content').load('home.html', () => ipcRenderer.send('CONTENT_LOAD', 'home'))
+    $('div#sidebar').load('sidebar.html', () => {
+        initSidebar()
+        $('div#content').load('home.html', () => ipcRenderer.send('CONTENT_LOAD', 'home'))
+    })
 })
+
+function initHome() {
+    console.log('initHome')
+    ipcRenderer.send('CONTENT_LOAD', 'home')
+}
 
 main()
