@@ -38,7 +38,7 @@ function Mbox:OnDisable()
 end
 
 function Mbox:PLAYER_ENTERING_WORLD()
-    Mbox:HelloWorld()
+    -- Mbox:HelloWorld()
     print('PLAYER_ENTERING_WORLD')
     local charName = UnitName("player")
     -- https://wow.gamepedia.com/ClassId

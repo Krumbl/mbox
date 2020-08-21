@@ -20,7 +20,6 @@ const dataStoreV2 = new DataStoreV2('D:\\Blizzard\\World of Warcraft\\_retail_\\
 const createWindow = () => {
   mlog.warn("START")
 
-  mlog.info(path.join(__dirname, 'renderer/home/index.html'));
   const mainWindow = new Window({
     file: path.join(__dirname, 'renderer/home/index.html')
   })
@@ -41,7 +40,9 @@ const createWindow = () => {
   ipcMain.on('CONTENT_LOAD', (event, page) => {
     mlog.error("CONTENT_LOAD " + page)
     // TODO switch on correct page
-    mainWindow.webContents.send('CONTENT_HOME', dataStoreV2)
+    if (page === 'home') {
+      mainWindow.webContents.send('CONTENT_HOME', dataStoreV2)
+    }
   })
 };
 
