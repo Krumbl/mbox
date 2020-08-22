@@ -4,6 +4,7 @@ class Class {
     constructor(id) {
         this.id = id
         this.name = this.nameFromId(id)
+        this.style = this.name.replace(/\s+/g, '').toLowerCase()
     }
 
     nameFromId(id) {
