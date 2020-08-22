@@ -42,6 +42,8 @@ const createWindow = () => {
     // TODO switch on correct page
     if (page === 'home') {
       mainWindow.webContents.send('CONTENT_HOME', dataStoreV2)
+    } else if (page === 'characters') {
+      mainWindow.webContents.send('CONTENT_CHARACTERS', dataStoreV2.accounts)
     }
   })
 };

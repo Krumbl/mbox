@@ -1,26 +1,34 @@
-<nav id="sidebar">
+<nav id="sidebar" class="bg-secondary">
     <div class="sidebar-header">
         <h3>Sidebar</h3>
     </div>
 
     <ul class="list-unstyled components">
         <li>
-            <a id="home" href="#home">Home</a>
+            <a id="home" href="#home" class="text-light">Home</a>
         </li>
         <li>
-            <a id="characters" href="#characters">Characters</a>
+            <a id="characters" href="#charactersSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-light">Characters</a>
+            <ul class="collapse list-unstyled" id="charactersSubmenu">
+                <li>
+                    <a href="#" class="text-light">Currency</a>
+                </li>
+                <li>
+                    <a href="#" class="text-light">Reputation</a>
+                </li>
+            </ul>
         </li>
         <li class="active">
-            <a href="#filtersSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Filters</a>
+            <a href="#filtersSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-light">Filters</a>
             <ul class="collapse list-unstyled" id="filtersSubmenu">
                 <li>
-                    <a href="#">Filter 1</a>
+                    <a href="#" class="text-light">Filter 1</a>
                 </li>
                 <li>
-                    <a href="#">Filter 2</a>
+                    <a href="#" class="text-light">Filter 2</a>
                 </li>
                 <li>
-                    <a href="#">Filter 3</a>
+                    <a href="#" class="text-light">Filter 3</a>
                 </li>
             </ul>
         </li>

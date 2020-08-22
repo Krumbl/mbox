@@ -16,9 +16,7 @@ $(function() {
     })
 })
 
-function initHome() {
-    console.log('initHome')
-    ipcRenderer.send('CONTENT_LOAD', 'home')
+function ipcHome() {
 }
 
 main()

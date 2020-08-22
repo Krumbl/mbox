@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/19/2020 9:49:20 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="8/22/2020 7:41:10 AM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>bfa</Name>
@@ -12976,7 +12976,9 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
       <MappedKey>
         <Name>New Mapped Key</Name>
         <Steps>
-          <Step />
+          <Step>
+            <Actions />
+          </Step>
         </Steps>
       </MappedKey>
     </Mappings>

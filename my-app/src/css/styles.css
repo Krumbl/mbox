@@ -28,11 +28,10 @@ a[data-toggle="collapse"] {
 
 /* https://bootstrapious.com/p/bootstrap-sidebar */
 
-
-.wrapper {
-    display: flex;
-    align-items: stretch;
-}
+/* .wrapper { */
+    /* display: flex; */
+    /* align-items: stretch; */
+/* } */
 
 #sidebar.inactive {
     margin-left: -100px;
@@ -78,12 +77,20 @@ a, a:hover, a:focus {
     display: block;
 }
 
-#sidebar ul li.inactive > a, a[aria-expanded="true"] {
-    background: #dae0e5;
-}
-
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #dae0e5;
 }
+
+div.row {
+    margin-right: 0px; /* -15px default turns on scroll bar */
+}
+
+
+/* grid */
+/* div.row { */
+    /* background-color: #e3efef */
+/* } */
+/* div.col { */
+    /* border: 1px solid #4b4e4f; */
+/* } */
