@@ -61,7 +61,7 @@ function renderCharacters(accounts) {
                 $('<p/>').text(character.name).appendTo(characterBody)
                 $('<p/>').text(character.currency.text).appendTo(characterBody)
                 $('<p/>').text(character.level).appendTo(characterBody)
-                $('<p/>').text(character.class).appendTo(characterBody)
+                $('<p/>').text(JSON.stringify(character.class)).appendTo(characterBody)
             })
         })
     })

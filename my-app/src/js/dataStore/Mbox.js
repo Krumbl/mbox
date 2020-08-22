@@ -6,6 +6,7 @@ let path = require('path')
 let lua = require('luaparse');
 const Character = require('../Character.js');
 const Currency = require('../Currency.js');
+const {Class, Classes} = require('../Class.js');
 
 class Mbox {
     constructor(accountPath) {
@@ -26,7 +27,7 @@ class Mbox {
             let char = new Character(charElement.key.raw)
             char.currency = new Currency(parseInt(this.parseField(charElement.value, 'copper')?.raw))
             char.level = this.parseField(charElement.value, 'level')?.raw
-            char.class = this.parseField(charElement.value, 'class')?.raw
+            char.class = Class.byId(this.parseField(charElement.value, 'class')?.raw)
             char.name = this.parseField(charElement.value, 'name')?.raw.replace(/"/gi, '')
             char.server = this.parseField(charElement.value, 'server')?.raw.replace(/"/gi, '')
             chars.push(char)
