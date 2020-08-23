@@ -8,7 +8,7 @@ function renderCharacters(accounts) {
     let accountsTable = $('<table/>').attr('id', 'accounts').addClass('table table-dark table-hover')
     accountsTable.appendTo($('div#characters'))
 
-    // account header riw
+    // account header row
     var accountsHeader = $('<thead/>')
         .addClass('thead')
         .appendTo(accountsTable)
@@ -18,9 +18,20 @@ function renderCharacters(accounts) {
     // server column spacer on accounts row
     $('<th/>').appendTo(accountsRow)
     accounts.forEach((account, name) => {
-        $('<th/>')
-            .text(account.name)
+        let gold = 0
+        account.servers.forEach((server, _) => {
+            server.characters.forEach((character, _) => {
+                gold += Math.floor(character.currency.copper / 100 / 100)
+            })
+        })
+
+        let th = $('<th/>')
+            // .text(account.name + gold)
+            // TODO add gold sum
             .appendTo(accountsRow)
+
+        $('<p/>').css('float', 'left').text(account.name).appendTo(th)
+        $('<p/>').addClass('moneygold').css('float', 'right').text(gold.toLocaleString()).appendTo(th)
     })
 
     // unique servers list
@@ -36,9 +47,19 @@ function renderCharacters(accounts) {
         let serverRow = $('<tr/>')
             .attr('id', 'server_' + serverName)
             .appendTo(accountsTable)
-        $('<th/>')
-            .text(serverName)
+        let th = $('<th/>')
             .appendTo(serverRow)
+
+        $('<p/>').css('float', 'left').text(serverName).appendTo(th)
+        // TODO sum gold
+        let gold = 0
+        accounts.forEach((account, _) => {
+            account.servers.get(serverName)?.characters.forEach((character, _) => {
+                gold += Math.floor(character.currency.copper / 100 / 100)
+            })
+        })
+        $('<p/>').addClass('moneygold').css('float', 'right').text(gold.toLocaleString()).appendTo(th)
+
         accounts.forEach((account, _) => {
                 $('<td/>')
                     .attr('id', account.name + '_' + serverName)
