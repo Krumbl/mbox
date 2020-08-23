@@ -27,6 +27,18 @@ ipcRenderer.on('SIDEBAR_FILTERS', (_, classes) => {
                 filterLevel(level)
             })
     })
+
+        // TODO levels from main thread config
+    let currency = [25000, 50000, 100000, 250000, 500000, 1000000]
+    currency.forEach(gold => {
+        $('<a/>')
+            .text(gold.toLocaleString())
+            .appendTo($('<li/>'))
+            .appendTo($('nav#sidebar ul#currencyFilterList'))
+            .click(function () {
+                filterCurrency(gold)
+            })
+    })
 })
 
 function initSidebar() {
@@ -48,6 +60,10 @@ function initSidebar() {
 
     $('nav#sidebar a#levelFilter').click(function () {
         filterLevel()
+    })
+
+    $('nav#sidebar a#currencyFilter').click(function () {
+        filterCurrency()
     })
 
     ipcRenderer.send('CONTENT_LOAD', 'sidebar')

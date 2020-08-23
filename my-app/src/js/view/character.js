@@ -85,6 +85,7 @@ function renderCharacters(dataStore) {
                     .attr('id', account.name + '_' + server.name + '_' + character.name)
                     .data('class-id', character.class.id)
                     .data('level', character.level)
+                    .data('currency-copper', character.currency.copper)
                     // .attr('data-class', character.class.id)
                     .attr('data-character', character.name)
                     .addClass('card bg-secondary')
@@ -145,6 +146,15 @@ function filterLevel(level) {
     if (level) {
         $('[data-character]').hide()
         $('[data-character]').filter(function() { return $(this).data('level') >= level}).show()
+    } else {
+        $('[data-character]').show()
+    }
+}
+
+function filterCurrency(gold) {
+    if (gold) {
+        $('[data-character]').hide()
+        $('[data-character]').filter(function() { return $(this).data('currencyCopper') >= gold * 100 * 100}).show()
     } else {
         $('[data-character]').show()
     }
