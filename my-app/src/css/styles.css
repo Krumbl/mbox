@@ -146,3 +146,13 @@ div.card.warlock{
 div.card.warrior{
     color: var(--warrior)!important
 }
+
+.moneygold {
+    padding-right: 15px;
+    color: #fff;
+}
+
+.moneygold::after {
+    content: "g";
+    content: url(../images/icons/money-gold.gif);
+}
