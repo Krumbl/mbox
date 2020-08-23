@@ -82,12 +82,13 @@ function renderCharacters(dataStore) {
             server.characters.forEach((character, _) => {
                 // TODO use data attr instead of ids?
                 let characterCard = $('<div/>')
-                    .attr('id', account.name + '_' + server.name + '_' + character.name)
-                    .data('class-id', character.class.id)
-                    .data('level', character.level)
-                    .data('currency-copper', character.currency.copper)
+                    // .attr('id', account.name + '_' + server.name + '_' + character.name)
+                    // .data('class-id', character.class.id)
+                    // .data('level', character.level)
+                    // .data('currency-copper', character.currency.copper)
                     // .attr('data-class', character.class.id)
-                    .attr('data-character', character.name)
+                    .data('character', character)
+                    .attr('data-character', 'query-placeholder')
                     .addClass('card bg-secondary')
                     .addClass(character.class.style)
                     .appendTo($('#' + $.escapeSelector(account.name) + '_' + server.name))
@@ -132,11 +133,31 @@ function addCharacters() {
     // add card with details for each account/server
 }
 
+// TODO manage on main thread
+// State.set('characterState', {filters: new Map('class', new Set())})
+// let state = {filters: new Map([['class', 'c']])}
+// State.set('state', state)
+// State.set('characterState', {filters:  new Map([
+//   [1, 'one'],
+//   [2, 'two'],
+//   [3, 'three'],
+// ]) })
+new CharacterState().store()
+
 function filterClass(classFilter) {
+    let cState = CharacterState.get()
     if (classFilter) {
+        cState.addFilter('class', classFilter)
+    } else {
+        cState.clearFilter('class')
+    }
+
+    let classFilters = cState.filters.get('class')
+    if (classFilters.size > 0) {
         $('[data-character]').hide()
-        // $('[data-class="' + classFilter + '"]').show()
-        $('[data-character]').filter(function() { return $(this).data('class-id') == classFilter}).show()
+        $('[data-character]').filter(function() { 
+            return classFilters.has(parseInt($(this).data('character').class.id))
+        }).toggle()
     } else {
         $('[data-character]').show()
     }
@@ -145,7 +166,7 @@ function filterClass(classFilter) {
 function filterLevel(level) {
     if (level) {
         $('[data-character]').hide()
-        $('[data-character]').filter(function() { return $(this).data('level') >= level}).show()
+        $('[data-character]').filter(function() { return $(this).data('character').level >= level}).show()
     } else {
         $('[data-character]').show()
     }
@@ -154,9 +175,13 @@ function filterLevel(level) {
 function filterCurrency(gold) {
     if (gold) {
         $('[data-character]').hide()
-        $('[data-character]').filter(function() { return $(this).data('currencyCopper') >= gold * 100 * 100}).show()
+        $('[data-character]').filter(function() { return $(this).data('character').currency.copper >= gold * 100 * 100}).show()
     } else {
         $('[data-character]').show()
     }
+}
+
+function filterServer(serverName) {
+
 }
 // $('[data-class]').filter(function() { return $(this).attr('data-class') > 11})
