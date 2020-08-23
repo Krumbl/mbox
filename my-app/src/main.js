@@ -3,9 +3,9 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const mlog = require('./js/log.js');
-const DataStore = require('./js/DataStore.js');
 const DataStoreV2 = require('./js/dataStore/DataStoreV2.js');
 const Window = require('./js//Window')
+const { _, Classes } = require('./js/Class.js')
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -44,7 +44,13 @@ const createWindow = () => {
       mainWindow.webContents.send('CONTENT_HOME', dataStoreV2)
     } else if (page === 'characters') {
       mainWindow.webContents.send('CONTENT_CHARACTERS', dataStoreV2)
+    } else if (page === 'sidebar') {
+      mainWindow.webContents.send('SIDEBAR_FILTERS', Classes)
     }
+  })
+
+  ipcMain.on('FILTER_CHARACTERS', (event, page) => {
+    mainWindow.webContents.send()
   })
 };
 

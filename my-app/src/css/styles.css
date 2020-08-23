@@ -82,6 +82,11 @@ ul ul a {
     padding-left: 30px !important;
 }
 
+ul ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 45px !important;
+}
+
 div.row {
     margin-right: 0px; /* -15px default turns on scroll bar */
 }
@@ -110,40 +115,40 @@ div.row {
     --warlock: #8787ED;
     --warrior: #C79C6E;
 }
-div.card.deathknight{
+.deathknight{
     color: var(--deathknight)!important
 }
-div.card.demonhunter{
+.demonhunter{
     color: var(--demonhunter)!important
 }
-div.card.druid {
+.druid {
     color: var(--druid)!important
 }
-div.card.hunter{
+.hunter{
     color: var(--hunter)!important
 }
-div.card.mage{
+.mage{
     color: var(--mage)!important
 }
-div.card.monk{
+.monk{
     color: var(--monk)!important
 }
-div.card.paladin{
+.paladin{
     color: var(--paladin)!important
 }
-div.card.priest{
+.priest{
     color: var(--priest)!important
 }
-div.card.rogue{
+.rogue{
     color: var(--rogue)!important
 }
-div.card.shaman{
+.shaman{
     color: var(--shaman)!important
 }
-div.card.warlock{
+.warlock{
     color: var(--warlock)!important
 }
-div.card.warrior{
+.warrior{
     color: var(--warrior)!important
 }
 

@@ -12,6 +12,7 @@ async function main() {
 $(function() {
     $('div#sidebar').load('sidebar.html', () => {
         initSidebar()
+        // TODO get classes from main thread to init filter
         $('nav#sidebar a#characters').click()
     })
 })

@@ -25,6 +25,7 @@ function renderCharacters(dataStore) {
         .text(Math.floor(dataStore.currency.copper / 100 / 100).toLocaleString())
         .addClass('moneygold')
         .appendTo(accountsRow)
+    // TODO put V, S, 1 .. 6
     accounts.forEach((account, name) => {
         let gold = 0
         account.servers.forEach((server, _) => {
@@ -82,7 +83,11 @@ function renderCharacters(dataStore) {
                 // TODO use data attr instead of ids?
                 let characterCard = $('<div/>')
                     .attr('id', account.name + '_' + server.name + '_' + character.name)
-                    .addClass('card bg-secondary text-white')
+                    .data('class-id', character.class.id)
+                    .data('level', character.level)
+                    // .attr('data-class', character.class.id)
+                    .attr('data-character', character.name)
+                    .addClass('card bg-secondary')
                     .addClass(character.class.style)
                     .appendTo($('#' + $.escapeSelector(account.name) + '_' + server.name))
                 let characterHeader = $('<div/>')
@@ -125,3 +130,23 @@ function renderCharacters(dataStore) {
 function addCharacters() {
     // add card with details for each account/server
 }
+
+function filterClass(classFilter) {
+    if (classFilter) {
+        $('[data-character]').hide()
+        // $('[data-class="' + classFilter + '"]').show()
+        $('[data-character]').filter(function() { return $(this).data('class-id') == classFilter}).show()
+    } else {
+        $('[data-character]').show()
+    }
+}
+
+function filterLevel(level) {
+    if (level) {
+        $('[data-character]').hide()
+        $('[data-character]').filter(function() { return $(this).data('level') >= level}).show()
+    } else {
+        $('[data-character]').show()
+    }
+}
+// $('[data-class]').filter(function() { return $(this).attr('data-class') > 11})
