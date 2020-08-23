@@ -1,10 +1,15 @@
+const {shell} = require('electron');
+const path = require('path');
+
 ipcRenderer.on('CONTENT_CHARACTERS', (event, accounts) => {
     // console.log('homedataStore: ' + JSON.stringify(accounts, null, 2))
     console.log('homedataStore: ' + accounts)
     renderCharacters(accounts)
 })
 
-function renderCharacters(accounts) {
+function renderCharacters(dataStore) {
+    let accounts = dataStore.accounts
+
     let accountsTable = $('<table/>').attr('id', 'accounts').addClass('table table-dark table-hover')
     accountsTable.appendTo($('div#characters'))
 
@@ -16,7 +21,10 @@ function renderCharacters(accounts) {
         .attr('id', 'account_server')
         .appendTo(accountsHeader)
     // server column spacer on accounts row
-    $('<th/>').appendTo(accountsRow)
+    $('<th/>')
+        .text(Math.floor(dataStore.currency.copper / 100 / 100).toLocaleString())
+        .addClass('moneygold')
+        .appendTo(accountsRow)
     accounts.forEach((account, name) => {
         let gold = 0
         account.servers.forEach((server, _) => {
@@ -89,6 +97,13 @@ function renderCharacters(accounts) {
                 $('<p/>').css('float', 'left').text(character.name).appendTo(charRow)
                 $('<p/>').css('float', 'right').text(character.level).appendTo(charRow)
                 charRow.appendTo(characterHeader)
+                charRow.on('click', function () {
+
+                    shell.openPath(
+                            path.join(dataStore.wowPath, 'Account', character.server.account.name, character.server.name, character.name)
+                    )
+                    // highlight specific file - showItemInFolder
+                });
 
                 $('<span/>')
                     .addClass('moneygold')

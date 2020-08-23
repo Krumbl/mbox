@@ -43,7 +43,7 @@ const createWindow = () => {
     if (page === 'home') {
       mainWindow.webContents.send('CONTENT_HOME', dataStoreV2)
     } else if (page === 'characters') {
-      mainWindow.webContents.send('CONTENT_CHARACTERS', dataStoreV2.accounts)
+      mainWindow.webContents.send('CONTENT_CHARACTERS', dataStoreV2)
     }
   })
 };
