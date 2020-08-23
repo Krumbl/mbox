@@ -95,7 +95,11 @@ function renderCharacters(dataStore) {
                 
                 let charRow = $('<div/>')
                 $('<p/>').css('float', 'left').text(character.name).appendTo(charRow)
-                $('<p/>').css('float', 'right').text(character.level).appendTo(charRow)
+                $('<p/>').css('float', 'right')
+                    .append(
+                        $('<img/>', {src:'../../images/icons/class_' + character.class.style + '.jpg'})
+                            .css({width: '24px'})
+                    ).appendTo(charRow)
                 charRow.appendTo(characterHeader)
                 charRow.on('click', function () {
 
@@ -109,6 +113,10 @@ function renderCharacters(dataStore) {
                     .addClass('moneygold')
                     .text(Math.floor(character.currency.copper / 100 / 100).toLocaleString())
                     .appendTo(characterBody)
+                $('<span/>')
+                    .text(character.level)
+                    .appendTo(characterBody)
+
             })
         })
     })

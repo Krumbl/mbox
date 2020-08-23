@@ -12,7 +12,7 @@ async function main() {
 $(function() {
     $('div#sidebar').load('sidebar.html', () => {
         initSidebar()
-        $('div#content').load('home.html', () => ipcRenderer.send('CONTENT_LOAD', 'home'))
+        $('nav#sidebar a#characters').click()
     })
 })
 
