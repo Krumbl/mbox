@@ -120,9 +120,29 @@ function renderCharacters(dataStore) {
                     .addClass('moneygold')
                     .text(Math.floor(character.currency.copper / 100 / 100).toLocaleString())
                     .appendTo(characterBody)
-                $('<span/>')
+                let charDetails = $('<div/>').appendTo(characterBody)
+                $('<p/>')
+                    .css('float', 'left')
                     .text(character.level)
-                    .appendTo(characterBody)
+                    .appendTo(charDetails)
+                $('<p/>')
+                    .css('float', 'right')
+                    .text(character.ilvl)
+                    .appendTo(charDetails)
+                if (character.crafting && character.crafting.cooldowns) {
+                    let cooldowns = $('<div/>').appendTo(characterBody)
+                    character.crafting.cooldowns.forEach(cooldown => {
+                        $('<p/>')
+                            .css('float', 'left')
+                            .text(cooldown.spellId)
+                            .appendTo(cooldowns)
+                        $('<p/>')
+                            .css('float', 'right')
+                            .text(cooldown.reset * 1000 > Date.now())
+                            .appendTo(cooldowns)
+
+                    })
+                }
 
             })
         })
