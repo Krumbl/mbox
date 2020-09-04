@@ -67,7 +67,6 @@ class Mbox {
         })
         return values
     }
-
 }
 
 module.exports = Mbox

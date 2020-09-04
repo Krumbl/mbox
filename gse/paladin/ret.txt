@@ -1,0 +1,28 @@
+https://wowlazymacros.com/t/elfyaus-8-3-ret-pally-macro-updated-24-may-20/5293
+
+TALENTS:- 1213111
+MODIFIERS:-
+SHIFT:- AOE DPS
+ALT:- Flash of Light
+
+dutueaWsQi9waBtKMPskZgvUjvs)svDBsyNcTxODtSFjddb(nLgkvQgSudxjPdsfkhdrNtalujXsPIy5kXJr5PiTmL65KAIujmveAYIOPR4IkP6Yu8mrDDQu2ivuTvQqAZc02PcXHv5ZK00irNMQghQ6DiOrd0DvLtsfLZsfQUgOZtf8nbTor41ujAKejIrsKU(Ao3XDY6eX4gjIuIhNrgnsj3KzsssK6ctWZnUbJKi1XCBaTliDDUGoGuxp2I1rnlAVv0irmsIeXijs)StpvdOWMmHg0hCEvdZzEiHvZd3WumUr6ND6PAaXYaprmCEr9v9MGDijgZi9Zo9unGyzGNigoVO(QMKxzA6gJkr6ND6PAaXYaprmCEr9vnjVsyieJqK(zNEQgqSmWtedNxuFvVdKUjGhJPi9Zo9unGyzGNigoVO(QotYZReJHi9Zo9unGcBYeAqFW5vnmN5HewnpCdtrQ7w946XwSirmsI0p70t1akSjtOb9bNx1WCMhsy18WnmfJBK(zNEQgqSmWtedNxuFvVjyhsIXms)Stpvdiwg4jIHZlQVQZWCaigvI0p70t1aILbEIy48I6RAsELWqigHi9Zo9unGyzGNigoVO(QodZbGymfPF2PNQbeld8eXW5f1x1Bimvzigdr6ND6PAaXYaprmCEr9v9gcdKdXips)StpvdOWMmHg0hCEvdZzEiHvZd3WuCq6Aw7QR5v4hKsIuIlEXLMHexbPo14G7lgTgjIrsK(NBr1mgXOWHQbel4TO4HXns)StpvdOWMmXXnVQjdecjahK6uJdoXWzoTbjIdsjU4fxAMnUcsDFX46XwSirmsI0p70t1akSjtOb9bNx1WCMhsy18WnmfJBK(zNEQgqSmWtedNxuFvVjyhsIXms)Stpvdiwg4jIHZlQVQZWCaigvI0p70t1aILbEIy48I6RAsELWqigHi9Zo9unGyzGNigoVO(QodZbGymfPF2PNQbeld8eXW5f1x1Bimvzigdr6ND6PAaXYaprmCEr9v9gcdKdXips)StpvdOWMmHg0hCEvdZzEiHvZd3WuCqkDmR6C3e24TcsDFXBx8Jd4GdsPRAyoZfymKaK66jUDCotgZIJyKXBfCfCWbr
+
+
+
+
+/cast [combat] Concentrated Flame
+/cast [combat] Anima of Death
+/cast [combat] Arcane Torrent
+/cast [combat] Seraphim
+/cast [combat] Avenging Wrath
+/cast Judgment
+/cast [combat] Avenger's Shield
+/castsequence [combat] reset=mod:ctrl/target/combat  Consecration, Hammer of the Righteous, Hammer of the Righteous
+/cast [combat] Shield of the Righteous
+
+/cast [combat] Avenging Wrath
+/cast Avenger's Shield
+/cast Judgment
+/castsequence [combat] reset=combat/target/8  Consecration, null
+/castsequence [combat] reset=combat/target/8  Hammer of the Righteous, Hammer of the Righteous, Consecration
+/castsequence [combat] reset=15  Shield of the Righteous, Light of the Protector

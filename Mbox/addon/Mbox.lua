@@ -22,6 +22,9 @@ function Mbox:OnInitialize()
             }
         }
     }
+    local character = DataStore:GetCharacter()
+    print(DataStore:GetCharacterClass(character))
+    print(character)
 
     self.db = LibStub("AceDB-3.0"):New("CharacterDB", defaults)
 end
@@ -43,11 +46,23 @@ function Mbox:PLAYER_LOGOUT()
     local charName = UnitName("player")
     -- https://wow.gamepedia.com/ClassId
     _, _, self.db.char.class = UnitClass("player")
-    self.db.char.copper = GetMoney()
-    self.db.char.level = UnitLevel("player")
+    -- self.db.char.copper = GetMoney()
+    
+    -- DataStore_Characters.lua#PublicMethods
+
+    -- DataStore_Characters
+    local character = DataStore:GetCharacter()
+    self.db.char.copper = DataStore:GetMoney(character) -- GetMoney()
+    self.db.char.name = DataStore:GetCharacterName(character) -- UnitFullName("player")
+    self.db.char.level = DataStore:GetCharacterLevel(character) -- UnitLevel("player")
+
+    -- DataStore_Inventory
+    self.db.char.ilvl = DataStore:GetAverageItemLevel() --GetAverageItemLevel()
+
+    -- Mbox
     self.db.char.server = GetNormalizedRealmName()
-    self.db.char.name = UnitFullName("player")
-    self.db.char.ilvl = GetAverageItemLevel()
+    self.db.char.time = time()
+
     -- /run local spellId = 139176; print(GetSpellInfo(spellId)); print(GetSpellCooldown(spellId));print(IsSpellKnown(spellId))
     local craftingCooldownsSpellIds = {139176}
     local cooldowns = {}
