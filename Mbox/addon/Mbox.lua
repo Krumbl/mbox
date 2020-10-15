@@ -40,12 +40,17 @@ function Mbox:OnDisable()
     print('disable')
 end
 
-function Mbox:PLAYER_LOGOUT()
+-- set static values that won't change
+function Mbox:PLAYER_ENTERING_WORLD() 
+    _, _, self.db.char.class = UnitClass("player")
+    self.db.char.server = GetNormalizedRealmName()
+end
+
+function Mbox:PLAYER_LEAVING_WORLD()
     -- Mbox:HelloWorld()
     print('PLAYER_ENTERING_WORLD')
-    local charName = UnitName("player")
+    -- local charName = UnitName("player")
     -- https://wow.gamepedia.com/ClassId
-    _, _, self.db.char.class = UnitClass("player")
     -- self.db.char.copper = GetMoney()
     
     -- DataStore_Characters.lua#PublicMethods
@@ -57,13 +62,18 @@ function Mbox:PLAYER_LOGOUT()
     self.db.char.level = DataStore:GetCharacterLevel(character) -- UnitLevel("player")
 
     -- DataStore_Inventory
-    self.db.char.ilvl = DataStore:GetAverageItemLevel() --GetAverageItemLevel()
+    -- self.db.char.ilvl = DataStore:GetAverageItemLevel() --GetAverageItemLevel()
 
     -- Mbox
-    self.db.char.server = GetNormalizedRealmName()
     self.db.char.time = time()
 
     -- /run local spellId = 139176; print(GetSpellInfo(spellId)); print(GetSpellCooldown(spellId));print(IsSpellKnown(spellId))
+
+    self.db.char.crafting.cooldowns = Mbox:checkSpellCooldowns() 
+    -- Currency = GetMoney()
+end
+
+function Mbox:checkSpellCooldowns()
     local craftingCooldownsSpellIds = {139176}
     local cooldowns = {}
     for index, spellId in pairs(craftingCooldownsSpellIds) do
@@ -79,9 +89,8 @@ function Mbox:PLAYER_LOGOUT()
             cooldowns[tostring(spellId)] = reset
         end
     end
-    self.db.char.crafting.cooldowns = cooldowns
-    -- Currency = GetMoney()
+    return cooldowns
 end
 
--- Mbox:RegisterEvent("PLAYER_ENTERING_WORLD")
-Mbox:RegisterEvent("PLAYER_LOGOUT")
+Mbox:RegisterEvent("PLAYER_ENTERING_WORLD")
+Mbox:RegisterEvent("PLAYER_LEAVING_WORLD")
