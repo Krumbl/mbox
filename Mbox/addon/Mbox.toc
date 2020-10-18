@@ -1,4 +1,4 @@
-## Interface: 80200
+## Interface: 90001
 ## Title: Mbox 
 ## Version: 0.0.1
 ## DefaultState: Enabled
