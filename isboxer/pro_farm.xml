@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="10/8/2020 7:27:41 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="10/28/2020 9:31:42 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>fish_druid_fx</Name>
@@ -4448,7 +4448,7 @@
     <CrypticMacroSets />
     <LaunchCharacterSetStrings />
     <WindowLayout>
-      <WindowLayoutString>8_no-empty</WindowLayoutString>
+      <WindowLayoutString>38square</WindowLayoutString>
     </WindowLayout>
   </CharacterSet>
   <CharacterSet>
@@ -18007,7 +18007,7 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
                 <UseCustomModifiers />
                 <WoWMacro>
                   <WoWMacroSetString>Crafting</WoWMacroSetString>
-                  <WoWMacroString>Transmute: Herbs to Anchors</WoWMacroString>
+                  <WoWMacroString>Jard's</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
             </Actions>
@@ -21253,6 +21253,20 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
           <Key>
             <Key>NONE</Key>
             <Code>0</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast Engineering
+/run local T=C_TradeSkillUI.GetRecipeCooldown(139176) if T~=nil then print(SecondsToTime(T)) else C_TradeSkillUI.CraftRecipe(139176) end C_TradeSkillUI.CloseTradeSkill()</MacroCommands>
+        <ColloquialName>Jard's</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+F9</Combo>
+          <Modifiers>Ctrl</Modifiers>
+          <Key>
+            <Key>F9</Key>
+            <Code>67</Code>
           </Key>
         </Combo>
         <AllowCustomModifiers />

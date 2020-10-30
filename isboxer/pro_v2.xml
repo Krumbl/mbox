@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="10/14/2020 11:09:44 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="10/29/2020 9:57:04 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>bfa</Name>
@@ -3065,7 +3065,7 @@
     <CrypticMacroSets />
     <LaunchCharacterSetStrings />
     <WindowLayout>
-      <WindowLayoutString>5man FX</WindowLayoutString>
+      <WindowLayoutString>38V</WindowLayoutString>
     </WindowLayout>
   </CharacterSet>
   <CharacterSet>
@@ -3094,7 +3094,7 @@
       <Slot>
         <ForegroundMaxFPS>40</ForegroundMaxFPS>
         <BackgroundMaxFPS>20</BackgroundMaxFPS>
-        <CharacterString>Krumbl-Prot-Sargeras</CharacterString>
+        <CharacterString>Krumbl</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+1</Combo>
           <Modifiers>Ctrl Alt</Modifiers>
@@ -3656,7 +3656,7 @@
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
         <BackgroundMaxFPS>30</BackgroundMaxFPS>
-        <CharacterString>Krumbl-Prot-Sargeras</CharacterString>
+        <CharacterString>Krumbl</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+1</Combo>
           <Modifiers>Ctrl Alt</Modifiers>
@@ -5046,7 +5046,7 @@
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
         <BackgroundMaxFPS>30</BackgroundMaxFPS>
-        <CharacterString>Krumbl-Prot-Sargeras</CharacterString>
+        <CharacterString>Krumbl</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+1</Combo>
           <Modifiers>Ctrl Alt</Modifiers>
@@ -5746,7 +5746,7 @@
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
         <BackgroundMaxFPS>30</BackgroundMaxFPS>
-        <CharacterString>Krumbl-Prot-Sargeras</CharacterString>
+        <CharacterString>Kraambl</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+1</Combo>
           <Modifiers>Ctrl Alt</Modifiers>
@@ -5756,8 +5756,7 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
-        <SwitchToKeyMapString>ISB42 - WoW</SwitchToKeyMapString>
-        <SwitchToMappedKeyString>JambaMaster</SwitchToMappedKeyString>
+        <WindowTitle />
         <FTLModifiers>
           <FTLModifierEnum>LShift</FTLModifierEnum>
         </FTLModifiers>
@@ -5843,7 +5842,7 @@
       <Slot>
         <ForegroundMaxFPS>60</ForegroundMaxFPS>
         <BackgroundMaxFPS>30</BackgroundMaxFPS>
-        <CharacterString>Kraambl-Ret</CharacterString>
+        <CharacterString>Krumbl</CharacterString>
         <SwitchToCombo>
           <Combo>Ctrl+Alt+2</Combo>
           <Modifiers>Ctrl Alt</Modifiers>
@@ -5853,9 +5852,10 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
-        <SwitchToKeyMapString>ISB42 - WoW</SwitchToKeyMapString>
-        <SwitchToMappedKeyString>JambaMaster</SwitchToMappedKeyString>
+        <WindowTitle />
         <FTLModifiers>
+          <FTLModifierEnum>LAlt</FTLModifierEnum>
+          <FTLModifierEnum>LShift</FTLModifierEnum>
           <FTLModifierEnum>RShift</FTLModifierEnum>
         </FTLModifiers>
         <CPUCores>
@@ -5950,8 +5950,7 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
-        <SwitchToKeyMapString>ISB42 - WoW</SwitchToKeyMapString>
-        <SwitchToMappedKeyString>JambaMaster</SwitchToMappedKeyString>
+        <WindowTitle />
         <FTLModifiers>
           <FTLModifierEnum>LCtrl</FTLModifierEnum>
         </FTLModifiers>
@@ -6047,8 +6046,7 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
-        <SwitchToKeyMapString>ISB42 - WoW</SwitchToKeyMapString>
-        <SwitchToMappedKeyString>JambaMaster</SwitchToMappedKeyString>
+        <WindowTitle />
         <FTLModifiers>
           <FTLModifierEnum>LAlt</FTLModifierEnum>
         </FTLModifiers>
@@ -6144,8 +6142,7 @@
           </Key>
         </SwitchToCombo>
         <EffectType>OnFocus</EffectType>
-        <SwitchToKeyMapString>ISB42 - WoW</SwitchToKeyMapString>
-        <SwitchToMappedKeyString>JambaMaster</SwitchToMappedKeyString>
+        <WindowTitle />
         <FTLModifiers>
           <FTLModifierEnum>LShift</FTLModifierEnum>
           <FTLModifierEnum>LCtrl</FTLModifierEnum>
@@ -6399,6 +6396,9 @@
       </MenuInstance>
       <MenuInstance>
         <MenuString>ST/AoE Toggle</MenuString>
+      </MenuInstance>
+      <MenuInstance>
+        <MenuString>Interact Toggle</MenuString>
       </MenuInstance>
     </MenuInstances>
     <WoWMacroSets>
@@ -6938,6 +6938,8 @@
         <BackgroundMaxFPS>30</BackgroundMaxFPS>
         <CharacterString>DxNothing VFX1</CharacterString>
         <EffectType>None</EffectType>
+        <FTLModifiers />
+        <CPUCores />
         <VariableKeystrokeInstances />
       </Slot>
     </Slots>
@@ -7129,7 +7131,7 @@
   </Character>
   <Character>
     <ExecuteOnLoad />
-    <Name>Krumbl-Prot-Sargeras</Name>
+    <Name>Krumbl</Name>
     <AccountName />
     <SubAccountName>VUONGMDO</SubAccountName>
     <ServerName>Sargeras</ServerName>
@@ -7145,9 +7147,10 @@
       <string>Interupt</string>
       <string>Stun</string>
       <string>Melee</string>
-      <string>Tank</string>
       <string>Vertical</string>
+      <string>DPS</string>
       <string>test</string>
+      <string>IWT</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Paladin - Prot</string>
@@ -8043,6 +8046,7 @@
       <string>Melee</string>
       <string>Tank</string>
       <string>Vertical</string>
+      <string>IWT</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Paladin - Prot</string>
@@ -8100,10 +8104,11 @@
       <string>Combat</string>
       <string>Repeater</string>
       <string>Assist</string>
-      <string>Healer</string>
       <string>Melee</string>
+      <string>Tank</string>
       <string>Vertical</string>
       <string>HealerOffspec</string>
+      <string>IWT</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Paladin - Prot</string>
@@ -8144,74 +8149,7 @@
           <KeyMapString>Virtual Combat</KeyMapString>
         </FromMappedKey>
         <ToMappedKey>
-          <KeyMapString>Paladin - Holy</KeyMapString>
-        </ToMappedKey>
-      </VirtualMappedKey>
-    </VirtualMappedKeys>
-    <VariableKeystrokeInstances />
-  </Character>
-  <Character>
-    <ExecuteOnLoad />
-    <Name>Kraambl-Ret</Name>
-    <AccountName />
-    <SubAccountName>2250763#3</SubAccountName>
-    <ServerName>Sargeras</ServerName>
-    <ActualName>Kraambl</ActualName>
-    <Game>World of Warcraft</Game>
-    <GameProfile>World of Warcraft Client (DirectX 11 Legacy)</GameProfile>
-    <KnownGame>WoW</KnownGame>
-    <RelayGroupStrings>
-      <string>Follower</string>
-      <string>Combat</string>
-      <string>Repeater</string>
-      <string>Assist</string>
-      <string>Interupt</string>
-      <string>Stun</string>
-      <string>Melee</string>
-      <string>Vertical</string>
-      <string>DPS</string>
-      <string>HealerOffspec</string>
-    </RelayGroupStrings>
-    <KeyMapStrings>
-      <string>Paladin - Prot</string>
-      <string>FocusTarget</string>
-      <string>Paladin - Holy</string>
-      <string>Paladin - Ret</string>
-    </KeyMapStrings>
-    <KeyMapWhiteOrBlackListType>Ignore</KeyMapWhiteOrBlackListType>
-    <KeyMapWhiteOrBlackList />
-    <ClickBarStrings />
-    <MenuInstances />
-    <VirtualFileTargets>
-      <VirtualFileTarget>
-        <Filename>Battle.net-Kraambl-Sargeras.config</Filename>
-        <VirtualFileString>Battle.net.config</VirtualFileString>
-      </VirtualFileTarget>
-      <VirtualFileTarget>
-        <Filename>Config-Kraambl-Sargeras.WTF</Filename>
-        <VirtualFileString>Config.WTF</VirtualFileString>
-      </VirtualFileTarget>
-      <VirtualFileTarget>
-        <Filename>Software/Blizzard Entertainment/Battle.net-ISBoxer/Kraambl-Sargeras/</Filename>
-        <VirtualFileString>Software/Blizzard Entertainment/Battle.net/</VirtualFileString>
-      </VirtualFileTarget>
-    </VirtualFileTargets>
-    <WoWMacroSets>
-      <WoWMacroSetLooseRef>
-        <WoWMacroSetString>Focus</WoWMacroSetString>
-      </WoWMacroSetLooseRef>
-      <WoWMacroSetLooseRef>
-        <WoWMacroSetString>Paladin</WoWMacroSetString>
-      </WoWMacroSetLooseRef>
-    </WoWMacroSets>
-    <CrypticMacroSets />
-    <VirtualMappedKeys>
-      <VirtualMappedKey>
-        <FromMappedKey>
-          <KeyMapString>Virtual Combat</KeyMapString>
-        </FromMappedKey>
-        <ToMappedKey>
-          <KeyMapString>Paladin - Ret</KeyMapString>
+          <KeyMapString>Paladin - Prot</KeyMapString>
         </ToMappedKey>
       </VirtualMappedKey>
     </VirtualMappedKeys>
@@ -8238,6 +8176,7 @@
       <string>Vertical</string>
       <string>DPS</string>
       <string>HealerOffspec</string>
+      <string>IWT</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Paladin - Prot</string>
@@ -8301,6 +8240,7 @@
       <string>Vertical</string>
       <string>DPS</string>
       <string>HealerOffspec</string>
+      <string>IWT</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Paladin - Prot</string>
@@ -8364,6 +8304,7 @@
       <string>Vertical</string>
       <string>DPS</string>
       <string>HealerOffspec</string>
+      <string>IWT</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Paladin - Prot</string>
@@ -8446,6 +8387,7 @@
       <string>Melee</string>
       <string>Tank</string>
       <string>Vertical</string>
+      <string>Interupt</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Druid - Bear</string>
@@ -8504,6 +8446,7 @@
       <string>Vertical</string>
       <string>DPS</string>
       <string>HealerOffspec</string>
+      <string>Interupt</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Druid - Balance</string>
@@ -8562,6 +8505,7 @@
       <string>Vertical</string>
       <string>DPS</string>
       <string>HealerOffspec</string>
+      <string>Interupt</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Druid - Balance</string>
@@ -8620,6 +8564,7 @@
       <string>Vertical</string>
       <string>DPS</string>
       <string>HealerOffspec</string>
+      <string>Interupt</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Druid - Balance</string>
@@ -8678,6 +8623,7 @@
       <string>Vertical</string>
       <string>DPS</string>
       <string>HealerOffspec</string>
+      <string>Interupt</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Druid - Balance</string>
@@ -10490,6 +10436,10 @@ This Window Layout features maximum usage of a single monitor, with small window
   </RelayGroup>
   <RelayGroup>
     <Name>Combat</Name>
+  </RelayGroup>
+  <RelayGroup>
+    <Name>IWT</Name>
+    <Description>Interact With Target</Description>
   </RelayGroup>
   <RelayGroup>
     <Name>Repeater</Name>
@@ -13231,6 +13181,389 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
     <Mappings />
   </KeyMap>
   <KeyMap>
+    <Name>Interact ATG Toggle</Name>
+    <Mode>OnPress</Mode>
+    <Mappings>
+      <MappedKey>
+        <Name>Slot-1 ATG Toggle</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>1</Target>
+                <Action>Leave</Action>
+                <RelayGroupString>IWT</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuButtonAction">
+                <MenuButton>
+                  <MenuString>Interact Toggle</MenuString>
+                  <NumButton>1</NumButton>
+                </MenuButton>
+                <ButtonChanges>
+                  <Actions />
+                  <UseImages>true</UseImages>
+                  <Image>
+                    <ImageString>cross.png</ImageString>
+                  </Image>
+                  <ImageHover />
+                  <ImagePressed />
+                </ButtonChanges>
+                <Target>all</Target>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>Interact ATG Toggle</KeyMapString>
+                  <MappedKeyString>Slot-1 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>2</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>1</Target>
+                <Action>Join</Action>
+                <RelayGroupString>IWT</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuButtonAction">
+                <MenuButton>
+                  <MenuString>Interact Toggle</MenuString>
+                  <NumButton>1</NumButton>
+                </MenuButton>
+                <ButtonChanges>
+                  <Actions />
+                  <UseImages>true</UseImages>
+                  <Image>
+                    <ImageString>checkmark.png</ImageString>
+                  </Image>
+                  <ImageHover />
+                  <ImagePressed />
+                </ButtonChanges>
+                <Target>all</Target>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>Interact ATG Toggle</KeyMapString>
+                  <MappedKeyString>Slot-1 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Slot-2 ATG Toggle</Name>
+        <Description>Generated by Mapped Key Wizard with 'Action Target Group Toggler'</Description>
+        <Hold />
+        <UseFTLModifiers />
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>2</Target>
+                <Action>Leave</Action>
+                <RelayGroupString>IWT</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuButtonAction">
+                <MenuButton>
+                  <MenuString>Interact Toggle</MenuString>
+                  <NumButton>2</NumButton>
+                </MenuButton>
+                <ButtonChanges>
+                  <Actions />
+                  <UseImages>true</UseImages>
+                  <Image>
+                    <ImageString>cross.png</ImageString>
+                  </Image>
+                  <ImageHover />
+                  <ImagePressed />
+                </ButtonChanges>
+                <Target>all</Target>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>Interact ATG Toggle</KeyMapString>
+                  <MappedKeyString>Slot-2 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>2</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>2</Target>
+                <Action>Join</Action>
+                <RelayGroupString>IWT</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuButtonAction">
+                <MenuButton>
+                  <MenuString>Interact Toggle</MenuString>
+                  <NumButton>2</NumButton>
+                </MenuButton>
+                <ButtonChanges>
+                  <Actions />
+                  <UseImages>true</UseImages>
+                  <Image>
+                    <ImageString>checkmark.png</ImageString>
+                  </Image>
+                  <ImageHover />
+                  <ImagePressed />
+                </ButtonChanges>
+                <Target>all</Target>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>Interact ATG Toggle</KeyMapString>
+                  <MappedKeyString>Slot-2 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Slot-3 ATG Toggle</Name>
+        <Description>Generated by Mapped Key Wizard with 'Action Target Group Toggler'</Description>
+        <Hold />
+        <UseFTLModifiers />
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>3</Target>
+                <Action>Leave</Action>
+                <RelayGroupString>IWT</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuButtonAction">
+                <MenuButton>
+                  <MenuString>Interact Toggle</MenuString>
+                  <NumButton>3</NumButton>
+                </MenuButton>
+                <ButtonChanges>
+                  <Actions />
+                  <UseImages>true</UseImages>
+                  <Image>
+                    <ImageString>cross.png</ImageString>
+                  </Image>
+                  <ImageHover />
+                  <ImagePressed />
+                </ButtonChanges>
+                <Target>all</Target>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>Interact ATG Toggle</KeyMapString>
+                  <MappedKeyString>Slot-3 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>2</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>3</Target>
+                <Action>Join</Action>
+                <RelayGroupString>IWT</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuButtonAction">
+                <MenuButton>
+                  <MenuString>Interact Toggle</MenuString>
+                  <NumButton>3</NumButton>
+                </MenuButton>
+                <ButtonChanges>
+                  <Actions />
+                  <UseImages>true</UseImages>
+                  <Image>
+                    <ImageString>checkmark.png</ImageString>
+                  </Image>
+                  <ImageHover />
+                  <ImagePressed />
+                </ButtonChanges>
+                <Target>all</Target>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>Interact ATG Toggle</KeyMapString>
+                  <MappedKeyString>Slot-3 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Slot-4 ATG Toggle</Name>
+        <Description>Generated by Mapped Key Wizard with 'Action Target Group Toggler'</Description>
+        <Hold />
+        <UseFTLModifiers />
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>4</Target>
+                <Action>Leave</Action>
+                <RelayGroupString>IWT</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuButtonAction">
+                <MenuButton>
+                  <MenuString>Interact Toggle</MenuString>
+                  <NumButton>4</NumButton>
+                </MenuButton>
+                <ButtonChanges>
+                  <Actions />
+                  <UseImages>true</UseImages>
+                  <Image>
+                    <ImageString>cross.png</ImageString>
+                  </Image>
+                  <ImageHover />
+                  <ImagePressed />
+                </ButtonChanges>
+                <Target>all</Target>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>Interact ATG Toggle</KeyMapString>
+                  <MappedKeyString>Slot-4 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>2</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>4</Target>
+                <Action>Join</Action>
+                <RelayGroupString>IWT</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuButtonAction">
+                <MenuButton>
+                  <MenuString>Interact Toggle</MenuString>
+                  <NumButton>4</NumButton>
+                </MenuButton>
+                <ButtonChanges>
+                  <Actions />
+                  <UseImages>true</UseImages>
+                  <Image>
+                    <ImageString>checkmark.png</ImageString>
+                  </Image>
+                  <ImageHover />
+                  <ImagePressed />
+                </ButtonChanges>
+                <Target>all</Target>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>Interact ATG Toggle</KeyMapString>
+                  <MappedKeyString>Slot-4 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Slot-5 ATG Toggle</Name>
+        <Description>Generated by Mapped Key Wizard with 'Action Target Group Toggler'</Description>
+        <Hold />
+        <UseFTLModifiers />
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>5</Target>
+                <Action>Leave</Action>
+                <RelayGroupString>IWT</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuButtonAction">
+                <MenuButton>
+                  <MenuString>Interact Toggle</MenuString>
+                  <NumButton>5</NumButton>
+                </MenuButton>
+                <ButtonChanges>
+                  <Actions />
+                  <UseImages>true</UseImages>
+                  <Image>
+                    <ImageString>cross.png</ImageString>
+                  </Image>
+                  <ImageHover />
+                  <ImagePressed />
+                </ButtonChanges>
+                <Target>all</Target>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>Interact ATG Toggle</KeyMapString>
+                  <MappedKeyString>Slot-5 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>2</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="TargetGroupAction">
+                <Target>5</Target>
+                <Action>Join</Action>
+                <RelayGroupString>IWT</RelayGroupString>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MenuButtonAction">
+                <MenuButton>
+                  <MenuString>Interact Toggle</MenuString>
+                  <NumButton>5</NumButton>
+                </MenuButton>
+                <ButtonChanges>
+                  <Actions />
+                  <UseImages>true</UseImages>
+                  <Image>
+                    <ImageString>checkmark.png</ImageString>
+                  </Image>
+                  <ImageHover />
+                  <ImagePressed />
+                </ButtonChanges>
+                <Target>all</Target>
+              </MappedKeyAction>
+              <MappedKeyAction xsi:type="MappedKeyStepAction">
+                <Target>all</Target>
+                <MappedKey>
+                  <KeyMapString>Interact ATG Toggle</KeyMapString>
+                  <MappedKeyString>Slot-5 ATG Toggle</MappedKeyString>
+                </MappedKey>
+                <Action>Set</Action>
+                <Value>1</Value>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+    </Mappings>
+  </KeyMap>
+  <KeyMap>
     <Name>Repeater ATG Toggle</Name>
     <Mode>OnPress</Mode>
     <Mappings>
@@ -15063,14 +15396,23 @@ Move forward to stop melee running around like weirdos</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Activate Proc</Name>
+        <Name>Burst</Name>
+        <Description>DPS Burst cooldowns</Description>
+        <Combo>
+          <Combo>Shift+3</Combo>
+          <Modifiers>Shift</Modifiers>
+          <Key>
+            <Key>3</Key>
+            <Code>4</Code>
+          </Key>
+        </Combo>
         <Steps>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>all</Target>
                 <KeyMapString>Virtual Combat</KeyMapString>
-                <MappedKeyString>Activate Proc</MappedKeyString>
+                <MappedKeyString>Burst</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -15120,13 +15462,44 @@ Move forward to stop melee running around like weirdos</Description>
       </MappedKey>
       <MappedKey>
         <Name>Taunt</Name>
+        <Combo>
+          <Combo>Alt+T</Combo>
+          <Modifiers>Alt</Modifiers>
+          <Key>
+            <Key>T</Key>
+            <Code>20</Code>
+          </Key>
+        </Combo>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>Virtual Combat</KeyMapString>
+                <MappedKeyString>Taunt</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Disrupt</Name>
+        <Description>Combat Disrupt (e.g. Typhoon, Blinding Light)</Description>
+        <Combo>
+          <Combo>Alt+Z</Combo>
+          <Modifiers>Alt</Modifiers>
+          <Key>
+            <Key>Z</Key>
+            <Code>44</Code>
+          </Key>
+        </Combo>
         <Steps>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>all</Target>
+                <RoundRobin>true</RoundRobin>
                 <KeyMapString>Virtual Combat</KeyMapString>
-                <MappedKeyString>Taunt</MappedKeyString>
+                <MappedKeyString>Disrupt</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -15171,7 +15544,7 @@ Move forward to stop melee running around like weirdos</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Activate Proc</Name>
+        <Name>Burst</Name>
         <Steps>
           <Step>
             <Actions />
@@ -15260,6 +15633,14 @@ Move forward to stop melee running around like weirdos</Description>
       </MappedKey>
       <MappedKey>
         <Name>Speed Boost</Name>
+        <Steps>
+          <Step>
+            <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Disrupt</Name>
         <Steps>
           <Step>
             <Actions />
@@ -17584,7 +17965,15 @@ Healers belong in this group</Description>
         <Name>Taunt</Name>
         <Steps>
           <Step>
-            <Actions />
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Druid</WoWMacroSetString>
+                  <WoWMacroString>Growl</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
           </Step>
         </Steps>
       </MappedKey>
@@ -19886,6 +20275,22 @@ Prayer of Mending slot 1</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
+        <Name>Burst</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Paladin</WoWMacroSetString>
+                  <WoWMacroString>Avenging Wrath</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
         <Name>Activate Proc</Name>
         <Steps>
           <Step>
@@ -20059,6 +20464,22 @@ Prayer of Mending slot 1</Description>
           </Step>
         </Steps>
       </MappedKey>
+      <MappedKey>
+        <Name>Disrupt</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Paladin</WoWMacroSetString>
+                  <WoWMacroString>Blinding Light</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
     </Mappings>
   </KeyMap>
   <KeyMap>
@@ -20090,7 +20511,8 @@ Prayer of Mending slot 1</Description>
             <Actions>
               <MappedKeyAction xsi:type="Keystroke">
                 <Combo>
-                  <Combo>=</Combo>
+                  <Combo>Shift+=</Combo>
+                  <Modifiers>Shift</Modifiers>
                   <Key>
                     <Key>=</Key>
                     <Code>13</Code>
@@ -20118,10 +20540,18 @@ Prayer of Mending slot 1</Description>
         </Steps>
       </MappedKey>
       <MappedKey>
-        <Name>Activate Proc</Name>
+        <Name>Burst</Name>
         <Steps>
           <Step>
-            <Actions />
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Paladin</WoWMacroSetString>
+                  <WoWMacroString>Avenging Wrath</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
           </Step>
         </Steps>
       </MappedKey>
@@ -20185,7 +20615,15 @@ Prayer of Mending slot 1</Description>
         <Name>Taunt</Name>
         <Steps>
           <Step>
-            <Actions />
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Paladin</WoWMacroSetString>
+                  <WoWMacroString>Hand of Reckoning</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
           </Step>
         </Steps>
       </MappedKey>
@@ -20289,6 +20727,22 @@ Prayer of Mending slot 1</Description>
           </Step>
         </Steps>
       </MappedKey>
+      <MappedKey>
+        <Name>Disrupt</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Paladin</WoWMacroSetString>
+                  <WoWMacroString>Blinding Light</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
     </Mappings>
   </KeyMap>
   <KeyMap>
@@ -20345,6 +20799,22 @@ Prayer of Mending slot 1</Description>
         <Steps>
           <Step>
             <Actions />
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Burst</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Paladin</WoWMacroSetString>
+                  <WoWMacroString>Avenging Wrath</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
           </Step>
         </Steps>
       </MappedKey>
@@ -20527,6 +20997,22 @@ Prayer of Mending slot 1</Description>
                 <WoWMacro>
                   <WoWMacroSetString>Paladin</WoWMacroSetString>
                   <WoWMacroString>Divine Steed</WoWMacroString>
+                </WoWMacro>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>Disrupt</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="WoWMacroRefAction">
+                <UseCustomModifiers />
+                <WoWMacro>
+                  <WoWMacroSetString>Paladin</WoWMacroSetString>
+                  <WoWMacroString>Blinding Light</WoWMacroString>
                 </WoWMacro>
               </MappedKeyAction>
             </Actions>
@@ -22056,12 +22542,12 @@ Prayer of Mending slot 1</Description>
                     <Y>477</Y>
                   </Location>
                   <Size>
-                    <Width>297</Width>
+                    <Width>201</Width>
                     <Height>492</Height>
                   </Size>
                   <X>526</X>
                   <Y>477</Y>
-                  <Width>297</Width>
+                  <Width>201</Width>
                   <Height>492</Height>
                 </Rect>
                 <MappedKey />
@@ -22076,12 +22562,12 @@ Prayer of Mending slot 1</Description>
                     <Y>478</Y>
                   </Location>
                   <Size>
-                    <Width>297</Width>
+                    <Width>201</Width>
                     <Height>492</Height>
                   </Size>
                   <X>524</X>
                   <Y>478</Y>
-                  <Width>297</Width>
+                  <Width>201</Width>
                   <Height>492</Height>
                 </Rect>
                 <UseMouseRepeat>true</UseMouseRepeat>
@@ -23776,6 +24262,32 @@ Prayer of Mending slot 1</Description>
         </Combo>
         <AllowCustomModifiers />
       </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast Growl</MacroCommands>
+        <ColloquialName>Growl</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+Num 5</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>Num 5</Key>
+            <Code>76</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast Travel Form</MacroCommands>
+        <ColloquialName>Travel Form</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+Num 6</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>Num 6</Key>
+            <Code>77</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
     </WoWMacros>
   </WoWMacroSet>
   <WoWMacroSet>
@@ -23998,6 +24510,84 @@ Prayer of Mending slot 1</Description>
           <Key>
             <Key>F7</Key>
             <Code>65</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast Avenger's Shield</MacroCommands>
+        <ColloquialName>Avenger's Shield</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+F8</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>F8</Key>
+            <Code>66</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast Hammer of the Righteous</MacroCommands>
+        <ColloquialName>Hammer of the Righteous</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+F13</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>F13</Key>
+            <Code>124</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast Blinding Light</MacroCommands>
+        <ColloquialName>Blinding Light</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+F9</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>F9</Key>
+            <Code>67</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast Hammer of Wrath</MacroCommands>
+        <ColloquialName>Hammer of Wrath</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+F10</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>F10</Key>
+            <Code>68</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast Hand of Reckoning</MacroCommands>
+        <ColloquialName>Hand of Reckoning</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+1</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>1</Key>
+            <Code>2</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/cast Avenging Wrath</MacroCommands>
+        <ColloquialName>Avenging Wrath</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Alt+2</Combo>
+          <Modifiers>Ctrl Alt</Modifiers>
+          <Key>
+            <Key>2</Key>
+            <Code>3</Code>
           </Key>
         </Combo>
         <AllowCustomModifiers />
@@ -26060,6 +26650,80 @@ Prayer of Mending slot 1</Description>
     </Buttons>
   </MenuButtonSet>
   <MenuButtonSet>
+    <Name>Interact Toggle</Name>
+    <Buttons>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <KeyMapString>ISB42 - Toggles</KeyMapString>
+            <MappedKeyString>Activate Repeat - Active Method</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+        <Text>I</Text>
+        <UseImages>true</UseImages>
+        <Image>
+          <ImageString>#FF000000</ImageString>
+        </Image>
+        <ImageHover>
+          <ImageString>#FF404040</ImageString>
+        </ImageHover>
+        <ImagePressed>
+          <ImageString>#FF606060</ImageString>
+        </ImagePressed>
+        <BackgroundColor />
+        <Alpha>0.784313738</Alpha>
+        <FontColor>
+          <Red>255</Red>
+          <Green>255</Green>
+          <Blue>255</Blue>
+        </FontColor>
+        <FontBold>0</FontBold>
+        <FontSize>24</FontSize>
+        <FontName>Tahoma</FontName>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <KeyMapString>Repeater ATG Toggle</KeyMapString>
+            <MappedKeyString>Slot-1 ATG Toggle</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <KeyMapString>Repeater ATG Toggle</KeyMapString>
+            <MappedKeyString>Slot-2 ATG Toggle</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <KeyMapString>Repeater ATG Toggle</KeyMapString>
+            <MappedKeyString>Slot-3 ATG Toggle</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <KeyMapString>Repeater ATG Toggle</KeyMapString>
+            <MappedKeyString>Slot-4 ATG Toggle</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+      </MenuButton>
+      <MenuButton>
+        <Actions>
+          <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+            <KeyMapString>Repeater ATG Toggle</KeyMapString>
+            <MappedKeyString>Slot-5 ATG Toggle</MappedKeyString>
+          </MappedKeyAction>
+        </Actions>
+      </MenuButton>
+    </Buttons>
+  </MenuButtonSet>
+  <MenuButtonSet>
     <Name>Repeater Toggle</Name>
     <Buttons>
       <MenuButton>
@@ -26425,7 +27089,7 @@ Prayer of Mending slot 1</Description>
             <MappedKeyString>ST/AOE Toggle</MappedKeyString>
           </MappedKeyAction>
         </Actions>
-        <Text>H</Text>
+        <Text>ST</Text>
         <BackgroundColor />
       </MenuButton>
     </Buttons>
@@ -27187,6 +27851,15 @@ Prayer of Mending slot 1</Description>
     <BindSoft>true</BindSoft>
     <X>100</X>
     <Y>200</Y>
+  </Menu>
+  <Menu>
+    <Name>Interact Toggle</Name>
+    <Description>Toggle checkmarks per character</Description>
+    <Template>5-button</Template>
+    <ButtonLayout>Interact Toggle</ButtonLayout>
+    <HotkeyLayout />
+    <X>275</X>
+    <Y>425</Y>
   </Menu>
   <Menu>
     <Name>RepeaterToggle</Name>

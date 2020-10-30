@@ -10,10 +10,17 @@ foreach($file in Get-ChildItem -Path default\SavedVariables) {
     Write-Host "copying " $file
     foreach($account in $accounts) {
         if ($account.name -ne "SavedVariables") {
+            Write-Host "account: " $account.name
             $path = Join-Path -Path $account.fullName -ChildPath "SavedVariables"
-            Write-Host "account: " $path
             # https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/copy-item?view=powershell-7
-            Copy-Item $file.fullName -Destination $path.fullName
+            Write-Host "copying " $file.fullName 
+            Write-Host "to " $path
+            Copy-Item $file.fullName -Destination "$path"
         }
     }
 }
+# TODO copy all files at once
+# Copy-Item -Path "C:\Logfiles" -Destination "C:\Drawings" -Recurse
+
+Write-Host "Sync Finished"
+Write-Host "All characters reset to default Dominos profile and need to be manually updated"
