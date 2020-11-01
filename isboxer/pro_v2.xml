@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="10/29/2020 9:57:04 PM">
+<ISBoxerToolkitProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="42" VersionMinor="0" BuildDate="10/30/2020 7:51:57 PM">
   <CharacterSet>
     <ExecuteOnLoad />
     <Name>bfa</Name>
@@ -6283,6 +6283,7 @@
       <string>Team</string>
       <string>healfx</string>
       <string>testing</string>
+      <string>Interact ATG Toggle</string>
     </KeyMapStrings>
     <KeyMapWhiteOrBlackListType>Ignore</KeyMapWhiteOrBlackListType>
     <KeyMapWhiteOrBlackList />
@@ -7150,7 +7151,6 @@
       <string>Vertical</string>
       <string>DPS</string>
       <string>test</string>
-      <string>IWT</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Paladin - Prot</string>
@@ -8046,7 +8046,6 @@
       <string>Melee</string>
       <string>Tank</string>
       <string>Vertical</string>
-      <string>IWT</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Paladin - Prot</string>
@@ -8108,7 +8107,6 @@
       <string>Tank</string>
       <string>Vertical</string>
       <string>HealerOffspec</string>
-      <string>IWT</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Paladin - Prot</string>
@@ -8176,7 +8174,6 @@
       <string>Vertical</string>
       <string>DPS</string>
       <string>HealerOffspec</string>
-      <string>IWT</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Paladin - Prot</string>
@@ -8240,7 +8237,6 @@
       <string>Vertical</string>
       <string>DPS</string>
       <string>HealerOffspec</string>
-      <string>IWT</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Paladin - Prot</string>
@@ -8304,7 +8300,6 @@
       <string>Vertical</string>
       <string>DPS</string>
       <string>HealerOffspec</string>
-      <string>IWT</string>
     </RelayGroupStrings>
     <KeyMapStrings>
       <string>Paladin - Prot</string>
@@ -10438,7 +10433,7 @@ This Window Layout features maximum usage of a single monitor, with small window
     <Name>Combat</Name>
   </RelayGroup>
   <RelayGroup>
-    <Name>IWT</Name>
+    <Name>NO_IWT</Name>
     <Description>Interact With Target</Description>
   </RelayGroup>
   <RelayGroup>
@@ -12841,7 +12836,7 @@ See http://isboxer.com/wiki/WoW:Interact_with_Target.</Description>
                 <MappedKeyString>Auto-Assist Me - Active Method</MappedKeyString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Target>~healer&amp;melee</Target>
+                <Target>(~healer&amp;melee)&amp;~NO_IWT</Target>
                 <Name>Interact with Target</Name>
               </MappedKeyAction>
             </Actions>
@@ -13191,8 +13186,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Actions>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Target>1</Target>
-                <Action>Leave</Action>
-                <RelayGroupString>IWT</RelayGroupString>
+                <Action>Join</Action>
+                <RelayGroupString>NO_IWT</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuButtonAction">
                 <MenuButton>
@@ -13225,8 +13220,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Actions>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Target>1</Target>
-                <Action>Join</Action>
-                <RelayGroupString>IWT</RelayGroupString>
+                <Action>Leave</Action>
+                <RelayGroupString>NO_IWT</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuButtonAction">
                 <MenuButton>
@@ -13267,8 +13262,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Actions>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Target>2</Target>
-                <Action>Leave</Action>
-                <RelayGroupString>IWT</RelayGroupString>
+                <Action>Join</Action>
+                <RelayGroupString>NO_IWT</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuButtonAction">
                 <MenuButton>
@@ -13301,8 +13296,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Actions>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Target>2</Target>
-                <Action>Join</Action>
-                <RelayGroupString>IWT</RelayGroupString>
+                <Action>Leave</Action>
+                <RelayGroupString>NO_IWT</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuButtonAction">
                 <MenuButton>
@@ -13343,8 +13338,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Actions>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Target>3</Target>
-                <Action>Leave</Action>
-                <RelayGroupString>IWT</RelayGroupString>
+                <Action>Join</Action>
+                <RelayGroupString>NO_IWT</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuButtonAction">
                 <MenuButton>
@@ -13377,8 +13372,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Actions>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Target>3</Target>
-                <Action>Join</Action>
-                <RelayGroupString>IWT</RelayGroupString>
+                <Action>Leave</Action>
+                <RelayGroupString>NO_IWT</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuButtonAction">
                 <MenuButton>
@@ -13419,8 +13414,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Actions>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Target>4</Target>
-                <Action>Leave</Action>
-                <RelayGroupString>IWT</RelayGroupString>
+                <Action>Join</Action>
+                <RelayGroupString>NO_IWT</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuButtonAction">
                 <MenuButton>
@@ -13453,8 +13448,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Actions>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Target>4</Target>
-                <Action>Join</Action>
-                <RelayGroupString>IWT</RelayGroupString>
+                <Action>Leave</Action>
+                <RelayGroupString>NO_IWT</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuButtonAction">
                 <MenuButton>
@@ -13495,8 +13490,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Actions>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Target>5</Target>
-                <Action>Leave</Action>
-                <RelayGroupString>IWT</RelayGroupString>
+                <Action>Join</Action>
+                <RelayGroupString>NO_IWT</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuButtonAction">
                 <MenuButton>
@@ -13529,8 +13524,8 @@ The Quick Setup Wizard uses this and similar mappings for whatever character swi
             <Actions>
               <MappedKeyAction xsi:type="TargetGroupAction">
                 <Target>5</Target>
-                <Action>Join</Action>
-                <RelayGroupString>IWT</RelayGroupString>
+                <Action>Leave</Action>
+                <RelayGroupString>NO_IWT</RelayGroupString>
               </MappedKeyAction>
               <MappedKeyAction xsi:type="MenuButtonAction">
                 <MenuButton>
@@ -14954,7 +14949,7 @@ Move forward to stop melee running around like weirdos</Description>
           <Step>
             <Actions>
               <MappedKeyAction xsi:type="VariableKeystrokeAction">
-                <Target>(@other melee)&amp;(tank|dps)</Target>
+                <Target>((@other melee)&amp;(tank|dps))&amp;~NO_IWT</Target>
                 <Name>Move Forward</Name>
               </MappedKeyAction>
             </Actions>
@@ -15098,6 +15093,19 @@ Move forward to stop melee running around like weirdos</Description>
                 <Target>Healer</Target>
                 <KeyMapString>Virtual Heal</KeyMapString>
                 <MappedKeyString>ST Rotation</MappedKeyString>
+              </MappedKeyAction>
+            </Actions>
+          </Step>
+        </Steps>
+      </MappedKey>
+      <MappedKey>
+        <Name>IWT</Name>
+        <Steps>
+          <Step>
+            <Actions>
+              <MappedKeyAction xsi:type="MappedKeyExecuteAction">
+                <KeyMapString>ISB42 - Party</KeyMapString>
+                <MappedKeyString>Interact with Target - Combat</MappedKeyString>
               </MappedKeyAction>
             </Actions>
           </Step>
@@ -15494,6 +15502,7 @@ Move forward to stop melee running around like weirdos</Description>
         </Combo>
         <Steps>
           <Step>
+            <Stick>1</Stick>
             <Actions>
               <MappedKeyAction xsi:type="MappedKeyExecuteAction">
                 <Target>all</Target>
@@ -24034,6 +24043,19 @@ Prayer of Mending slot 1</Description>
         </Combo>
         <AllowCustomModifiers />
       </WoWMacro>
+      <WoWMacro>
+        <MacroCommands>/run FollowUnit("player")</MacroCommands>
+        <ColloquialName>Stop</ColloquialName>
+        <Combo>
+          <Combo>Ctrl+Shift+Alt+F9</Combo>
+          <Modifiers>Ctrl Shift Alt</Modifiers>
+          <Key>
+            <Key>F9</Key>
+            <Code>67</Code>
+          </Key>
+        </Combo>
+        <AllowCustomModifiers />
+      </WoWMacro>
     </WoWMacros>
   </WoWMacroSet>
   <WoWMacroSet>
@@ -26684,7 +26706,7 @@ Prayer of Mending slot 1</Description>
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <KeyMapString>Repeater ATG Toggle</KeyMapString>
+            <KeyMapString>Interact ATG Toggle</KeyMapString>
             <MappedKeyString>Slot-1 ATG Toggle</MappedKeyString>
           </MappedKeyAction>
         </Actions>
@@ -26692,7 +26714,7 @@ Prayer of Mending slot 1</Description>
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <KeyMapString>Repeater ATG Toggle</KeyMapString>
+            <KeyMapString>Interact ATG Toggle</KeyMapString>
             <MappedKeyString>Slot-2 ATG Toggle</MappedKeyString>
           </MappedKeyAction>
         </Actions>
@@ -26700,7 +26722,7 @@ Prayer of Mending slot 1</Description>
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <KeyMapString>Repeater ATG Toggle</KeyMapString>
+            <KeyMapString>Interact ATG Toggle</KeyMapString>
             <MappedKeyString>Slot-3 ATG Toggle</MappedKeyString>
           </MappedKeyAction>
         </Actions>
@@ -26708,7 +26730,7 @@ Prayer of Mending slot 1</Description>
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <KeyMapString>Repeater ATG Toggle</KeyMapString>
+            <KeyMapString>Interact ATG Toggle</KeyMapString>
             <MappedKeyString>Slot-4 ATG Toggle</MappedKeyString>
           </MappedKeyAction>
         </Actions>
@@ -26716,7 +26738,7 @@ Prayer of Mending slot 1</Description>
       <MenuButton>
         <Actions>
           <MappedKeyAction xsi:type="MappedKeyExecuteAction">
-            <KeyMapString>Repeater ATG Toggle</KeyMapString>
+            <KeyMapString>Interact ATG Toggle</KeyMapString>
             <MappedKeyString>Slot-5 ATG Toggle</MappedKeyString>
           </MappedKeyAction>
         </Actions>
