@@ -61,52 +61,50 @@ ACP_Data = {
 			"Altoholic_Guild", -- [6]
 			"Altoholic_Search", -- [7]
 			"Altoholic_Summary", -- [8]
-			"AstralKeys", -- [9]
-			"AzeriteTooltip", -- [10]
-			"Bagnon", -- [11]
-			"Bagnon_Config", -- [12]
-			"Bagnon_GuildBank", -- [13]
-			"Bagnon_VoidStorage", -- [14]
-			"DataStore", -- [15]
-			"DataStore_Achievements", -- [16]
-			"DataStore_Agenda", -- [17]
-			"DataStore_Auctions", -- [18]
-			"DataStore_Characters", -- [19]
-			"DataStore_Containers", -- [20]
-			"DataStore_Crafts", -- [21]
-			"DataStore_Currencies", -- [22]
-			"DataStore_Garrisons", -- [23]
-			"DataStore_Inventory", -- [24]
-			"DataStore_Keystones", -- [25]
-			"DataStore_Mails", -- [26]
-			"DataStore_Pets", -- [27]
-			"DataStore_Quests", -- [28]
-			"DataStore_Rares", -- [29]
-			"DataStore_Reputations", -- [30]
-			"DataStore_Spells", -- [31]
-			"DataStore_Stats", -- [32]
-			"DataStore_Talents", -- [33]
-			"Dejunk", -- [34]
-			"DialogKey", -- [35]
-			"Dominos", -- [36]
-			"Dominos_Cast", -- [37]
-			"Dominos_Config", -- [38]
-			"Dominos_Progress", -- [39]
-			"EMA", -- [40]
-			"ISBoxer", -- [41]
-			"Leatrix_Maps", -- [42]
-			"Leatrix_Plus", -- [43]
-			"SexyMap", -- [44]
-			"ShadowedUF_Options", -- [45]
-			"ShadowedUnitFrames", -- [46]
-			"TomTom", -- [47]
-			"TrufiGCD", -- [48]
-			"VuhDo", -- [49]
-			"VuhDoOptions", -- [50]
-			"GSE", -- [51]
-			"GSE_GUI", -- [52]
-			"GSE_LDB", -- [53]
-			"Bagnon_ItemLevel", -- [54]
+			"BagBrother", -- [9]
+			"Bagnon", -- [10]
+			"Bagnon_Config", -- [11]
+			"Bagnon_GuildBank", -- [12]
+			"Bagnon_VoidStorage", -- [13]
+			"DataStore", -- [14]
+			"DataStore_Achievements", -- [15]
+			"DataStore_Agenda", -- [16]
+			"DataStore_Auctions", -- [17]
+			"DataStore_Characters", -- [18]
+			"DataStore_Containers", -- [19]
+			"DataStore_Crafts", -- [20]
+			"DataStore_Currencies", -- [21]
+			"DataStore_Garrisons", -- [22]
+			"DataStore_Inventory", -- [23]
+			"DataStore_Keystones", -- [24]
+			"DataStore_Mails", -- [25]
+			"DataStore_Pets", -- [26]
+			"DataStore_Quests", -- [27]
+			"DataStore_Rares", -- [28]
+			"DataStore_Reputations", -- [29]
+			"DataStore_Spells", -- [30]
+			"DataStore_Stats", -- [31]
+			"DataStore_Talents", -- [32]
+			"Dejunk", -- [33]
+			"dialogkey", -- [34]
+			"Dominos", -- [35]
+			"Dominos_Cast", -- [36]
+			"Dominos_Config", -- [37]
+			"Dominos_Progress", -- [38]
+			"EMA", -- [39]
+			"Leatrix_Maps", -- [40]
+			"Leatrix_Plus", -- [41]
+			"SexyMap", -- [42]
+			"ShadowedUF_Options", -- [43]
+			"ShadowedUnitFrames", -- [44]
+			"TomTom", -- [45]
+			"TrufiGCD", -- [46]
+			"VuhDo", -- [47]
+			"VuhDoOptions", -- [48]
+			"GSE", -- [49]
+			"GSE_GUI", -- [50]
+			"GSE_LDB", -- [51]
+			"Bagnon_ItemLevel", -- [52]
 			["name"] = "pox",
 		}, -- [2]
 		{
@@ -165,7 +163,62 @@ ACP_Data = {
 			"Bagnon_ItemLevel", -- [53]
 			["name"] = "Farm",
 		}, -- [3]
-		[5] = {
+		{
+			"Altoholic", -- [1]
+			"Altoholic_Achievements", -- [2]
+			"Altoholic_Agenda", -- [3]
+			"Altoholic_Characters", -- [4]
+			"Altoholic_Grids", -- [5]
+			"Altoholic_Guild", -- [6]
+			"Altoholic_Search", -- [7]
+			"Altoholic_Summary", -- [8]
+			"BagBrother", -- [9]
+			"Bagnon", -- [10]
+			"Bagnon_Config", -- [11]
+			"Bagnon_GuildBank", -- [12]
+			"Bagnon_VoidStorage", -- [13]
+			"DataStore", -- [14]
+			"DataStore_Achievements", -- [15]
+			"DataStore_Agenda", -- [16]
+			"DataStore_Auctions", -- [17]
+			"DataStore_Characters", -- [18]
+			"DataStore_Containers", -- [19]
+			"DataStore_Crafts", -- [20]
+			"DataStore_Currencies", -- [21]
+			"DataStore_Garrisons", -- [22]
+			"DataStore_Inventory", -- [23]
+			"DataStore_Keystones", -- [24]
+			"DataStore_Mails", -- [25]
+			"DataStore_Pets", -- [26]
+			"DataStore_Quests", -- [27]
+			"DataStore_Rares", -- [28]
+			"DataStore_Reputations", -- [29]
+			"DataStore_Spells", -- [30]
+			"DataStore_Stats", -- [31]
+			"DataStore_Talents", -- [32]
+			"Dejunk", -- [33]
+			"dialogkey", -- [34]
+			"Dominos", -- [35]
+			"Dominos_Cast", -- [36]
+			"Dominos_Config", -- [37]
+			"Dominos_Progress", -- [38]
+			"EMA", -- [39]
+			"Leatrix_Maps", -- [40]
+			"Leatrix_Plus", -- [41]
+			"SexyMap", -- [42]
+			"ShadowedUF_Options", -- [43]
+			"ShadowedUnitFrames", -- [44]
+			"TomTom", -- [45]
+			"TrufiGCD", -- [46]
+			"VuhDo", -- [47]
+			"VuhDoOptions", -- [48]
+			"GSE", -- [49]
+			"GSE_GUI", -- [50]
+			"GSE_LDB", -- [51]
+			"Bagnon_ItemLevel", -- [52]
+			["name"] = "pox_master",
+		}, -- [4]
+		{
 			"Altoholic", -- [1]
 			"Altoholic_Achievements", -- [2]
 			"Altoholic_Agenda", -- [3]
@@ -249,7 +302,7 @@ ACP_Data = {
 			"DBM-EternalPalace", -- [81]
 			"DBM-WorldEvents", -- [82]
 			["name"] = "raid",
-		},
+		}, -- [5]
 		[20] = {
 			"Altoholic", -- [1]
 			"Altoholic_Achievements", -- [2]
@@ -318,11 +371,11 @@ ACP_Data = {
 	["collapsed"] = {
 		["Altoholic"] = true,
 		["DataStore"] = true,
-		["DBM"] = true,
-		["Details"] = true,
-		["Bagnon"] = true,
-		["RaiderIO"] = true,
 		["GSE"] = true,
+		["Details"] = true,
+		["RaiderIO"] = true,
+		["Bagnon"] = true,
+		["DBM"] = true,
 	},
 	["ProtectedAddons"] = {
 		["WeakAurasOptions"] = true,
@@ -330,11 +383,11 @@ ACP_Data = {
 		["WorldQuestsList"] = true,
 		["idTip"] = true,
 		["Postal"] = true,
-		["WeakAuras"] = true,
+		["FasterLoot"] = true,
 		["WeakAurasTemplates"] = true,
 		["ACP"] = true,
 		["Mbox"] = true,
-		["FasterLoot"] = true,
+		["WeakAuras"] = true,
 		["WeakAurasModelPaths"] = true,
 	},
 }

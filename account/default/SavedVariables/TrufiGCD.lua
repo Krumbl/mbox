@@ -1,2 +1,0 @@
-
-TrufiGCDGlSave = nil
