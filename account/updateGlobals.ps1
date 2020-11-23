@@ -4,6 +4,10 @@ $WOW_PATH = "D:\Blizzard\World of Warcraft\_retail_\WTF\Account"
 # [DirectoryInfo] https://docs.microsoft.com/en-us/dotnet/api/system.io.directoryinfo?view=netcore-3.1
 $accounts = Get-ChildItem $WOW_PATH -Directory
 
+# TODO copy from main account first
+$accountName = "NAME"
+
+
 # copyAll exists once more than 1 addon?
 # https://docs.microsoft.com/en-us/dotnet/api/system.io.fileinfo?view=netcore-3.1
 foreach($file in Get-ChildItem -Path default\SavedVariables) {
@@ -23,4 +27,4 @@ foreach($file in Get-ChildItem -Path default\SavedVariables) {
 # Copy-Item -Path "C:\Logfiles" -Destination "C:\Drawings" -Recurse
 
 Write-Host "Sync Finished"
-Write-Host "All characters reset to default Dominos profile and need to be manually updated"
+Write-Host "All characters reset to default profile and need to be manually updated (dominos, SUF)"

@@ -2,6 +2,7 @@
 ACP_Data = {
 	["sorter"] = "Group By Name",
 	["NoRecurse"] = false,
+	["NoChildren"] = true,
 	["AddonSet"] = {
 		{
 			"Altoholic", -- [1]
@@ -94,12 +95,12 @@ ACP_Data = {
 			"EMA", -- [39]
 			"Leatrix_Maps", -- [40]
 			"Leatrix_Plus", -- [41]
-			"SexyMap", -- [42]
-			"ShadowedUF_Options", -- [43]
-			"ShadowedUnitFrames", -- [44]
-			"TomTom", -- [45]
-			"TrufiGCD", -- [46]
-			"VuhDo", -- [47]
+			"QuickQuest", -- [42]
+			"SexyMap", -- [43]
+			"ShadowedUF_Options", -- [44]
+			"ShadowedUnitFrames", -- [45]
+			"TomTom", -- [46]
+			"TrufiGCD", -- [47]
 			"VuhDoOptions", -- [48]
 			"GSE", -- [49]
 			"GSE_GUI", -- [50]
@@ -197,25 +198,30 @@ ACP_Data = {
 			"DataStore_Stats", -- [31]
 			"DataStore_Talents", -- [32]
 			"Dejunk", -- [33]
-			"dialogkey", -- [34]
-			"Dominos", -- [35]
-			"Dominos_Cast", -- [36]
-			"Dominos_Config", -- [37]
-			"Dominos_Progress", -- [38]
-			"EMA", -- [39]
-			"Leatrix_Maps", -- [40]
-			"Leatrix_Plus", -- [41]
-			"SexyMap", -- [42]
-			"ShadowedUF_Options", -- [43]
-			"ShadowedUnitFrames", -- [44]
-			"TomTom", -- [45]
-			"TrufiGCD", -- [46]
-			"VuhDo", -- [47]
-			"VuhDoOptions", -- [48]
-			"GSE", -- [49]
-			"GSE_GUI", -- [50]
-			"GSE_LDB", -- [51]
-			"Bagnon_ItemLevel", -- [52]
+			"Details", -- [34]
+			"Details_EncounterDetails", -- [35]
+			"Details_RaidCheck", -- [36]
+			"Details_DataStorage", -- [37]
+			"Details_Streamer", -- [38]
+			"Details_TinyThreat", -- [39]
+			"Details_Vanguard", -- [40]
+			"dialogkey", -- [41]
+			"Dominos", -- [42]
+			"Dominos_Cast", -- [43]
+			"Dominos_Config", -- [44]
+			"Dominos_Progress", -- [45]
+			"EMA", -- [46]
+			"Leatrix_Maps", -- [47]
+			"Leatrix_Plus", -- [48]
+			"SexyMap", -- [49]
+			"ShadowedUF_Options", -- [50]
+			"ShadowedUnitFrames", -- [51]
+			"TomTom", -- [52]
+			"TrufiGCD", -- [53]
+			"GSE", -- [54]
+			"GSE_GUI", -- [55]
+			"GSE_LDB", -- [56]
+			"Bagnon_ItemLevel", -- [57]
 			["name"] = "pox_master",
 		}, -- [4]
 		{
@@ -367,7 +373,6 @@ ACP_Data = {
 			["name"] = "hyperspawn",
 		},
 	},
-	["NoChildren"] = true,
 	["collapsed"] = {
 		["Altoholic"] = true,
 		["DataStore"] = true,
